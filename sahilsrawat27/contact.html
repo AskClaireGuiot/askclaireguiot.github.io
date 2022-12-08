@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Sample Website</title>
+</head>
+
+<body>
+    <header class="header-fix">
+        <nav>
+            <section class="top-nav">
+                <div>
+               <a href="Index.html">
+                    <!-- Links to home page -->
+                    <img src="images/logo.png" alt="ascentphysiotherapy Logo" width="250" class="web-logo">
+                </a>
+                </div>
+                <input id="menu-toggle" type="checkbox" />
+                <label class="menu-button-container" for="menu-toggle">
+                    <div class="menu-button"></div>
+                </label>
+                <ul class="menu">
+                    <li><a href="Index.html" class="nav-link">Home</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="facilities.html" class="nav-link">Facilities</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+                </ul>
+            </section>
+        </nav>
+    </header>
+    <main>
+    <h1 class="h1_heading"> Get in touch with us...</h1>
+<div class="form_div">
+  <h2>Contact Form</h2>
+  <form method="post" action="https://learndigital.dev/DGL103/dgl103-form.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Ex: Mike">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Ex: Smith">
+
+    <label for="email">Email <span class="label-required">* (required)</span></label>
+    <input type="email" id="email" name="email" placeholder="Ex: mike@yahoo.com" required>
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Please tell us a little about your enquiry" style="height:100px"></textarea>
+
+    <div class="wrapper-button">
+      <input type="reset" value="Reset">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+<div class="div_flex">
+<div class="time_table">
+  <table>
+      <caption>Timings</caption>
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Opening Time</th>
+          <th>Closing Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Monday</td>
+          <td>8:30 am</td>
+          <td>5pm</td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td>8:30 am</td>
+          <td>5:00 pm</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>8:30 am</td>
+          <td>4:00 pm</td>
+        </tr>
+        <tr>
+          <td>Thursday</td>
+          <td>8:30 am</td>
+          <td>5:00 pm</td>
+        </tr>
+        <tr>
+          <td>Friday</td>
+          <td>8:30 am</td>
+          <td>4:00 pm</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Closed on Weekends</td>
+        </tr>
+      </tfoot>
+    </table>
+</div>
+<div class="contact_div">
+  <section class="contactus_section">
+  <h2 class="contact_heading">Contact Us</h2>
+  <p><b>Phone: </b><a href="tel:2503387467">(250) 338-7467</a><br>
+    <b>Fax: </b>250 890-0032<br>
+    <b>Email: </b><a href="mailto:admin@ascentphysiotherapy.com">admin@ascentphysiotherapy.com</a></p>
+</section>
+<section class="address_div">
+    <h2 class="address_heading">Our Address</h2>
+    <p>141A Nordin Street<br>
+      Comox, BC, Canada<br>
+      V9M 3N5</p>
+</section>
+</div>
+</div>
+</main>
+
+
+
+<footer>
+  <section class="footer_flex">
+  <div class="footer_content">
+      <div class="footer_products">
+          <h4 class="products_heading">Our Products</h4>
+          <ul>
+              <li> Stability Balls</li>
+              <li>Exercise Banding/Tubing</li>
+              <li>Massage and Sports Creams</li>
+              <li>Special Order</li>
+              <li>Foam Rollers</li>
+              <li>SISU Mouth Guards</li>
+              <li>TENS Machines</li>
+              <li>Rock Tape</li>
+          </ul>
+      </div>
+      <div class="footer_location">
+          <h4 class="location_heading">Our Location</h4>
+          <p>
+              141A Nordin Street Comox, BC,<br>
+              Canada V9M3N5
+          </p>
+          <p><b>Phone: </b><a href="tel:2503387467">(250) 338-7467</a><br>
+              <b>Fax: </b>250 890-0032<br>
+              <b>Email: </b><a href="mailto:admin@ascentphysiotherapy.com">admin@ascentphysiotherapy.com</a></p>
+      </div> 
+  </div>
+      <div class="footer_map">
+          <iframe class="map_width"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d556.5153219991477!2d-124.92487009151395!3d49.672669200621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54881315b1258325%3A0xf21aee3501fe1122!2sAscent%20Physiotherapy!5e0!3m2!1sen!2sca!4v1669330359577!5m2!1sen!2sca"
+              width="360" height="280" style="border:1;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+ </section>
+  <small class="small_align">This is a fictional website that was designed and coded as an educational exercise.
+      It is not intended to
+      be seen outside of the class environment. None of the content and images were approved by the business
+      owner.</small>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="images/angle-double-small-up.png"
+          width="20px"></button>
+  <script>
+      // Java Script for button
+      // Copied from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+      let mybutton = document.getElementById("myBtn");
+      // When the user scrolls down 20px from the top of the document, show the button
+
+      window.onscroll = function () { scrollFunction() };
+
+      function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              mybutton.style.display = "block";
+          } else {
+              mybutton.style.display = "none";
+          }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+          document.body.scrollTop = 0; // For Safari
+          document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
+
+  </script>
+</footer>
+
+</body>
+
+</html>

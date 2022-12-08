@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Contact us</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@300&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="contact.css">
+    </head>
+
+    <body>
+        <!--  ******************************  Header  ********************************* -->
+        <header>
+            <div class="header-nav">
+                <div class="logo">
+                    <a href="home.html"><img src="images/Logo.png"
+                            alt="comoxvalleylifeline Logo" width="200"
+                            height="55"></a>
+                </div>
+            </div>
+            <!--  ******************************  Nav bar  ********************************* -->
+            <nav>
+                <ul id="nav-items">
+                    <li><a href="home.html" class="navigation">Home</a></li>
+                    <li><a href="services.html" class="navigation">Services</a></li>
+                    <li><a href="about.html" class="navigation">About Us</a></li>
+                    <li><a href="contact.html" class="navigation">Contact
+                            Us</a></li>
+                </ul>
+                <a class="toggle" onclick="showNav()"><i class="fa
+                        fa-bars"></i></a>
+            </nav>
+
+        </header>
+        <main>
+
+            <!--  ****************************** Forms code ********************************* -->
+            <div class="heading">
+                <h1>Contact Us</h1>
+            </div>
+            <section class="container">
+
+                <section class="form">
+
+                    <form>
+                        <label>First Name</label>
+                        <input type="text" id="fname" name="firstname"
+                            placeholder="Your name..">
+
+                        <label>Last Name</label>
+                        <input type="text" id="lname" name="lastname"
+                            placeholder="Your last name..">
+                        <label>Is your age above 60?</label><br><br>
+                        <div class="some-class">
+                            <input type="radio" class="radio" name="x" value="y"
+                                id="y" />
+                            <label for="y">Yes</label>
+                            <input type="radio" class="radio" name="x" value="z"
+                                id="z" />
+                            <label for="z">No</label>
+                        </div><br><br>
+                        <label for="cars">Gender:</label><br> <br>
+
+
+                        <select name="gender" id="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select> <br><br>
+
+                        <label>Email</label>
+                        <input type="text" id="Email" name="Email"
+                            placeholder="Your Email..">
+
+                        <label>Comments</label><br>
+                        <textarea id="Comments" name="Comments"
+                            placeholder="Write
+                            something.."></textarea><br><br>
+
+                        <input type="submit" value="Submit">
+                    </form>
+
+                </section>
+
+                <section class="map"><br>
+                    <div class="responsive-map-container">
+                        <iframe class="googlemap"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2581.2374700221458!2d-124.99920218440353!3d49.68750074992357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5488147593f58011%3A0xa57af17e80199166!2sComox%20Valley%20Lifeline%20Society!5e0!3m2!1sen!2sca!4v1668908813964!5m2!1sen!2sca"
+                            width="350" height="485" style="border:0;"
+                            allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                </section>
+            </section>
+
+            <!--  ******************************  Buttons  code  ********************************* -->
+            <section class="buttoncontainer">
+
+                <div class="buttonblock">
+                    <button onclick="window.location.href='tel:(250)-338-7467'"
+                        type="button"><img
+                            src="images/Call.png"></button><br><br>
+                    <span><b>Tel:</b><a> (250)-338-4255</a></span>
+                </div>
+
+                <div class="buttonblock">
+                    <button
+                        onclick="window.location.href='https://goo.gl/maps/G79Nk3CaoR74YcNy7'"
+                        type="button"><img
+                            src="images/Location.png"></button><br><br>
+                    <span><b>Address: </b>392 - 10th Street<br>
+                        Courtenay, BC V9N 1P5</span>
+                </div>
+
+                <div class="buttonblock">
+                    <button
+                        onclick="window.location.href='mailto:comoxvalleylifelinesociety@gmail.com'"
+                        type="button"><img
+                            src="images/Paperplane.png"></button><br><br>
+                    <span><b>Email: </b><br><a>comoxvalleylifelinesociety@gmail.com</a></span>
+                </div>
+
+                <div class="buttonblock">
+                    <button
+                        onclick="window.location.href='http://comoxvalleylifeline.com/'"
+                        type="button"><img
+                            src="images/Earth.png"></button><br><br>
+                    <span><b>Website: </b><br><a>ComoxValleyLifelineSociety</a></span>
+                </div>
+
+            </section>
+
+        </main>
+
+        <!--  ******************************  First Footer  ********************************* -->
+        <section class="firstfooter">
+            <div class="allcards">
+
+                <article class="footercards">
+                    <h3>Little about us</h3>
+                    <a href="http://lifeline.ca/en">Learn More at Lifeline
+                        Canada</a><br>
+                    <a href="http://www.canwestlifeline.com/">Member of the
+                        Western Canadian Association of Lifeline Programs</a>
+                </article>
+
+
+                <article class="footercards">
+                    <h3>About the helpline</h3>
+                    <p>
+                        All our Help Buttons are 100% waterproof.
+                    </p>
+                </article>
+
+                <article class="footercards">
+                    <h3>How Lifeline with AutoAlert Works</h3>
+                    <div class="iframecontainer">
+                        <iframe class="responsive-iframe" width="400"
+                            height="200"
+                            src="https://www.youtube.com/embed/xHOyqUQTzM0"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write;
+                            encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe> </div>
+                </article>
+            </div>
+        </section>
+
+        <!--  ******************************  Bottom Footer  ********************************* -->
+        <footer>
+            <p>
+                This is a fictional website that was designed and coded as an
+                educational exercise. It is not intended to be seen outside of
+                the class environment. None of the content and images were
+                approved by the business owner.
+            </p>
+        </footer>
+
+        <!--  ****************************** For mobile view , Nav javascript ********************************* -->
+        <script>
+        function showNav() {
+          var element = document.getElementById("nav-items");
+          element.classList.toggle("show-items");
+        }
+      </script>
+    </body>
+</html>

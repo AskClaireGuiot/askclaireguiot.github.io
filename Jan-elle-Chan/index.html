@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Assignment G-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><!--Makes page responsive-->
+    <title>Ambassador Taxi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <header>
+      <h1>Ambassador Taxi</h1>
+      <nav class="flex-container nowrap">
+        <div class="menu-label">Menu</div>
+        <ul id="nav-items" class="palette2">
+          <!-- list for navigation -->
+          <li class="flex-item-nav"><a href="index.html">Home</a></li>
+          <li class="flex-item-nav"><a href="booking.html">Booking</a></li>
+          <li class="flex-item-nav"><a href="rates.html">Rates</a></li>
+          <li class="flex-item-nav"><a href="services.html">Services</a></li>
+          <li class="flex-item-nav"><a href="blank.html">About</a></li>
+        </ul>
+        <!-- menu button, taxi icon -->
+        <a class="toggle" onclick="showNav()">
+          <i class="fa-solid fa-taxi"></i></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="flex-container">
+        <div class="flex-item palette1">
+          <h2>Why Choose Ambassador?</h2>
+          <p>
+            Ambassador Transportation Corporation's goal is to provide the best ground and airport transportation service on Vancouver Island. All our drivers are professional and have a wealth of experience, which is put to use in all our services.      
+          </p>
+          <p>
+            We offer shuttle services from Comox Airport to Comox Valley and surrounding areas, including Nanaimo and Tofino.
+          </p>
+          <p>
+            For those extra special occasions when you want to make a grand entrance and travel in style, we also provide limousine services.
+          </p>
+          <p>
+            With lots of activities all year round, you don't ever have to miss out. We will arrange to get you and your group there and home safely afterwards.
+          </p>
+          <button class="button"><a href="services.html">Read about our Services<a></button>
+        </div>
+
+        <div class="flex-item palette1">
+          <figure>
+            <img
+              class="picture"
+              src="images/highway.jpg"
+              alt="Image of a highway"
+              width="80%";
+              height="auto";
+        
+            />
+            <figcaption>See more of Vancouver Island</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="flex-container">
+        <div  class="flex-item palette1">
+          <figure>
+            <img
+              class="picture"
+              src="images/LimousineService.jpg"
+              alt="Image of a Limousine"
+              width="80%";
+              height="auto";
+        
+            />
+            <figcaption>Luxurious limousine service</figcaption>
+          </figure>
+        </div>
+
+        <div class="flex-item palette1">
+          <h2>Serving our Community</h2>
+          <p>
+            Ambassador is owned and operated by residents of Vancouver Island. We are committed to our comunnity and we are always seeking ways to support local businesses.
+          </p>
+          <p>
+            To this end, we have partenered with restuarants, wineries and breweries to deliver exceptional tour experiences.
+          </p>
+          <p>
+            <quote> <em>"A quick shout out to Courtenay’s newly-minted taxi service - Ambassador Transportation Corporation and Kevin East!
+
+              I am an entrepreneur who owns property in Gastown where I work during the week, and retreat to my recreational home at Mt Washington for seasonal hiking and skiing.
+              
+              Today, I was in a bind to get to a Harbour Air Flight in Comox on Monday. I called another company then Ambassador. Not only was Kevin gracious and amiable, his rates to come up the hill were 60% less than the other company."</em></quote>
+          </p>
+          <p>
+            <small>Ray Matthews</small>
+          </p>
+          
+        </div>
+      </section>
+      <section class="flex-container">
+        <div  class="flex-item centeritem palette1">
+          <iframe width="500" height="350" src="https://www.youtube.com/embed/8i-ZfutgmCk" title="Wine Tour Testimonial by Paul Horgen" ></iframe>
+        </div>
+        
+        
+      </section>
+      
+    </main>
+    <footer class="palette2">
+      <section class="flex-container footer-item palette3">
+        <div class="flex-item palette3">
+          <h4>Contact Us</h4>
+          <p>
+            Telephone (Local): 1-250--339-5252
+          </p>
+          <p>
+            Telephone (Out of area): 1-877-339-5252
+          </p>
+          <p>
+            <a href = "mailto: gowithambassador@gmail.com">gowithambassador@gmail.com</a>
+          </p>
+          
+          
+        </div>
+        
+        <div class="flex-item palette3">
+          <h4><a href="blank.html">Upcoming Events</a></h4>
+          <h4><a href="blank.html">FAQ</a></h4>
+          <!-- Add font awesome icons -->
+<a href="https://www.facebook.com/ambassadorshuttle" "#" class="fa fa-facebook"></a>
+<a href="https://twitter.com/ComoxShuttle" "#" class="fa fa-twitter"></a>
+<a href="https://www.youtube.com/channel/UC1MZk4X-pUmuVUcVNwKm1AQ" "#" class="fa fa-youtube"></a>
+        </div>
+        
+      </section>
+      <small
+        >Copyright &copy; 2022 This is a fictional website that was designed and coded as an educational exercise. It is not intended to be seen outside of the class environment. None of the content and images were approved by the business owner.</small
+      >
+    </footer>
+    <script>
+      function showNav() {
+        var element = document.getElementById("nav-items");
+        element.classList.toggle("show-items");
+      }
+    </script>
+  </body>
+</html>

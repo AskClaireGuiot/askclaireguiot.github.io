@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Home</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@300&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="home.css">
+    </head>
+
+    <body>
+        <!--  ******************************  Header  ********************************* -->
+        <header>
+            <div class="header-nav">
+                <div class="logo">
+                    <a href="home.html"><img src="images/Logo.png"
+                            alt="comoxvalleylifeline Logo" width="200"
+                            height="55"></a>
+                </div>
+            </div>
+
+            <!--  ******************************  Nav bar  ********************************* -->
+            <nav>
+                <ul id="nav-items">
+                    <li><a href="home.html" class="navigation">Home</a></li>
+                    <li><a href="services.html" class="navigation">Services</a></li>
+                    <li><a href="about.html" class="navigation">About Us</a></li>
+                    <li><a href="contact.html" class="navigation">Contact
+                            Us</a></li>
+                </ul>
+                <a class="toggle" onclick="showNav()"><i class="fa
+                        fa-bars"></i></a>
+            </nav>
+
+        </header>
+
+        <!--  ******************************  Backgorund video ********************************* -->
+        <div class="videobg">
+            <video id="videocontainer" autoplay muted loop>
+                <source src="images/Lifeline.mp4" type="video/mp4">
+            </video>
+
+            <div class="video-overlay"></div>
+            <div class="overlay">
+                <h1>Comox Valley Lifeline Society<br>
+                    <q>Help at the push of a button</q></h1>
+            </div>
+        </div>
+        <main>
+
+
+            <!--  ****************************** Introduction block ********************************* -->
+            <div class="Intro">
+                <img src="images/personsimage.png">
+
+                <h2>Comox Valley Lifeline Society</h2>
+                <p>The Comox Valley Lifeline Society is a non-profit,
+                    charitable
+                    organization that provides Lifeline services to a
+                    variety of
+                    individuals who may feel reassured that help is
+                    available to
+                    them twenty four hours a day, seven days a week.</p>
+                <h2>Communities we serve</h2>
+                <p>Cowichan Valley, Chemainus-Crofton, Sunshine Coast, Comox
+                    Valley, Campbell River And North Vancouver Island.</p>
+            </div>
+
+            <!--  ******************************  "Things you want to know" block ********************************* -->
+            <div class="Questions"><h2>Things you want to know</h2></div>
+            <section class="flip-card-container">
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h3>What is a Lifeline?</h3> </div>
+                        <div class="flip-card-back">
+                            <p> Lifeline is an easy-to-use personal
+                                emergency
+                                response
+                                system that lets you summon help any time of
+                                the
+                                day
+                                or
+                                night, even if you can't speak. All you have
+                                to
+                                do
+                                is
+                                press your Personal Help Button, worn on a
+                                wristband
+                                or
+                                pendant and a Personal Response Associate
+                                will
+                                ensure
+                                you get help fast.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  ******************************  Flipcards block ********************************* -->
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h3>How it helps?</h3> </div>
+                        <div class="flip-card-back">
+                            <p> This year 1.4 million people, 65 and older
+                                will
+                                fall. If you or a loved one experience a
+                                medial
+                                emergency, time is of the essence. We can
+                                help
+                                by connecting you to the right help for the
+                                situation, 24 hours a day, 365 days a year
+                                at
+                                the push of a button. Whether you need
+                                emergency
+                                services or just the assistance of a family
+                                member or friend to help you get back on
+                                your
+                                feet, we can help.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h3>If a fall should happen ?</h3> </div>
+                        <div class="flip-card-back">
+                            <p> Not all falls can be prevented. If a fall
+                                does
+                                occur, older adults need to be sure they can
+                                reach help easily and quickly, especially if
+                                they are injured, in order to prevent
+                                further
+                                injury and dangerous complications.
+
+
+
+                                The Comox Valley Lifeline Society offers a
+                                variety of medical alert services designed
+                                specifically for older adults that provide
+                                fast,
+                                24/7 access to expert help in an emergency.
+                                These services range from the standard
+                                HomeSafe
+                                service to the fall detection capability of
+                                the
+                                HomeSafe with AutoAlert and the freedom of
+                                the
+                                new GoSafe mobile service.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <!--  ******************************  Services block  ********************************* -->
+            <section class="secondcard">
+                <div class="allcards">
+                    <h2>Our Services</h2>
+                    <article class="cards">
+
+
+                        <h3>HomeSafe Basic</h3>
+                        <p>
+                            Wear your basic help button around your neck or
+                            wrist and have access to help at the push of a
+                            button from anywhere within range of the in-home
+                            Communicator.
+                        </p>
+                        <button class="btn2"
+                            onclick="window.location.href='services.html'"
+                            type="button">Learn more</button>
+
+                    </article>
+                    <article class="cards">
+
+
+                        <h3>HomeSafe with Auto Alert</h3>
+                        <p>
+                            HomeSafe with AutoAlert is designed to
+                            automatically detect hard falls and send a call
+                            for help even if you can't push the button
+                            yourself. This is an excellent choice if you
+                            have a history, risk or fear of falling.
+                        </p>
+
+                        <button class="btn2"
+                            onclick="window.location.href='services.html'"
+                            type="button">Learn more</button>
+
+                    </article>
+
+                    <article class="cards">
+                        <h3>GoSafe Mobile Help Button</h3>
+                        <p>
+                            GoSafe gives you the freedom to go where you
+                            want, when you want. This system has six
+                            locating technologies designed to help find you
+                            anywhere in Canada should an emergency occur.
+                        </p>
+                        <button class="btn2"
+                            onclick="window.location.href='services.html'"
+                            type="button">Learn more</button>
+
+                    </article>
+
+                </div>
+            </section>
+
+            <!--  ******************************  Image hover  block ********************************* -->
+            <section class="thirdcard">
+                <div class="allcards">
+                    <h2>How Lifeline works?</h2>
+                    <div class="imgallcards">
+
+
+                        <article class="imgcards">
+                            <img src="images/buttonpress.jpeg"
+                                alt="image-of-lifeline-button"
+                                class="image">
+                            <div class="cardoverlay">
+                                <div class="text">If you need help, push your
+                                    Personal Help Button.</div>
+                            </div>
+                        </article>
+
+                        <article class="imgcards">
+                            <img src="images/lifelinecomm.jpeg"
+                                alt="image-of-lifeline-communicator"
+                                class="image">
+                            <div class="cardoverlay">
+                                <div class="text">Your Lifeline Communicator
+                                    Unit
+                                    dials our Response Centre.</div>
+                            </div>
+                        </article>
+
+                        <article class="imgcards">
+                            <img src="images/customerservice.jpeg"
+                                alt="image-of-group-of-Customerservice-membes-talking-on-phone"
+                                class="image">
+                            <div class="cardoverlay">
+                                <div class="text">A Personal Response Associate
+                                    assesses your situation and sends you the
+                                    you
+                                    need.</div>
+                            </div>
+                        </article>
+
+
+                        <article class="imgcards">
+                            <img src="images/support.jpeg"
+                                alt="young-woman-giving-support-to-old-lady"
+                                class="image">
+                            <div class="cardoverlay">
+                                <div class="text">Whether it is a family member,
+                                    a
+                                    neighbor or ambulance, Lifeline always sends
+                                    you
+                                    the help you need.</div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!--  ****************************** First Footer********************************* -->
+            <section class="firstfooter">
+                <div class="allcards">
+
+                    <article class="footercards">
+                        <h3>Little about us</h3>
+                        <a href="http://lifeline.ca/en">Learn More at
+                            Lifeline
+                            Canada</a><br>
+                        <a href="http://www.canwestlifeline.com/">Member of
+                            the
+                            Western Canadian Association of Lifeline
+                            Programs</a>
+                    </article>
+
+
+                    <article class="footercards">
+                        <h3>About the helpline</h3>
+                        <p>
+                            All our Help Buttons are 100% waterproof.
+                        </p>
+                    </article>
+
+
+                    <article class="footercards">
+                        <h3>How Lifeline with AutoAlert Works</h3>
+                        <div class="iframecontainer">
+                            <iframe class="responsive-iframe" width="400"
+                                height="200"
+                                src="https://www.youtube.com/embed/xHOyqUQTzM0"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write;
+                                encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe> </div>
+                    </article>
+
+                </div>
+            </section>
+
+        </main>
+
+        <!--  ******************************  Bootom Footer  ********************************* -->
+        <footer>
+
+            <div class="secondfooter">
+                <p>
+                    This is a fictional website that was designed and coded
+                    as
+                    an educational exercise. It is not intended to be seen
+                    outside of the class environment. None of the content
+                    and
+                    images were approved by the business owner.
+                </p>
+            </div>
+        </footer>
+
+        <!--  ****************************** For mobile view, Nav bar javascript ********************************* -->
+        <script>
+        function showNav() {
+          var element = document.getElementById("nav-items");
+          element.classList.toggle("show-items");
+        }
+      </script>
+    </body>
+</html>

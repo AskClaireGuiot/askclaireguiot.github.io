@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Phi Architecture</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Work+Sans:ital,wght@0,100;0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <!--logo section-->
+            <div class="logo">
+                <img src="images/phi_logo.png" alt="phi architecture logo">
+            </div>
+
+            <!--navigation links-->
+            <ul>
+                <li>
+                    <a href="index.html" class="underline" style="color:#FCB375">Home</a>
+                </li>
+                <li>
+                    <a href="portfolio.html" class="underline">Portfolio</a>
+                </li>
+                <li>
+                    <a href="about_us.html" class="underline">About Us</a>
+                </li>
+            </ul>
+        </nav>
+        <section class="hero">
+            <video id="background-video" autoplay loop muted title="Video of the forest" poster="https://learndigital.dev/DGL103/ForestVideo.jpg">
+                <source src="video/hero_section_video.mp4" type="video/mp4">
+              </video>
+              
+              <div class="video-overlay"></div>
+            <!--hero section with company name, tagline and projects carousel-->
+            <h4>
+                Phi Architecture
+            </h4>
+            <h1>Building Excellence with Care</h1>
+        </section>
+    </header>
+    <section class="facts_section">
+        <!--company facts-->
+        <h2>
+            We promise highest quality of craftmanship 
+        </h2>
+        <div class="facts">
+            <div class="fact_card">
+                <!--<img src="images/card_background_pattern.png" alt="hexagonal abstract pattern for card background">-->
+                <p class="fact_description">
+                    Specialising in
+                </p>
+                <p class="fact_detail">
+                    Local Constructions 
+                </p>
+            </div>
+
+            <div class="fact_card">
+                <!--<img src="images/card_background_pattern.png" alt="hexagonal abstract pattern for card background">-->
+                <div class="fact_content">
+                    <p class="fact_description">
+                        Serving Vancouver Island since
+                    </p>
+                    <p class="fact_detail">
+                        2004 
+                    </p>
+                </div>
+            </div>
+
+            <div class="fact_card">
+                <div class="fact_content">
+                    <!--<img src="images/card_background_pattern.png" alt="hexagonal abstract pattern for card background">-->
+                    <p class="fact_description">
+                        Working alongside
+                    </p>
+                    <p class="fact_detail">
+                        Local Authorities, Bylaws, Climate and builders 
+                    </p>
+                </div>
+            </div>
+
+            <div class="fact_card">
+                <div class="fact_content">
+                    <!--<img src="images/card_background_pattern.png" alt="hexagonal abstract pattern for card background">-->
+                    <p class="fact_description">
+                        Providing customisations based on
+                    </p>
+                    <p class="fact_detail">
+                        Client needs, aspirations,personality, budget, and unique site. 
+                    </p>
+                </div>
+            </div>
+        </div>
+            <!--link to learn more and that redirects to about us page-->
+            <div class="learn_more_facts">
+                <a href="about_us.html">
+                    <p>
+                        Learn more about us
+                    </p>
+                    <img src="images/right_pointed_arrow.png" alt="icon of arrow pointing to the right" class="zoom">
+                </a>
+            </div>
+    </section>
+    <section class="testimonial_section">
+        <!--testimonials-->
+        <h2>We make happy clients</h2>
+        <div class="testimonial_box">
+            <p class="testimonial">
+                "Could not have been more pleased with the quality of work, timeliness of project completion, and overall professional attitude. Each aspect of the project was handled beyond expectations. Their hands on approach was instrumental in maintaining budget goals and solving any issues that arose during the process. Best experience with any contractor I have worked with."
+            </p>
+            <p class="testimonial_author">
+                - CASEY HALL, PROJECT VICTORY
+            </p>
+            <!--testimonal carousel links-->
+            <a href="testimonal.hrml">
+                <img src="images/left_pointed_arrow_black.png" alt="icon of arrow pointing to the left" class="zoom">
+            </a>
+            <a href="testimonal.hrml">
+                <img src="images/right_pointed_arrow_black.png" alt="icon of arrow pointing to the right" class="zoom">
+            </a>
+        </div>
+    </section>
+    <section class="enquiry_form_section">
+        <!--enquiry form-->
+        <div class="enquiry_form_box">
+            <h2>We'd love to work with you</h2>
+            <form>
+                <label for="name">
+                    Name
+                </label>
+                <input type="text" id="name" name="name" value="" placeholder="Enter Name" required>
+
+                <label for="project_type">
+                    Project Type
+                </label>
+
+                <select id="project_type" name="project_type">
+                    <option value="residential">Residential</option>
+                    <option value="commercial">Commercial</option>
+                    <option value="public">Public</option>
+                </select>
+
+                <label for="location">
+                    Project Location
+                </label>
+                <input type="text" id="location" name="location" value="" placeholder="Enter Location">
+
+                <label for="client_contact" >
+                    How can we contact you?
+                </label>
+                <textarea id="client_contact" name="client_contact" rows="4" cols="50" placeholder="Enter Email/Phone number/Fax" required></textarea>
+
+                <button type="button">Submit</button>
+            </form>
+        </div>
+    </section>
+    <hr>
+    <section class="contact_us_section">
+        <!--contact details-->
+        <h3>Contact Us</h3>
+        <div class="contact_us">
+            <div class="contact_us_card">
+                <img src="images/email_icon.png" alt="lined icon of an envelope to signfy email">
+                <p>
+                    <a href="mailto:pippa@phiarchitecture.ca" class="underline">pippa@phiarchitecture.ca</a>
+                </p>
+            </div>
+
+            <div class="contact_us_card">
+                <img src="images/phone_icon.png" alt="lined icon of a phone to signfy contact number">
+                    <p>
+                        <a href="tel:2507030433" class="underline">250 703 0433</a>
+                    </p>
+                </div>
+
+            <div class="contact_us_card">
+                <img src="images/location_icon.png" alt="lined icon of a location pin to signfy address">
+                <address>
+                    <p>
+                        <a href="https://www.google.com/maps/place/5+Little+Bear+Way,+Royston,+BC+V0R+2V0/@49.6462595,-124.9562951,17z/data=!3m1!4b1!4m5!3m4!1s0x548814afb0823cb3:0xcd0bec47784d7a77!8m2!3d49.6462595!4d-124.9541011" class="underline">Royston, BC 5 Little Bear Way</a>
+                    </p>
+                </address>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <!--copyright statement and disclaimer-->
+        <p>
+            <em>
+                This is a fictional website that was designed and coded as an educational exercise. It is not intended to be seen outside of the class environment. None of the content and images were approved by the business owner.
+            </em>
+        </p>
+    </footer>
+</body>
+</html>

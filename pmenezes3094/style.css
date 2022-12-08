@@ -1,0 +1,654 @@
+
+/*All pages*/
+
+    /*Font sizes and line heights*/
+
+    h1, h2,h3, h4, h5, h6{
+        font-family: 'Work Sans', sans-serif;  
+    }
+
+    .about_us_video h1 {
+        text-align: center;
+    }
+
+    p, label{
+        font-family: 'Quicksand', sans-serif;
+    }
+
+    button{
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 600;
+    }
+
+    a:link, a:visited{
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 600;
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    a:hover{
+        color: #FCB375;
+    }
+
+    /*hover effects*/
+    /*hover code taken from 'https://codepen.io/gabrielcojea/pen/ExPaBzQ' */
+
+    .underline{
+        position: relative;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      
+      .underline::before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 0;
+        height: 4px;
+        background-color: #FCB375;
+        transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+      }
+      
+      @media (hover: hover) and (pointer: fine) {
+        .underline:hover::before{
+          left: 0;
+          right: auto;
+          width: 100%;
+        }
+      }
+
+
+
+    /*button hover effect*/
+
+    button{
+        font-size: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 50%;
+        margin: auto;
+        margin-top: 40px;
+  
+       /* padding:12px;*/
+        border: 1px solid #ffffff;
+        background-color: transparent;
+        color: #ffffff;
+    }
+
+    button:hover, button:active {
+        color:#fff;
+        background:#FCB375;
+      }
+
+      /*arrow effect*/
+      
+      .zoom:hover {
+        transform: scale(1.5);
+        transition: transform 0.5s; /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+      }
+      
+    /*button hover ends*/
+
+
+    h1{
+        font-size: 60px;
+    }
+
+    h4 {
+        font-size: 30px;
+        
+    }
+
+    h5 {
+        font-size: 20px;
+    }
+
+
+
+    /*body section styling*/
+    body{
+        margin: 0px;
+    }
+
+    hr {
+        border: 0;
+        height: 5px;
+        background: #ffffff;
+        margin: 0px;
+    }
+
+    /*Navigation Bar*/
+    nav {
+        height:80px;
+        background-color: black;
+        display: flex;
+        align-items: center;
+    }
+
+        /*Logo*/
+        .logo{
+            width: 50px;
+            height: 50px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 3.7%;
+        }
+
+        /*Navigation Menu*/    
+            nav ul {
+                display: flex;
+                padding-right: 3.7%;
+                margin-left: auto;
+                list-style: none;
+                text-transform: uppercase;
+            }
+
+            li {
+                padding-left: 25px;
+                padding-right: 25px;
+            }
+
+    /*Footer*/
+        footer {
+             background-color: #cccccc;
+        }
+
+        /*footer content*/
+            footer p {
+                padding-left: 3.7%;
+                padding-right: 3.7%;
+                padding-top: 50px;
+                padding-bottom: 50px;
+                margin: 0px;
+                font-size: 20px;
+                color: #707070;
+
+            }
+/*Index Page Styles*/
+
+    /*hero section*/
+    .hero {
+        text-align: center;
+    }
+
+    /*video background : code from codepen askclairguiot*/
+    #background-video,
+    .video-overlay {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    }
+
+    .hero h4 {
+        padding-top: 100px;
+        color: #ffffff;
+    }
+
+    .hero h1 {
+        padding-bottom: 100px;
+        color: #ffffff;
+    }
+
+.video-overlay {
+  background-color: #000000;
+  opacity: 0.3;
+}
+    /*video background ends*/
+
+    /*Facts Section*/
+    .facts_section {
+        background-color: #000000;
+        color: #ffffff;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 3.7%;
+        padding-right: 3.7%;
+    }
+
+    .facts_section h2 {
+        margin: 0px;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    .facts {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+        margin: auto;
+        justify-content: center;
+        /*padding-bottom: 100px;*/
+    }
+
+    .fact_card{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        width: 22.03%;
+        background-image: url('images/card_background_pattern.png');
+        background-size: cover;
+        text-align: center;
+        min-width: 300px;
+    }
+
+    .learn_more_facts {
+        text-align: center;
+        padding-top: 50px;
+        text-transform: uppercase;
+    }
+
+    .fact_description{
+        font-size:  16px;
+    }
+
+    .fact_detail{
+       font-size: 20px; 
+    }
+
+    .fact_content{
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    /*testimonial section*/
+    .testimonial_section {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        text-align: center;
+        padding-left: 3.7%;
+        padding-right: 3.7%;
+    }
+
+    .testimonial_section h2, .testimonial_section p {
+        margin: auto;
+    }
+
+    .testimonial_section h2 {
+        padding-bottom: 50px;
+    }
+
+    .testimonial{
+        padding-top: 50px;
+        padding-left: 7.83%;
+        padding-right: 7.83%;
+        padding-bottom: 30px;
+       
+    }
+
+    .testimonial_box {
+        width: 61.2%;
+        text-align: center;
+        border: 1px solid #000000;
+        margin: auto;
+
+    }
+
+    .testimonial_box img {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 1.46%;
+        padding-left: 1.46%;
+    }
+
+    /*enquiry form section*/
+
+    .enquiry_form_section {
+        color: #ffffff;
+        background-color: #000000;
+        background-image: url('images/form_background.png');
+        background-size: cover;
+    }
+
+    .enquiry_form_section h2 {
+        text-align: center;
+        margin: 0px;
+        padding-top: 100px;
+        padding-bottom: 20px;
+    }
+
+    .enquiry_form_section form {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 50px;
+    }
+
+    form {
+        width: 40%;
+        min-width: 200px;
+        margin: auto;
+    }
+
+    /*form button{
+        font-size: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 50%;
+        margin: auto;
+        margin-top: 40px;
+    }*/
+
+    label{
+        padding-top: 30px;
+        padding-bottom: 10px;
+    } 
+
+    select, input {
+        height: 40px;
+    }
+
+    textarea {
+        height: 100px;
+    }
+
+    .enquiry_form_box {
+        background-color: #000000;
+        width: 62.66%;
+        margin: auto;
+    }
+
+    /**contact us section*/
+
+    .contact_us_section {
+        background-color: #000000;
+        text-align: center;
+        color: #ffffff;
+        padding-left: 3.7%;
+        padding-right: 3.7%;
+    }
+
+    .contact_us {
+        display: flex;
+        flex-wrap: wrap;
+        /*gap: 1.46%;*/
+        gap: 20px;
+        margin: auto;
+        justify-content: center;
+        padding-bottom: 100px; 
+    }
+
+    .contact_us_section h3{
+        margin: 0px;
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+
+    .contact_us_card {
+        text-align: center;
+        border: 1px solid #ffffff;
+        width: 22.03%;
+        min-width: 300px;
+    }
+
+    .contact_us_card a:link, .contact_us_card a:visited{
+        color: #ffffff;
+    }
+
+    .contact_us_card img {
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    .contact_us_card p ,.contact_us_card a{
+        margin: 0px;
+        padding-bottom: 20px;
+    }
+
+
+
+/*Portfolio Page*/
+
+    /*projects section*/
+    .projects {
+        padding-top: 85px ;
+        padding-bottom: 85px;
+        text-align: center;
+    }
+
+    /*test code*/
+        .project_card {
+        padding-left: 3.7%;
+        padding-right: 3.7%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        text-align: center;
+        background-repeat: no-repeat;
+        width: 76.8%;
+        height: 430px;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        }
+        
+        /*card background images*/
+        #chalet_card{
+            background-image: url(images/chalet.png);
+            background-size: cover;
+            margin-bottom: 15px;
+            margin-top: 15px;
+        }
+
+        #victory_card{
+            background-image: url(images/victory.png);
+            background-size: cover;
+            margin-bottom: 15px;
+            margin-top: 15px;
+        }
+
+        #mcelhanney{
+            background-image: url(images/mcelhanney.png);
+            background-size: cover;
+            margin-bottom: 15px;
+            margin-top: 15px;
+        }
+
+
+        /*card content*/
+            .card_content {
+                margin: auto;
+                width:51%;
+                top: 50%;
+                align-items: center;
+            }
+
+            .card_content h4 {
+                margin: 10px;
+                color: #ffffff;
+                padding-bottom: 20px;
+            }
+
+            /*.card_content button {
+                margin: 0px;   
+                font-size: 20px;
+                padding:12px;
+                border: 1px solid #ffffff;
+                background-color: transparent;
+                color: #ffffff;
+            }*/
+
+/*Project Page*/
+
+.feature_image{
+    background: url('images/chalet_feature.png');
+    background-size: cover;
+    height: 39vh;
+}
+
+.feature_image img{
+    position: relative;
+}
+
+.feature_image a {
+    position: absolute;
+    padding-left: 3.7%;
+    padding-top: 50px;
+}
+
+    /*Project content*/
+    .project_content {
+      padding-top: 50px;  
+      padding-bottom: 50px;
+    }
+
+    .project_content h4, .project_content p {
+        margin: 0px;
+    }
+
+    .project_content h4{
+        padding-bottom: 25px;
+    }
+
+    .project_content p {
+        padding-bottom: 10px;
+    }
+
+
+            /*project description content*/
+            .project_information {
+                padding-left: 3.7%;
+                padding-right: 3.7%;
+            }
+
+            .project_information ul {
+                padding-left: 0%;
+                padding-right: 0%;
+                padding-bottom: 100px;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                margin: auto;
+                justify-content: center;
+            }
+
+            .project_information ul li{
+                padding: 0%;
+                list-style: none;
+            }
+
+            /*gallery images*/
+            .img_hover_zoom img {
+                transition: transform 1s, filter 1s ease-in-out;
+                transform-origin: center center;
+                filter: brightness(70%);
+              }
+              
+              /* The Transformation */
+              .img_hover_zoom:hover img {
+                filter: brightness(100%);
+                transform: scale(1.2);
+
+              }
+            
+/*About Us page*/
+
+    /*about us video section*/
+    .about_us_video {
+        padding-left: 3.7%;
+        padding-right: 3.7%;
+    }
+
+    /*Content section*/
+        .about_information {
+            display:flex;
+        }
+
+        .about_information h5{
+            margin: 0px;
+        }
+
+        .about_information p{
+            margin: 0px;
+            font-size: 16px;
+            padding-top: 10px;
+        }
+
+    /*architect info*/
+        figure {
+            margin: 0px;
+        }
+
+        figcaption {
+            padding-top: 30px;
+        }
+
+        .architect_info {
+            padding-left: 3.7%;
+            padding-right: 4.64%;
+            padding-top: 50px;
+        }
+
+        .architect_info p{
+            font-size: 20px;
+        }
+
+        .architect_info p em{
+            font-size: 16px;
+        }
+    
+    /*agency info*/
+        .phi_architecture_info {
+            padding-right: 3.7%;
+            padding-left: 4.64%;
+            padding-top: 50px;
+        }
+
+        .phi_architecture_info p{
+            padding-bottom: 50px;
+        }
+
+/*Stylings for mobile designs*/
+
+        @media only screen and (max-width: 480px) 
+        {
+
+        /*nav link*/
+        li {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        /*About Us page*/
+
+            /*architect information*/
+            .architect_info img {
+                width: 92.53%;
+                text-align: center;
+            }
+
+            /*content section*/
+            .about_information {
+                display: block;
+            }
+
+        /**/
+
+          }
+
+         @media only screen and (max-width: 768px)  
+        {
+            /*About Us page*/
+
+            /*architect information*/
+            .architect_info img {
+                width: 92.53%;
+                text-align: center;
+            }
+
+            /*content section*/
+            .about_information {
+                display: block;
+            }
+        }
+
+        /**/
+
+
+          
+
+
+

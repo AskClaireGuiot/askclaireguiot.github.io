@@ -1,0 +1,750 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #eee;
+  color: #333;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5em;
+}
+
+/* Navigation */
+.main-header {
+  /* display: flex; */
+  /* align-items: center; */
+  background: black;
+  /* height: 100%; */
+}
+
+.main-header img {
+  margin: 0 0 0 0.45em;
+}
+
+.main-nav a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 1em;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+}
+
+nav ul {
+  display: none;
+  flex-direction: column;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all 0.5s;
+}
+
+nav ul li a:hover {
+  color: rgb(231, 147, 20);
+}
+
+.show-items {
+  display: flex;
+}
+
+nav a {
+  color: white;
+  top: 10px;
+  right: 10px;
+}
+
+nav .toggle {
+  align-self: flex-end;
+  position: absolute;
+  cursor: pointer;
+}
+
+/* home hero */
+.home-hero {
+  display: flex;
+  background-image: url(images/coverphoto.jpg);
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  padding: 0.1rem;
+  text-align: center;
+  color: #1b1919;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+h1 {
+  font-size: 25px;
+  line-height: 1.4;
+}
+
+button {
+  background: rgb(231, 147, 20);
+  border-color: rgb(231, 147, 20);
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+}
+
+.button a {
+  text-decoration: none;
+  color: white;
+}
+
+.button {
+  text-align: center;
+  width: 100%;
+  margin: 0;
+}
+
+button:hover,
+button:focus {
+  border-color: rgba(0, 0, 0, 0.979);
+  color: #fff;
+  box-shadow: inset 0 0 0 50px rgba(0, 0, 0, 0.979);
+}
+
+/* Arrow down */
+.arrows {
+  width: 60px;
+  height: 73px;
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  bottom: 20px;
+}
+
+.arrows path {
+  stroke: rgb(231, 147, 20);
+  fill: transparent;
+  stroke-width: 2px;
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 0
+  }
+
+  40% {
+    opacity: 1
+  }
+
+  80% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 0
+  }
+}
+
+@-webkit-keyframes arrow
+
+/*Safari and Chrome*/
+  {
+  0% {
+    opacity: 0
+  }
+
+  40% {
+    opacity: 1
+  }
+
+  80% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 0
+  }
+}
+
+.arrows path.a1 {
+  animation-delay: -1s;
+  -webkit-animation-delay: -1s;
+  /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+  animation-delay: -0.5s;
+  -webkit-animation-delay: -0.5s;
+  /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+  /* Safari 和 Chrome */
+}
+
+/* Story section */
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2.heading-desktop {
+  display: none;
+}
+
+.home-story {
+  padding: 100px 15px 100px;
+}
+
+.home-story img {
+  width: 100%;
+}
+
+/* home services */
+.home-services {
+  padding: 0px 15px 45px;
+}
+
+.card {
+  margin: 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.home-services img {
+  height: 300px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.card div {
+  padding: 15px;
+}
+
+/* testimonials start */
+.home-testimonials {
+  background-color: rgba(226, 222, 222, 0.651);
+  padding: 100px 15px 100px;
+}
+
+.home-testimonials img {
+  /* padding: 1rem 2rem; */
+  width: 100%;
+}
+
+.home-testimonials p {
+  font-weight: bold;
+}
+
+/* Team */
+.about-team {
+  padding: 0px 15px 45px;
+}
+
+.item {
+  margin: 15px 0;
+  border: 1px solid rgb(192, 192, 192);
+  border-radius: 8px;
+  background: rgb(212, 211, 211);
+  box-sizing: border-box;
+}
+
+.about-team img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.item div {
+  padding: 15px;
+}
+
+.about-team h3 {
+  color: rgba(0, 0, 0, 0.808);
+  font-family: "Merriweather", serif;
+  text-align: center;
+}
+
+.about-team p {
+  text-align: center;
+}
+
+
+/* MIssion section */
+.about-mission {
+  padding: 40px 15px 100px;
+}
+
+.about-mission img {
+  width: 100%;
+}
+
+.about-mission div {
+  text-align: center;
+}
+
+/* Services */
+.service {
+  width: 300px;
+  margin: 15px;
+  padding: 10px 15px;
+  box-sizing: border-box;
+}
+
+.services .wrapper {
+  padding: 0px 15px 45px;
+}
+
+/*call to action */
+.call-to-action div {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 80px;
+}
+
+.button-center {
+  text-align: center;
+}
+
+.button-center a {
+  color: white;
+  text-decoration: none;
+}
+
+/* ABOUT TABLE */
+
+.about-table {
+  padding: 0px 15px 45px;
+}
+
+/* TABLE */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+caption {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  padding: 45px 0;
+}
+
+td,
+th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgb(231, 147, 20);
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+  background-color: #ddd;
+}
+
+tfoot {
+  font-size: 0.8em;
+  font-style: italic;
+  text-align: center;
+  background-color: #c5c5c5;
+}
+
+/** ABOUT TESTIMONIALS */
+.about-testimonials {
+  background-color: rgba(226, 222, 222, 0.651);
+  padding: 100px 15px 100px;
+}
+
+.about-testimonials img {
+  width: 100%;
+}
+
+.about-testimonials p {
+  font-weight: bold;
+}
+
+/* CONTANCT INFO */
+.contact-info {
+  text-align: center;
+  padding: 25px 0px;
+}
+
+/* CONTACT FORM */
+.contact-section {
+  background: #e6e6e6;
+  padding: 35px 15px 50px;
+  text-align: center;
+}
+
+.h3-contact {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans";
+  color: black;
+  font-size: 25px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0 auto;
+  max-width: 880px;
+  height: 450px;
+  background: rgba(187, 184, 184, 0.534);
+  text-align: left;
+  padding: 10px 0;
+}
+
+.subject,
+.content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  padding: 0;
+  margin: 0;
+  font-family: "Varela Round";
+}
+
+.id {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+.name,
+.email {
+  display: inline-block;
+  width: 45%;
+}
+
+label {
+  display: block;
+  padding: 0;
+  margin: 0;
+  font-family: "Varela Round";
+}
+
+input[name="email"],
+input[name="name"] {
+  width: 100%;
+  height: 40px;
+  font-size: 10px;
+}
+
+.subject {
+  height: 62px;
+}
+
+input[name="subject"] {
+  width: 100%;
+  height: 40px;
+  font-size: 10px;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+  font-size: 10px;
+}
+
+.left {
+  width: 101%;
+  margin: 0%;
+}
+
+/* footer main */
+.ft-container {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  background-color: rgb(126, 126, 133);
+  line-height: 1.5;
+  color: #bbb;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: rgb(73, 73, 73);
+}
+
+.ft-title {
+  color: #fff;
+  font-family: "Merriweather", serif;
+  font-size: 17px;
+}
+
+.ft-main {
+  padding: 45px 15px 45px;
+}
+
+.ft-main ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.ft-legal {
+  background-color: #333;
+  text-align: center;
+  color: white;
+}
+
+/* Styling Icons */
+i {
+  padding: 16px 5px;
+}
+
+.fa-quote-left,
+.fa-quote-right {
+  color: rgb(231, 147, 20);
+}
+
+.fa-envelope-o {
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.fa-envelope,
+.fa-phone,
+.fa-facebook,
+.fa-map-marker {
+  color: rgb(78, 78, 78);
+}
+
+/* Medium - ipads */
+@media only screen and (min-width: 768px) {
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 15px;
+  }
+
+  .main-nav {
+    display: flex;
+  }
+
+  nav .toggle {
+    display: none;
+  }
+
+  .home-story .container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .home-story img {
+    width: 50%;
+    margin-right: 15px;
+  }
+
+  .home-services .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .home-services .card {
+    margin: 0 7px;
+  }
+
+  .home-testimonials .container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .home-testimonials img {
+    width: 50%;
+    margin-right: 15px;
+  }
+
+  .about-testimonials .container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .about-testimonials img {
+    width: 30%;
+    padding: 15px;
+    margin-right: 15px;
+  }
+
+  .about-team .team-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .about-team .item {
+    margin: 0 7px;
+  }
+
+  .about-team button {
+    display: flex;
+    align-items: center;
+  }
+
+  .about-team .padding-bottom {
+    padding-bottom: 31px;
+  }
+
+  .about-mission .container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .about-mission img {
+    width: 50%;
+    margin-right: 15px;
+  }
+
+  .about-mission div {
+    text-align: left;
+  }
+
+  .services .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  form {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+
+  .ft-main {
+    justify-content: space-between;
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .arrows {
+    height: 100px;
+  }
+}
+
+/* Large - laptops */
+@media only screen and (min-width: 1200px) {
+  .main-header .wrapper {
+    width: 1000px;
+    margin: 0 auto;
+  }
+
+  .home-story .container {
+    width: 1000px;
+    margin: 0 auto;
+  }
+
+  h2.heading-desktop {
+    display: block;
+    text-align: left;
+  }
+
+  h2.heading-mobile {
+    display: none;
+  }
+
+  .home-services .wrapper {
+    width: 1000px;
+    margin: 0 auto;
+  }
+
+  .about-team .team-flex {
+    width: 1000px;
+    margin: 0 auto;
+  }
+
+  .about-testimonials .container {
+    width: 1000px;
+    margin: 0 auto;
+  }
+
+  .home-testimonials .container {
+    display: flex;
+    align-items: center;
+    width: 1000px;
+    margin: 0 auto;
+  }
+
+  .about-mission .container {
+    width: 1000px;
+    margin: 0 auto;
+  }
+
+  .about-mission div {
+    text-align: left;
+  }
+
+  .about-table {
+    width: 1000px;
+    margin: 0 auto;
+  }
+
+  form {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+
+  .services .wrapper {
+    width: 1000px;
+    margin: 0 auto;
+  }
+
+  .ft-main {
+    width: 1000px;
+    margin: 0 auto;
+  }
+}
