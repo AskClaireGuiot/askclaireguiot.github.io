@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- DGL 103 DLU1 - Isiah Dyck - Assignment G -->
+    <!-- Testing ground - test.html-->
+    <!--only meant to test any further coding without changing any major codes in the main files-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Testing ground</title>
+    <style>
+        
+        main button {
+            padding: 0;
+        }
+
+        /* main .phone, main .mobile {
+            display: none;
+        } */
+
+        main a {
+            padding: 1px 6px;
+            color: black;
+        }
+
+        main .btn {
+            padding: 0 3px;
+        }
+
+        main .btn .fa-phone{
+            display:contents;
+        }
+
+        main .btn .fa-mobile {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <button class="mobile"><a href="tel:999-999-9999"><i class="fa fa-mobile"
+                    aria-hidden="true"></i></a></button>
+        <button class="phone"><a href="tel:999-999-9999"><i class="fa fa-phone" aria-hidden="true"></i></a></button>
+        <button class="btn" onclick="window.location.href='tel:999-999-9999';"><i class="fa fa-phone" aria-hidden="true"></i><i class="fa fa-mobile"
+            aria-hidden="true"></i></button><!-- https://www.w3docs.com/snippets/html/how-to-create-an-html-button-that-acts-like-a-link.html -->
+    
+    </main>
+</body>
+
+</html>

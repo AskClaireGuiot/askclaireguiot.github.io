@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home | AngelMaker</title>
+    <!--Assignment G - Cat Grey-->
+    <link rel="stylesheet" href="styles.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    >
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="images/logo-purple.png" alt="AngelMaker logo"
+      height="300"
+      width="300">
+  </header>
+      <nav>
+        <div class="wrapper-nav">
+          <a class="nav-brand" href="home.html">
+            <img class="nav-sigil"
+              src="images/sigil-purple.png"
+              alt="purple angelmaker sigil"
+              height="80"
+              width="80"> <!--logos and images obtained with from AngelMaker-->
+            </a>
+          <div class="menu-label">Menu</div>
+          <ul id="nav-items">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="updates.html">Updates</a></li>
+              <li><a href="tour.html">Tour</a></li>
+              <li><a href="music.html">Music</a></li>
+              <li><a href="https://angelmaker.indiemerch.com/">Store</a></li>
+              <li><a href="contact.html">Contact</a></li>
+          </ul>
+        <a class="toggle" onclick="showNav()"><i class="fa fa-bars"></i></a>  <!--script for the menu toggle in mobile--> 
+        </div>  
+      </nav>
+
+
+      
+    <main>
+      <div class="home-hero">
+        <h1>AngelMaker Home</h1>
+      </div>
+         <section class="home-release">
+          <div class="home-release-info">
+          <h2>Sanctum</h2>
+          <p><strong>Out Now</strong></p>
+          <p>
+            Their fourth full length studio album, "Sanctum" is AngelMaker's
+            delicate balance between heavy and melodic elements.
+          </p>
+          <form class="home-listen-button"
+          action="https://open.spotify.com/album/0RyQZ62ByBc3nAIOTJqqFE?si=U5yyZ1p8RXmSDBxrDdxvsg"
+        >
+          <button type="submit">Listen Now</button>
+        </form>
+      </div>
+      <div class="home-release-figure">    
+      <figure>
+            <img
+              src="images/sanctum-cover.jpg"
+              alt="cover art for sanctum by angelmaker by grind design"
+              height="300"
+              width="300"
+            >
+            <figcaption class="image-caption">
+              Sanctum by AngelMaker.<br> 
+              Released March 11 2022. <br>
+              Album artwork by
+              Rob Borbas of
+              <a href="https://www.instagram.com/grindesign_tattoo/?hl=en">
+                Grind Design</a
+              >
+            </figcaption>
+          </figure>
+      </div>
+
+        </section>
+
+        <section class="home-update">
+          <h2>Latest News</h2>
+          <div class="home-update-cards"> <!--made this part into a div to allow the header and button to remain unaffected by the flex properties-->
+          <article class="home-update-card">
+            <h3>"In Dying Days" cover out now</h3>
+            <figure>
+            <a href="https://youtu.be/Du8MSP23Iq4">
+              <img
+                src="images/in-dying-days-out.png"
+                alt="in dying days album art"
+                width="200"
+                height="200"
+              >
+            </a>
+            <figcaption>25 NOV 2022 <br>
+            Check out the new song <a href="https://youtu.be/Du8MSP23Iq4">here</a></figcaption>
+          </figure>
+          </article>
+          <article class="home-update-card">
+            <h3>Re-stock alert</h3>
+            <figure>
+            <a
+              href="https://www.risingmerch.com/collections/angelmaker/products/angelmaker-mononoke-shirt"
+            >
+              <img
+                src="images/mononoke-merch.PNG"
+                alt="princess mononoke inspired angelmaker merch design"
+                width="200"
+                height="200"
+              >
+            </a>
+            <figcaption>18 NOV 2022<br>
+            Princess Mononoke merch restocked!<br>
+          Get yours <a href="https://www.risingmerch.com/collections/angelmaker/products/angelmaker-mononoke-shirt">here</a></figcaption>
+            </figure>
+          </article>
+          <article class="home-update-card">
+            <h3>European tour lineup change</h3>
+            <figure>
+            <a href="updates.html">
+              <img
+                src="images/euro-tour-update.PNG"
+                alt="updated shadow of intent 2023 european tour poster"
+                width="200"
+                height="200"
+              >
+            </a>
+            <figcaption>28 OCT 2022<br>
+            For more details, visit the <a href="updates.html">Updates</a> page</figcaption>
+            </figure>
+          </article>
+        </div>
+          <form action="updates.html">
+            <button type="submit">View all updates</button>
+          </form>
+        </section>
+
+        <section class="home-tour-dates">
+          <h2>Tour dates</h2>
+          <script
+            charset="utf-8"
+            src="https://widget.bandsintown.com/main.min.js"
+          ></script>
+          <a
+            class="bit-widget-initializer"
+            data-artist-name="ANGELMAKER"
+            data-display-local-dates="false"
+            data-display-past-dates="true"
+            data-auto-style="false"
+            data-text-color="#5b5e93"
+            data-link-color="#5b5e93"
+            data-background-color="rgba(0,0,0,0)"
+            data-display-limit="5"
+            data-display-start-time="true"
+            data-link-text-color="#aea9de"
+            data-display-lineup="false"
+            data-display-play-my-city="false"
+            data-separator-color="rgba(124,124,124,0.25)"
+          ></a>
+          <!--source code for widget obtained from https://artists.bandsintown.com/support/blog/install-events-widget-->
+          <form action="tour.html">
+            <button type="submit">See all tour updates</button>
+          </form>
+        </section>
+    </main>
+
+    <footer>
+      <!--footer for all pages-->
+      <div class="footer-flex-container">
+        <div class="footer-wrapper-logo">
+          <a href="home.html"><img
+            src="images/logo-purple.png"
+            alt="AngelMaker logo"
+            height="90"
+            width="100"
+          ></a>
+      </div>
+      <div class="footer-wrapper-newsletter">
+        <h2>Join Us</h2>
+        <p>Subscribe to our newsletter</p>
+        <form method="post" action="subscriptions.php">
+          <label for="sub-email">Email address</label>
+          <input
+            type="email"
+            id="sub-email"
+            name="email"
+            placeholder="Ex. youremail@gmail.com"
+          >
+          <div class="footer-wrapper-button">
+            <input type="submit" value="Subscribe">
+          </div>
+        </form>
+      </div>
+      <div class="footer-wrapper-connections">
+        <h2>Get Connected</h2>
+        <a
+          href="https://open.spotify.com/artist/1AdrYGYDz4oa9dvW2jfFrG?si=8l1x_cguTHSW0h-QAK_9dw"
+        >
+          <img class="sm-icon"
+            src="images/spotify-white.png"
+            alt="spotify icon in white"
+            height="20"
+            width="20"
+          >
+        </a>
+        <a href="https://angelmaker.bandcamp.com/album/sanctum">
+          <img class="sm-icon"
+            src="images/bandcamp-white.png"
+            alt="bandcamp icon in white"
+            height="20"
+            width="20"
+          >
+        </a>
+        <a href="https://www.youtube.com/user/AngelMakerMusic">
+          <img class="sm-icon"
+            src="images/yt-white.png"
+            alt="youtube icon in white"
+            height="20"
+            width="20"
+          >
+        </a>
+        <a href="https://www.instagram.com/angelmakerband/?hl=en">
+          <img class="sm-icon"
+            src="images/instagram-white.png"
+            alt="instagram icon in white"
+            height="20"
+            width="20"
+          >
+        </a>
+        <a href="https://www.facebook.com/angelmakerband/">
+          <img class="sm-icon"
+            src="images/facebook-white.png"
+            alt="facebook icon in white"
+            height="20"
+            width="20"
+          >
+        </a>
+        <a href="https://www.tiktok.com/@angelmakerofficial">
+          <img class="sm-icon"
+            src="images/tiktok-white.png"
+            alt="tiktok icon in white"
+            height="20"
+            width="20"
+          >
+        </a>
+        <a href="https://twitter.com/AngelMakerBand">
+          <img class="sm-icon"
+            src="images/twitter-white.png"
+            alt="twitter icon in white"
+            height="20"
+            width="20"
+          >
+        </a>
+      </div>
+      </div>
+      <div class="footer-wrapper-disclaimer">
+      <p>
+        Disclaimer: This is a fictional website that was designed and coded as
+        an educational exercise. It is not intended to be seen outside of the
+        class environment. None of the content and images were approved by the
+        business owner.
+      </p>
+    </div>
+    
+    </footer>
+
+    <!--script for the menu toggle in mobile-->
+    <script>
+      function showNav() {
+        var element = document.getElementById("nav-items");
+        element.classList.toggle("show-items");
+      }
+    </script>
+  </body>
+</html>

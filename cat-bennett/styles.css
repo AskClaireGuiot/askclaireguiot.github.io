@@ -1,0 +1,641 @@
+/*INDEX -
+Global Settings
+Font Styling (body, headings, lists, buttons, forms)
+Layout Structure (header, navigation, footer)
+Page-specific styling
+Media Queries 
+-*/
+
+/*Colour Palette*
+lightest purple: #dad9f0
+lighter purple: #aea9de
+light purple: #9a94d6
+Dark Purple: #5b5e93
+Charcoal: #202020
+Black: #0a0a0c
+*/
+
+/*==========*
+GLOBAL SETTINGS
+*==========*/
+
+*{
+    box-sizing: border-box;
+    margin: 0; /*done for more direct control on specific margins*/
+}
+
+
+/*==========*
+FONT STYLING
+*==========*/
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background: #0a0a0c;
+    color: #aea9de;
+    font-size: 1.6rem;
+    font-family: 'DM Sans', sans-serif;
+}
+
+h1, h2, h3{
+    font-family: 'Oswald', sans-serif;
+    color: #9a94d6;
+    padding: 5px;
+}
+
+h1{
+    font-size: 2.8rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+h2{
+    font-size: 2.5rem;
+}
+
+h3{
+    font-size: 2.0rem;
+}
+
+p, figcaption{
+    color: #aea9de;
+    padding: 1%;
+}
+
+a {
+    color: #dad9f0;
+    text-decoration: none;
+}
+
+.image-caption{
+    font-size: smaller;
+}
+
+/*==========*
+IMAGE STYLING
+*==========*/
+
+figure img{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    height: auto;
+    width: 50%;
+    padding-top: 5px;
+
+} /*Box shadow obtained from option #89 retrieved from: https://getcssscan.com/css-box-shadow-examples */
+
+
+/*==========*
+BUTTON STYLING
+*==========*/
+
+input[type="submit"], button {
+    background-color: #9a94d6;
+    color: white;
+    padding: 12px 20px;
+    border: 1px solid #9a94d6;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+  }
+
+button:hover, input[type="submit"]:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+  color: #dad9f0;
+}
+
+button:active, input[type="submit"]:active{
+    font-weight: 800;
+    box-shadow: 0 2px 0 #9a94d6;
+    transition: all 150ms linear;
+  transform: translateY(5px); /*subtle, but it makes the button look like it's being pressed when you click)*/
+}
+
+/*==========*
+FORM CONTROLS
+*==========*/
+input, select, textarea{
+    font-size: 1.6rem;
+    display: flex;
+}
+
+input[type="text"], 
+select{
+    width: 100%;
+}
+
+textarea{
+    width: 100%;
+}
+
+input[type="text"], 
+select,
+textarea {
+    padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+
+
+  fieldset {
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+  }
+
+  .wrapper-form{
+    text-align: left;
+    padding: 12px;
+  }
+
+
+/*==========*
+GENERAL STRUCTURE
+*==========*/
+
+body {
+    text-align: center;
+    margin: 0;
+  }
+  
+section, article {
+    padding: 2% 0;
+  }
+  
+  header,
+  section,
+  footer {
+    text-align: center;
+  }
+  
+  header,
+  footer {
+    padding:0;
+  }
+  
+ /*==========*
+HEADER
+*==========*/
+
+header{
+    background: #5b5e93 url(images/hollow-heart-purple.png) top no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+.logo{
+    width: 50%;
+    height: auto;
+    padding: 2%;
+}
+
+/*==========*
+NAVIGATION STYLES
+*==========*/
+
+.wrapper-nav{
+    display: flex;
+    align-content: flex-start;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wrapper-nav img{
+    flex: 1;
+    text-align: left;
+    width: 15%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper-nav a{
+flex: 1;
+} /*this allows the sigil to be in line with the menu label and hamburger icon*/
+
+
+nav{
+    padding: 1rem;
+    display: flex;
+    background-color: #202020;
+    margin: 0;
+}
+
+.menu-label{
+    padding: 0 0.5rem;
+}
+
+.nav-sigil {
+    height: 2%;
+    width: auto;
+    margin: 0;
+}
+
+/*mobile first nav toggle - demonstrated in lecture videos*/
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0 2%;
+    flex-direction: column;
+    display: none;
+    align-items: baseline;
+    align-self: start;
+    flex: 1;
+}
+
+.show-items{
+    display: flex;
+}
+
+nav .toggle{
+    cursor: pointer;
+    flex: 1;
+}
+
+/*end of mobile first nav toggle code*/
+
+
+
+
+/*==========*
+FOOTER STYLES
+*==========*/
+
+footer{
+    background-color: #202020;
+    padding: 2%;
+}
+
+.footer-wrapper-logo img{
+    width: 50%;
+    height: auto;
+    padding: 2%;
+}
+
+.footer-wrapper-disclaimer{
+    font-size: smaller;
+    padding-top: 2%;
+}
+
+.footer-wrapper-button{
+    display: flex;
+    justify-content: center;
+}
+
+/*==========*
+HOME PAGE STYLING
+*==========*/
+
+.home-hero{
+    background: rgb(32,32,32);
+    background: linear-gradient(180deg, rgba(91,94,147,1) 0%, rgba(32,32,32,0.773546918767507) 0%), 
+    url(images/hollow-heart-forest.jpg) center no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        margin: auto;
+    }
+
+.home-listen-button{
+    margin-bottom: 16px;
+}
+
+.home-update{
+    background: rgb(32,32,32);
+background: linear-gradient(180deg, rgba(91,94,147,1) 0%, rgba(32,32,32,0.773546918767507) 0%), 
+url(images/hollow-heart-forest.jpg) center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.home-update img{
+    max-width: 292px;
+    max-height: 292px;
+    width: 90%;
+    height: auto;
+}
+
+
+/*==========*
+ABOUT PAGE STYLING
+*==========*/
+
+.about-hero{
+    background: rgb(32,32,32);
+    background: linear-gradient(180deg, rgba(91,94,147,1) 0%, rgba(32,32,32,0.773546918767507) 0%), 
+    url(images/am-group.JPG) top no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        padding-bottom: 10px;
+}
+
+.about-group-pic img{
+    width: 70%;
+    height: auto; 
+    max-width: 650px;
+    max-height: 655px;
+
+}
+
+.about-band-bio{
+    text-align: left;
+    margin: 0 5%;
+}
+
+.about-bio-section{
+    background: rgb(32,32,32);
+background: linear-gradient(180deg, rgba(91,94,147,1) 0%, rgba(32,32,32,0.773546918767507) 0%), 
+url(images/background-crowd.jpg) center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+/*==========*
+MUSIC PAGE STYLING
+*==========*/
+
+.music-hero{
+    background: rgb(32,32,32);
+background: linear-gradient(180deg, rgba(91,94,147,1) 0%, rgba(32,32,32,0.773546918767507) 0%), 
+url(images/background-sigil.jpg) center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.music-spotify-player{
+    width: 80%;
+        max-width: 760px;
+}
+
+.music-discography{
+    background: rgb(32,32,32);
+background: linear-gradient(180deg, rgba(91,94,147,1) 0%, rgba(32,32,32,0.773546918767507) 0%), 
+url(images/background-sigil.jpg) center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.music-discography-card img{
+    width: 50%;
+    height: auto;
+}
+
+.music-support-img{
+    width: 40%;
+    height: auto;
+    padding-top: 10px;
+    max-width: 432px;
+    max-height: 442px;
+}
+
+.music-buy-button{
+    margin-top: 10px;
+}
+
+.music-buy-stream ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+
+/*==========*
+CONTACT PAGE STYLING
+*==========*/
+
+.contact-hero{
+    background: rgb(32,32,32);
+    background: linear-gradient(180deg, rgba(91,94,147,1) 0%, rgba(32,32,32,0.773546918767507) 0%), 
+    url(images/background-stage-crowd.jpg) center no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+}
+
+.contact-booking{
+    background: rgb(32,32,32);
+    background: linear-gradient(180deg, rgba(91,94,147,1) 0%, rgba(32,32,32,0.773546918767507) 0%), 
+    url(images/background-stage-crowd.jpg) center no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+}
+
+
+
+.contact-submit{
+    display: flex;
+justify-content: right;    
+padding-right: 10px;
+}
+
+
+
+/*==========*
+MEDIA QUERIES
+*==========*/
+
+/*small devices (521px and up)*/
+@media only screen and (min-width: 521px){
+    .music-discography-cards{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    } /*created this break for the discography cards because the stacked seemed to be too big */
+    
+    
+    .music-discography-card{
+    flex: 0 0 50%;
+    }
+}
+/*Medium devices (landscape tablets, 768px and up)*/
+@media only screen and (min-width: 768px){
+
+/*sizing/spacing media queries*/
+
+nav{
+    padding: 0;
+    min-width: 768px;
+    margin: auto;
+}
+
+main{
+    min-width: 768px;
+    margin: 0 auto;
+}
+
+.home-hero{
+    min-width: 768px;
+    margin: 0 auto;
+}
+
+input[type="text"], 
+select, .contact-form input[type="email"]{
+    width: 50%;
+}
+
+
+    /*NAV media queries*/
+
+.wrapper-nav{
+    align-items: center;
+}
+
+nav .menu-label, .nav-sigil {
+        display: none;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: row;
+    }
+
+    nav ul li{
+        padding: 5% 10%;
+        flex: 1 0 14%;
+    }
+
+
+    nav .toggle {
+        display: none;
+    }
+
+    nav li:hover{
+        background-color: #aea9de;
+        color: #0a0a0c;
+    }
+
+    /*FOOTER media queries*/
+.footer-flex-container{
+       display: flex;
+    flex-flow: row nowrap;
+    align-content: space-between; 
+    align-items: stretch;
+}
+
+.footer-wrapper-logo{
+    flex: 2 0 calc(33% - 1em);
+    align-self: center;
+    }
+
+    .footer-wrapper-newsletter, .footer-wrapper-connections{
+        flex: 1 0 calc(33% - 1em);
+        align-self: center;
+    }
+
+    /*HOME media queries*/
+
+
+.home-release{
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 0 5px;
+    align-items: center;
+}
+
+.home-release-info{
+    flex: 0 0 40%;
+}
+
+.home-release-figure{
+    flex: 3 0 60%;
+    padding: 10px 0;
+}
+
+.home-update-cards{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.home-update-card{
+flex: 0 0 50%;
+}
+
+    /*ABOUT media queries*/
+
+.about-bio-cards{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.about-bio-card{
+flex: 0 0 80%;
+}
+
+ /*MUSIC media queries*/
+
+
+.music-buy-stream-wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.music-buy-stream{
+flex: 0 0 50%;
+}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+.wrapper-nav, .wrapper-form, .about-band-bio, .home-tour-dates, .home-release, .about-bio-cards, .home-update-cards{
+    margin: 0 10%;
+}
+
+.home-update-card{
+    flex: 0 0 33%;
+}
+    .music-discography-card{
+        flex: 0 0 45%;
+        }
+     
+        .about-bio-card{
+            flex: 0 0 50%;
+            }    
+
+.music-buy-stream-wrapper{
+    margin: 0 30%;
+}
+            
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    main{
+        min-width: 1200px;
+        margin: 0 auto;
+    }
+
+.about-band-bio{
+    margin: 0 15%;
+}
+
+    .music-discography-cards, .home-update-cards{
+        margin: 0 10%;
+    }
+
+    .music-discography-card{
+        flex: 0 0 30%;
+        }
+
+
+}

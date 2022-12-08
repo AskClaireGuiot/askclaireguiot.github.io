@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>services</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Google Fonts Import-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&family=Playfair+Display:wght@600&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/0d0c69edef.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--
+        Assignment G
+        Abbey Girvan
+        DGL103 Fall22 DLU1i
+    -->
+  </head>
+  <body>
+    <nav>
+      <div class="wrapper">
+        <section class="container">
+          <img
+            class="logo"
+            src="images/logo.png"
+            alt="nicole cahoon logo"
+            width="100"
+          />
+          <a class="toggle" onclick="showNav()"
+            ><i class="fa-solid fa-bars"></i
+          ></a>
+        </section>
+        <ul class="nav-list nav-container" id="nav-items">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="our-team.html">Our Team</a></li>
+          <li><a href="contact-us.html">Contact Us</a></li>
+          <li>
+            <a href="finanical-resources.html">BC Financial Resources</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <header>
+      <div class="wrapper">
+        <h1>Services</h1>
+      </div>
+    </header>
+
+    <main>
+      <section class="main-info">
+        <div class="wrapper main-wrapper">
+          <img
+            class="main-img"
+            src="images/financial-calculator.jpg"
+            alt="old style financial calculator"
+          />
+          <p>
+            We offer a variety of services in accounting, taxes, and business
+            consultaions. Below are lists of our sevices, as well as the average
+            fee for each service.
+          </p>
+        </div>
+      </section>
+
+      <section class="lists">
+        <div class="list-wrapper">
+          <section class="list-container">
+            <div>
+              <h2>Accounting</h2>
+              <ul>
+                <li>
+                  Corporate Year Ends &#8212;<br />Financial Statements
+                  Preparation
+                </li>
+                <li>Cash Flow Analysis</li>
+                <li>Bookkeeping services</li>
+              </ul>
+            </div>
+            <div>
+              <h2>Business Consulting</h2>
+              <ul>
+                <li>Business Valuation</li>
+                <li>Business Succession Planning</li>
+                <li>Starting a Business</li>
+                <li>Mergers and Acquisitions</li>
+              </ul>
+            </div>
+            <div>
+              <h2>Taxes</h2>
+              <ul>
+                <li>Personal and Corporate Tax Returns</li>
+                <li>Tax Planning</li>
+                <li>Estate Planning</li>
+                <li>Family Trusts</li>
+                <li>Tax Compliance</li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </section>
+      <section class="testimonial">
+        <div class="testimonial-wrapper">
+          <h2>Lance Petty - Temprite Climate Solutions Ltd</h2>
+          <p>
+            “A year and a half ago I decided to take the plunge into the world
+            of starting my own business. The advice experienced business owners
+            gave me was “stick to what you&#39;re good at and hire good people
+            to do the rest”. Taking their advice seriously I made the right
+            choice to go with Nicole and her team.
+          </p>
+          <p>
+            They worked with me every step of the way. Whether its getting month
+            end and payroll done on time or consulting with me on strategy and
+            goals, Nicole and her team take pride of what they&#39;re good at.
+            Nicole takes ownership of her responsibilities and plays a
+            significant role in the success of my company.
+          </p>
+          <p>
+            I highly recommend Nicole for anyone that requires an accounting,
+            bookkeeping, consulting or tax professional. Oh and she has good
+            taste in scotch lol”
+          </p>
+        </div>
+      </section>
+
+      <section class="tables-container">
+        <section class="tables">
+          <div class="table-wrapper">
+            <!--ACCOUNTING fees and charges table-->
+            <table class="flex-item">
+              <caption>
+                Accounting Fees
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col">Services</th>
+                  <th scope="col">Cost per Hour</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Corporate Year End</td>
+                  <td>num</td>
+                </tr>
+                <tr>
+                  <td>Cash Flow Analysis</td>
+                  <td>num</td>
+                </tr>
+                <tr>
+                  <td>Bookkeeping</td>
+                  <td>num</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!--BUSINESS CONSULTATION fees and charges table-->
+            <table class="flex-item">
+              <caption>
+                Business Consultation Fees
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col">Services</th>
+                  <th scope="col">Cost per Hour</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Business Valuation</td>
+                  <td>num</td>
+                </tr>
+                <tr>
+                  <td>Business Succession Planning</td>
+                  <td>num</td>
+                </tr>
+                <tr>
+                  <td>Starting a Business</td>
+                  <td>num</td>
+                </tr>
+                <tr>
+                  <td>Mergers and Acquisitions</td>
+                  <td>num</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- TAXES fees and charges table-->
+            <table class="flex-item">
+              <caption>
+                Tax Services Fees
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col">Services</th>
+                  <th scope="col">Cost per Hour</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Personal Tax Returns</td>
+                  <td>num</td>
+                </tr>
+                <tr>
+                  <td>Corporate Tax Returns</td>
+                  <td>num</td>
+                </tr>
+                <tr>
+                  <td>Estate Planning</td>
+                  <td>num</td>
+                </tr>
+                <tr>
+                  <td>Family Trusts</td>
+                  <td>num</td>
+                </tr>
+                <tr>
+                  <td>Tax Compliance</td>
+                  <td>num</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="asides-container">
+          <!--tax checklist-->
+          <aside class="services-aside">
+            <div class="aside-wrapper">
+              <h4>2020 Tax Check List</h4>
+              <p>
+                If you&#39;re anything like me, you probably never want to think
+                about 2020 again. Unfortunately before we can completely move
+                on, we still have one beast we must tackle, that&#39;s your 2020
+                taxes…
+                <br />
+                Thanks to the COVID, there are some additional things you must
+                know about the 2021 tax season.
+                <br />
+                We here created a helpful document to get you ready and
+                prepared!
+              </p>
+              <a
+                class="button"
+                href="files/2020-Tax-Checklist.pdf"
+                download="202-Tax-Checklist"
+                target="blank"
+                >2020 Checklist</a
+              >
+            </div>
+          </aside>
+
+          <!--book an appointment?-->
+          <aside class="services-aside">
+            <div class="aside-wrapper">
+              <h4>Book an Appointment</h4>
+              <p>
+                want to book an Appointment with us?
+                <br />
+                click the link below!
+              </p>
+              <a class="button" href="contact-us.html">Bookings</a>
+            </div>
+          </aside>
+        </section>
+      </section>
+    </main>
+
+    <!--footer-->
+    <footer>
+      <div class="wrapper">
+        <em
+          >This is a fictional website that was designed and coded as an
+          educational exercise. It is not intended to be seen outside of the
+          class environment. None of the content and images were approved by the
+          business owner.</em
+        >
+      </div>
+    </footer>
+
+    <!--javaScript to make bars icon work-->
+    <script>
+      function showNav() {
+        var element = document.getElementById("nav-items");
+        element.classList.toggle("show-items");
+      }
+    </script>
+  </body>
+</html>

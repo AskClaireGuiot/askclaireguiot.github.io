@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- DGL 103 DLU1 - Isiah Dyck - Assignment G -->
+    <!-- Product and Services - product_and_services.html-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap" rel="stylesheet">
+    <title>Comox Valley Lifeline Society - Product and Service</title>
+</head>
+
+<!--
+    References/Credits:
+    Comox Valley Lifeline Society - http://comoxvalleylifeline.com/
+    Responsive Nav and Layout - Claire Guiot - https://codepen.io/AskClaireGuiot/pen/eYErXvr
+    How TO - Copy Text to Clipboard - https://www.w3schools.com/howto/howto_js_copy_clipboard.asp
+    How to Add an HTML Button that Acts Like a Link - https://www.w3docs.com/snippets/html/how-to-create-an-html-button-that-acts-like-a-link.html
+    LifeLine - https://www.lifeline.ca/en/ - the medical dispenser and the check in calss
+-->
+
+<body id="product_and_service_link" class="product_and_services">
+    <!--link from the bottom of the page-->
+    <header>
+        <div class="nav_wrapper">
+            <nav>
+                <p class="menu-label">menu</p>
+                <ul id="nav-items">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li class="current_page"><a href="product_and_services.html">Product and Services</a></li>
+                    <li><a href="contact_us.html">Contact Us</a></li>
+                </ul>
+                <a class="toggle" onclick="showNav()"><i class="fa fa-bars"></i></a>
+            </nav>
+        </div>
+        <p class="title">Comox Valley Lifeline Society</p>
+        <h1>Product and Service</h1>
+        <p><i>"Help At The Push Of A Button"</i></p>
+    </header>
+    <main>
+        <section>
+            <h2>Lifeline Communicator Units</h2>
+            <figure>
+                <h3>Regator Lifeline Communicator</h3>
+                <div>
+                    <img src="image/regular_lifeline_communicatior.jpg" alt="regualr lifeline communicator" width="250">
+                    <p>A Regular Lifeline Communicator that is connected to an active telephone jack and electrical
+                        outlet.
+                        This type of unit allows you to connect your existing phone into back of the Lifeline unit so
+                        that
+                        your phone works through the Lifeline unit.</p>
+                </div>
+            </figure>
+            <figure>
+                <h3>Wireless Lifeline Communicator</h3>
+                <div>
+                    <img src="image/wireless_lifeline_communicator.jpg" alt="Wireless Lifeline Communicator"
+                        width="250">
+                    <p>A Wireless Lifeline Communicator that works with it's own cellular technology; this unit is
+                        connected
+                        to an electrical outlet in your home.</p>
+                </div>
+            </figure>
+        </section>
+        <hr>
+        <section>
+            <h2>Personal Help Button</h2>
+            <figure id="homesafe_basic_link">
+                <h3>HomeSafe basic</h3>
+                <div>
+                    <img src="image/homesafe_basic.jpg" alt="hoemsafe basic's button" width="250">
+                    <ul>
+                        <li>Light weight</li>
+                        <li>Button can be worn around the neck or wrist</li>
+                        <li>Long lasting battery we change when needed</li>
+                        <li>100% waterproof</li>
+                    </ul>
+                </div>
+            </figure>
+            <figure id="homesafe_autoalert_link">
+                <h3>HomeSafe AutoAlert</h3>
+                <div>
+                    <img src="image/homesafe_autoalert.jpg" alt="HomeSafe AutoAlert's button" width="250">
+                    <ul>
+                        <li>Adjustable cord to wear around the neck</li>
+                        <li>Fall detection technology</li>
+                        <li>Help at the push of the button or an automatic <br> signal sent when a fall is detected*
+                        </li>
+                        <li>100% waterproof</li>
+                    </ul>
+                </div>
+                <small>*AutoAlert does not detect 100% of falls, if able, you should always push your button if you need
+                    help.</small>
+            </figure>
+            <figure id="gosafe_link">
+                <h3>GoSafe</h3>
+                <div>
+                    <img src="image/gosafe.jpg" alt="GoSafe's Button" width="250">
+                    <ul>
+                        <li>Six advanced location technologies</li>
+                        <li>Access to help at home and on the go</li>
+                        <li>AutoAlert feature</li>
+                        <li>Direct two-way voice communication</li>
+                        <li>100% waterproof</li>
+                    </ul>
+                </div>
+            </figure>
+            <hr>
+            <figure>
+                <h3>Medication Dispenser</h3>
+                <div>
+                    <img src="image/medication_dispenser.jpeg" alt="A Medication Dispenser" width="250">
+                    <!--Home Health Care shoppe https://www.homehealthcareshoppe.com/medready-medication-dispenser-2 -->
+                    <p>Quisque malesuada pretium rhoncus. Curabitur sed metus finibus, finibus ipsum sit amet, tincidunt
+                        nisl. Aenean id ultrices ipsum. Aliquam eu nisi ut nulla
+                        efficitur tincidunt non at lectus. Quisque posuere ipsum et sodales posuere. In pharetra
+                        sollicitudin dolor eu pellentesque. Nulla facilisi. Vestibulum ipsum
+                        lectus.</p>
+                </div>
+            </figure>
+            <figure>
+                <h3>Check in Calls</h3>
+                <p>Quisque malesuada pretium rhoncus. Curabitur sed metus finibus, finibus ipsum sit amet, tincidunt
+                    nisl. Aenean id ultrices ipsum. Aliquam eu nisi ut nulla
+                    efficitur tincidunt non at lectus. Quisque posuere ipsum et sodales posuere. In pharetra
+                    sollicitudin dolor eu pellentesque. Nulla facilisi. Vestibulum ipsum
+                    lectus.</p>
+            </figure>
+        </section>
+        <p class="lifeline_canada">More information about the products can be found here and brought at <a href="https://www.lifeline.ca/en/" target="_blank">Learn More at Lifeline
+            Canada</a></p>
+        <section class="appointment">
+            <h2>Book An Appointment now, to get the service or the products</h2>
+
+            <div class="contact_copy_button">
+                <p>by phone (Administration's Office): (250)-338-4255 <button
+                        onclick="navigator.clipboard.writeText('(250)-338-4255');"><i class="fa fa-clone"
+                            aria-hidden="true"></i></button>
+                    <button onclick="window.location.href='tel:(250)-338-4255';"><i class="fa fa-phone"
+                            aria-hidden="true"></i></button>
+                </p>
+            </div>
+                
+            <div class="contact_copy_button">
+                <p>by email: CVLifelineSociety@gmail.com</p>
+                <button onclick="navigator.clipboard.writeText('CVLifelineSociety@gmail.com');"><i class="fa fa-clone"
+                        aria-hidden="true"></i></button>
+                <!--Email is fake-->
+            </div>
+            <p>or contact your town Community Office: <a
+                class="contact_us_button" href="contact_us.html">Contact
+                Us</a></p>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="#product_and_service_link">Product and Service</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <p><i>"Help At The Push Of A Button"</i></p>
+    </footer>
+    <footer class="copyright">
+        <small>“This is a fictional website that was designed and coded as an educational exercise. It is not intended
+            to be seen outside of the class environment.
+            None of the content and images were approved by the business owner.”</small>
+    </footer>
+    <script>
+        function showNav() {//Responsive Nav and Layout - Claire Guiot - https://codepen.io/AskClaireGuiot/pen/eYErXvr
+            var element = document.getElementById("nav-items");
+            element.classList.toggle("show-items");
+        }
+    </script>
+</body>
+
+</html>

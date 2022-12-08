@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://kit.fontawesome.com/bd87e31b68.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Work+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Brenda's Glass Epressions-About Me</title>
+  </head>
+
+  <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <!--back to top button W3 website-->
+    <header>
+      <!-- <beginning of primary nav-->
+      <div class="site-header"></div>
+      <div class="header-wrapper">
+        <a>
+          <img
+            src="images/GlassExpressionsLogo.jpg"
+            alt="Glass Expressions Logo"
+            width="250"
+          />
+        </a>
+        <nav>
+          <div class="menu-label">Menu</div>
+          <ul id="nav-items">
+            <li>
+              <a href="index.html">HOME</a>
+            </li>
+            <li>
+              <a href="aboutme.html">ABOUT ME</a>
+            </li>
+            <li>
+              <a href="artglass.html">ART GLASS</a>
+            </li>
+            <li>
+              <a href="tools.html">TOOLS</a>
+            </li>
+            <li>
+              <a href="visitus.html">VISIT US</a>
+            </li>
+            <li>
+              <a href="tel:250-339-7739">250-339-7739</a>
+            </li>
+            <li>
+              <a href="#" class="fa fa-facebook"></a>
+            </li>
+          </ul>
+          <a class="toggle" onclick="showNav()"><i class="fa fa-bars"></i></a>
+        </nav>
+      </div>
+    </header>
+    <!--end of primary navagation -->
+    <main>
+      <h1>Brenda's Glass Expressions</h1>
+      <div class="about-flexwrapper">
+        <div class="image">
+          <img src="images/fakeowner.jpg" alt="Happy Person" />
+        </div>
+        <article>
+          <h2>My Story</h2>
+          <blockquote>
+            Pellentesque habitant morbi tristique senectus et netus et malesuada
+            fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
+            ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
+            egestas semper. Aenean ultricies mi vitae est. Mauris placerat
+            eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.
+            Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit
+            amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros
+            ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim
+            in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id
+            cursus faucibus, tortor neque egestas augue, eu vulputate magna eros
+            eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan
+            porttitor, facilisis luctus, metus
+          </blockquote>
+          <h4>Brenda</h4>
+        </article>
+      </div>
+    </main>
+    <!-- beginning of footer -->
+    <footer>
+      <div class="footer-wrapper">
+        <a
+          href="https://www.princestrust.ca/en-CA/Veterans-Military/Buy-Veteran"
+          ><img
+            src="images/buyachetonsveteranCA_colourlogo.jpg"
+            alt="Buy-Veteran logo"
+        /></a>
+        <p>
+          Brenda's Glass Expressions <br />
+          2925 Comox Road<br />
+          Courtenay, BC <br />
+          Canada
+        </p>
+        <p>
+          Hours of Operation<br />
+          Tuesday to Saturday <br />
+          10:00 am to 2:00 pm <br />
+          <a class="btn-style" href="tel:250-339-7739">250-339-7739</a>
+        </p>
+
+        <nav class="secondary-nav">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="aboutme.html">ABOUT ME</a></li>
+            <li><a href="artglass.html">ART GLASS</a></li>
+            <li><a href="tools.html">TOOLS</a></li>
+            <li><a href="visitus.html">VISIT US</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="disclaimer-wrapper">
+        <p>
+          This is a fictional website that was designed and coded as an
+          educational exercise. It is not intended to be seen outside of the
+          class environment. None of the content and images were approved by the
+          business owner.
+        </p>
+      </div>
+    </footer>
+    <script>
+      function showNav() {
+        var element = document.getElementById("nav-items");
+        element.classList.toggle("show-items");
+      }
+    </script>
+
+    <!--back to top button W3 website-->
+    <script>
+      // Get the button
+      let mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+  </body>
+</html>

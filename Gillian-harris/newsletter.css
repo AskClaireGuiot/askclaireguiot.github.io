@@ -1,0 +1,368 @@
+/* STYLES ----------------------------------
+1. Universal styling (fonts, centering)
+2. Header (logo image, social icons)
+3. Navigation
+4. Main (News banner, intro, new products card)
+5. Footer (upcoming events, newsletter, social icons)
+6. Forms
+7. Solo Buttons
+8. Media Queries 
+-----------------------------------------------------*/
+
+/* -----------------
+   1. Universal styling  
+   ------------------*/
+   * {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+p {
+    font-family: 'Nunito', sans-serif;
+    color: black;
+    font-size: 1.7rem;
+}
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    text-align: left;
+    
+}
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: large;
+    text-align: left;
+    text-decoration: underline;
+}
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: large;
+}
+h5 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    font-style: bold;
+    font-size: large;
+}
+
+nav,
+main,
+footer {
+  text-align: center;
+}
+/* -----------------
+    2. Header  
+   ------------------*/
+.companyname { 
+    width: auto;
+} 
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+/* -----------------
+    3. Navigation  
+   ------------------*/
+ nav {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(202, 202, 202);
+    border-radius: 30px 30px 0px 0px;
+    margin: 0px 0px;   
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    display: none; /*hides menu items - default for mobile*/
+    padding: 5px;
+}
+nav ul a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+   
+}
+nav ul li {
+    padding: 5px;
+}
+.nav-item:hover {
+    background-color: rgb(212, 212, 212);
+    border-radius: 3px;
+}  
+.nav-item:hover a {
+    color: rgb(100, 58, 4);
+}
+.show-list {
+    display: flex;
+}
+nav .toggle {
+    padding-right: 20px;
+    align-self: flex-end;
+    position: absolute;
+    cursor: pointer;
+}
+nav .menu-label {
+    font-size: 1.5rem ;
+}
+/* -----------------
+   4. Main  
+   ------------------*/
+   .confirmationscreen {background-color: hsl(39, 38%, 48%);
+border-radius: 20px;
+margin: 30px;
+padding: 20px;
+text-align: center;
+
+}
+
+/* -----------------
+   5. Footer  
+   ------------------*/
+.footer-container {
+    border-radius: 5px;
+}
+
+.events, .newsletter, .socialfooter{
+    background-color: rgb(175, 174, 174);
+    border-radius: 5px;
+    margin: 10px 0px;
+}
+
+.events {
+    padding: 10px;
+}
+
+.events ul li {
+    list-style: none;
+    background-color: rgb(175, 174, 174);
+    text-decoration: none;
+}
+
+.events a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: black;
+}
+.newsletter {
+    font-size: 1.5rem;
+}
+.socialicons{
+    display: flex;
+    justify-content: space-around;
+}
+.copyright {
+    text-align: center;
+    height: 5px;
+}
+/* -----------------
+   6. Forms  
+   ------------------*/
+   
+   input[type="submit"] {
+    background-color: hsl(39, 38%, 48%);
+    color: white;
+    padding: 12px 20px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;  
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: rgb(145, 109, 33);
+  }
+
+
+/* ---
+   Structure
+   --- */
+
+   .newsletter {
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .wrapper-button {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* ---
+    Form Controls
+    --- */
+  
+  input,
+  select,
+  textarea {
+    font-size: 1em;
+  }
+  
+  input[type="text"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 20px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 20px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  textarea {
+    font-family: sans-serif;
+  }
+  
+  fieldset {
+    margin-bottom: 16px;
+  }
+  
+  .label-required {
+    font-size: 1rem;
+    color: red;
+  }
+/* -----------------
+    6. Solo Buttons 
+   ------------------*/
+.linkbutton {font-family: sans-serif;
+    font-size: 1.5rem;
+    color: black;
+    background-color: white;
+    padding: 8px;
+border-radius: 5px;
+text-decoration: none;
+box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;}
+/* ==============
+   7. Media Queries 
+   ============== */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+  
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+/*header*/
+
+    .instagram,
+    .facebook {
+        display: flex;
+        align-self: flex-end;
+        margin-bottom: 20px;
+    }
+/*nav*/
+    .nav {
+        display: flex;
+        padding-bottom: 5px;
+    }
+
+    .nav-items {
+        display: flex;
+        list-style: none;
+    }
+    .nav-item a {
+        display: flex;
+        text-decoration: none;
+        color: black;
+        font-size: 2rem;
+    }
+    nav .menu-label {
+        display: none; /*nav menu bars */
+    }
+    nav ul {
+        display: flex; /*shows menu items on large screen*/
+        flex-direction: row;
+        justify-content: center;
+        justify-content: space-around;
+    }
+    nav .toggle {
+        display: none;
+    }
+
+/* main */
+
+/* footer*/
+
+    .footer-container {
+        display: flex;
+        width: 100%;
+        padding: 10px;
+        flex-direction: row;justify-content: center;
+        background-color: rgb(202, 202, 202);
+        border-top:#b75327 solid 5px;
+
+    }
+    .footer {
+        display: flex;
+        flex-direction: row;
+       
+        
+    }
+    .events {
+        display: flex;
+        justify-content: left;
+        padding: 10px 10px;
+        margin: 10px;
+        align-self: flex-start;   
+        flex-direction: column; 
+    }
+    .events li {
+        display: flex;
+        list-style: none;
+        padding-top: 10px;
+    }
+
+    .newsletter {
+        display: flex;
+        justify-content: center;
+        padding: 10px 10px; 
+        margin: 10px 40px; 
+        flex-direction: column;
+        align-self: auto;
+    }
+   
+    .socialfooter {
+        display: flex;
+        justify-content: right;
+        background-color: rgb(175, 174, 174);
+        padding: 10px 10px;
+        margin: 10px;
+        flex-direction: column;
+        height: fit-content;
+    } 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  
+    /* nav */
+    .nav-item a {
+        display: flex;
+        text-decoration: none;
+        color: black;
+        justify-content: center;
+        padding: 10px 50px;
+        font-size: large;
+    }
+}
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {}

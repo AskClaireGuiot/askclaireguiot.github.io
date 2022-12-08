@@ -1,0 +1,588 @@
+/********************* GLOBAL CSS *********************/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("images/nima-mot-CdMlh9z906E-unsplash.jpg");
+  background-size: cover;
+  background-color: magenta;
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+}
+
+img {
+  border-radius: 5px;
+}
+
+/********************* NAVIGATION *********************/
+
+
+.navbar {
+  align-items: center;
+  background: rgb(219, 15, 214);
+  background: linear-gradient(0deg, rgba(219, 15, 214, 1) 0%, rgba(224, 54, 166, 1) 88%);
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  position: relative;
+
+}
+
+nav h1 {
+  display:none;
+}
+
+.brendalogo {
+  display: flex;
+  align-items: flex-end;
+  width: 20%;
+  gap: 9px;
+  font-family: 'Ms Madi', cursive;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+}
+
+.brendalogo img {
+  width: 200px;
+}
+
+.facebook-link {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  display: flex;
+  gap: 15px;
+
+
+}
+
+.facebook-link h3 {
+  align-self: center;
+  display: none;
+  font-family: 'Gloria Hallelujah', cursive;
+
+}
+
+.facebook-link img:hover {
+  transform: scale(1.2);
+  transition: all 195ms;
+}
+
+nav ul {
+  list-style-type: none;
+  display: none;
+  color: black;
+  flex-direction: column;
+  font-family: 'Gloria Hallelujah', cursive;
+
+
+
+
+}
+
+nav ul li {
+  color: white;
+  font-size: 1.4rem;
+  margin-top: 17px;
+}
+
+nav ul li :hover {
+  color: #37DF9E;
+}
+
+
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.show-items {
+  display: flex;
+
+}
+
+nav .toggle {
+  align-self: flex-end;
+  position: absolute;
+  cursor: pointer;
+  top: 7rem;
+  right: 2rem;
+  transform: scale(3.0);
+}
+/********************* FOOTER *********************/
+
+footer {
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  display: flex;
+  background-color: #AEB3EA;
+  height: 150px;
+  margin-top: 10px;
+  font-family: 'Gloria Hallelujah', cursive;
+  gap:10px;
+
+
+}
+
+.locationmapwrap iframe{
+  display:none;
+}
+
+.locationmapwrap p {
+  font-size:.7rem
+}
+
+footer p {
+  color: black;
+}
+
+footer h4 {
+  color: black;
+  
+
+}
+
+footer img {
+  width: 130px;
+}
+.hourswrap p {
+  font-size:.8rem;
+}
+
+/********************* HOME CSS *********************/
+.welcome {
+  background: rgb(219, 169, 15);
+  background: linear-gradient(0deg, rgba(219, 169, 15, 0.9612219887955182) 0%, rgba(54, 224, 159, 1) 100%);
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  padding-top: 10px;
+  font-family: 'Macondo', cursive;
+  font-size: 1.5rem;
+
+}
+
+.welcome h2 {
+  text-align: center;
+  font-size: 2rem;
+  text-decoration: underline;
+  ;
+
+}
+
+.welcome-intro {
+  display: Flex;
+  padding: 20px;
+  flex-direction: column;
+
+
+
+}
+
+.welcome-intro img {
+  width: 200px;
+  align-self: center;
+
+
+}
+
+aside {
+  background: rgb(219, 169, 15);
+  background: linear-gradient(0deg, rgba(219, 169, 15, 0.9612219887955182) 0%, rgba(54, 224, 159, 1) 100%);
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  text-align: center;
+  margin: 20px;
+  font-family: 'Macondo', cursive;
+}
+
+aside img {
+  max-width: 100%;
+
+}
+
+/********************* STORE CSS *********************/
+
+.store-intro {
+  background-color: #C460E4;
+  width: 95%;
+  margin: auto;
+  margin-top: 50px;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  font-family: 'Macondo', cursive;
+  font-size: 1.3rem;
+}
+
+.store-intro img {
+  max-width: 100%;
+}
+
+
+.store-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+
+.store-links img {
+  background-color: #7674EF;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.store-links div {
+  text-align: center;
+
+
+}
+
+
+.store-links button {
+
+  background-color: #EFC3F8;
+  border-radius: 100px;
+  color: #4F49B0;
+
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+  cursor: pointer;
+  font-family: CerebriSans-Regular, system-ui, Roboto, sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 100ms;
+  border: 0;
+  font-size: 16px;
+}
+
+.store-links button:hover {
+  transform: scale(1.3) rotate(-3deg);
+}
+
+/*************** GRINDERS CSS ************/
+
+.grinder1 {
+  background-color: red;
+  padding: 50px;
+  border-right: 9px solid black;
+  margin-top: 20px;
+  background: rgb(177, 69, 203);
+  background: linear-gradient(274deg, rgba(177, 69, 203, 0) 33%, rgba(97, 255, 200, 1) 59%);
+  margin-right: 20px;
+
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.grinder2 {
+  background-color: red;
+  padding: 50px;
+  border-right: 9px solid black;
+  margin-top: 20px;
+  background: rgb(177, 69, 203);
+  background: linear-gradient(274deg, rgba(177, 69, 203, 0) 33%, rgba(255, 97, 180, 1) 59%);
+  margin-right: 26px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.grinder2 img {
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  text-align: center;
+}
+
+
+.grinder1 img {
+
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.grinders-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 40px;
+
+}
+
+.grinders-wrapper h2 {
+  font-size: 2.7em;
+  text-decoration: underline;
+  background-color: #7674EF;
+  padding: 19px;
+  border-radius: 13px;
+  margin-top: 90px;
+  width:50%;
+  background: rgb(177, 69, 203);
+  background: linear-gradient(274deg, rgba(177, 69, 203, 0.8213457076566125) 0%, rgba(118, 116, 239, 1) 100%);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+  font-family: 'Macondo', cursive;
+
+}
+
+
+/************ CONTACT US CSS ****************/
+.map h4 {
+  text-align:center;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 2rem;
+}
+.map{
+  background-color:#C361EA;
+  margin:auto;
+  width:95%;
+  padding:20px;
+  margin-top:20px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border-radius:30px;
+  
+
+}
+
+
+.map iframe{
+  width:95%;
+  margin-left:9px;
+  border-radius:10px;
+  margin-top:25px;
+ 
+}
+
+.contact-hours {
+  background-color:#633CB0;
+  width:95%;
+  margin:auto;
+  margin-top:100px;
+  border-radius:30px;
+  font-family: 'Gloria Hallelujah', cursive;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.contact-hours ul {
+  list-style: none;
+}
+
+.contact-hours h4 {
+  font-size: 2rem;
+  
+}
+
+#submit{
+  width:20%;
+
+}
+
+
+.contact-form textarea {
+  padding: 50px;
+  width: 95%;
+  align-self: center;
+  margin-top: 10px;
+  border-radius:15px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border: 2px solid lime;
+ 
+
+}
+
+.contact-form::placeholder{
+  text-align:right;
+  transform: translateY(150px);
+}
+.contact-form input {
+  width: 70%;
+  align-self: center;
+  padding:10px;
+  border-radius:15px;
+  margin-top:15px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border: 2px solid lime;
+
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  background-color:#98B0F0;
+  border-radius:30px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  padding-bottom:20px;
+
+}
+.contact-form h2{
+  text-align:Center;
+  font-family: 'Gloria Hallelujah', cursive;
+
+}
+.contact-hours iframe{
+  margin:auto;
+  margin-top:40px;
+  border-radius:20px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  
+}
+
+/********************* MEDIA QUERIES *********************/
+@media (min-width:1130px) {
+
+  /********************* GLOBAL MEDIA*********************/
+ 
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  nav ul li {
+    padding-right: 140px;
+    font-size: 1.9rem;
+
+  }
+
+  nav .toggle {
+    display: none;
+  }
+
+  footer img {
+    width: 250px;
+  }
+  nav h1 {
+    display:block
+  }
+  
+
+
+  /********************* STORE MEDIA*********************/
+  .store-intro p {
+    text-align: start
+  }
+
+  .store-intro {
+    width: 55%;
+    text-align: center;
+  }
+
+  .store-links {
+    margin-top: 50px;
+    flex-direction: row;
+    margin-bottom: 90px;
+  }
+
+  /********************* WELCOME*********************/
+
+  .welcome-wrap {
+    display: flex;
+  }
+
+  .welcome-intro{
+    flex-direction: row;
+  }
+
+  .welcome-intro img {
+    height: 550px;
+    width: auto;
+  }
+
+  .welcome {
+    padding: 20px 10px 20px 90px;
+
+  }
+
+  .welcome p {
+    border-width: 10px;
+    border-style: solid;
+    border-color: black;
+    border-left: 0;
+    border-right: 0;
+    padding-top: 70px;
+    margin-right: 10%;
+  }
+
+  .welcome h2 {
+    margin-left: 29px;
+    font-size: 2.0rem;
+    text-align: left;
+  }
+
+  .facebook-link h3 {
+    align-self: center;
+    display: block;
+  }
+
+
+
+
+  /*********************CONTACT US*********************/
+  .contact-form textarea{
+    width:70%;
+  }
+
+.contact-hours{
+  width:30%;
+  margin:auto;
+  margin-top:50px;
+  position:relative;
+  right:300px;
+  padding-bottom:60px;
+  
+  
+}
+.contact-form {
+  margin-top: 90px;
+  width:50%;
+  margin:auto;
+  margin-top:200px;
+
+}
+  
+
+.map{
+ position:absolute;
+width:35%;
+right:10%;
+top:15%;
+}
+
+.locationmapwrap{
+  display:flex;
+  margin-top:30px;
+  gap:20px;
+}
+
+.locationmapwrap iframe{
+  display:block;
+}
+
+/*********************FOOTER*********************/
+.locationmapwrap h3 {
+  margin-top:35px;
+}
+
+.locationmapwrap a{
+  margin-top:59px;
+
+}
+.locationmapwrap p {
+  font-size:1rem;
+}
+}

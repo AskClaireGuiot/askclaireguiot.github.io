@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- DGL 103 DLU1 - Roberta Joehle - Assignment G -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://kit.fontawesome.com/bd87e31b68.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Work+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Brenda's Glass Epressions-Home</title>
+  </head>
+
+  <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <!--back to top button W3 website-->
+    <header>
+      <!-- <beginning of primary nav-->
+      <div class="site-header"></div>
+      <div class="header-wrapper">
+        <a>
+          <img
+            src="images/GlassExpressionsLogo.jpg"
+            alt="glassexpressions logo"
+            width="250"
+        /></a>
+        <nav>
+          <div class="menu-label">Menu</div>
+          <ul id="nav-items">
+            <li>
+              <a href="index.html">HOME</a>
+            </li>
+            <li>
+              <a href="aboutme.html">ABOUT ME</a>
+            </li>
+            <li>
+              <a href="artglass.html">ART GLASS</a>
+            </li>
+            <li>
+              <a href="tools.html">TOOLS</a>
+            </li>
+            <li>
+              <a href="visitus.html">VISIT US</a>
+            </li>
+            <li>
+              <a href="tel:250-339-7739">250-339-7739</a>
+            </li>
+            <li>
+              <a href="#" class="fa fa-facebook"></a>
+            </li>
+          </ul>
+          <a class="toggle" onclick="showNav()"><i class="fa fa-bars"></i></a>
+        </nav>
+      </div>
+    </header>
+    <!--end of primary navagation -->
+    <main>
+      <h1>Brenda's Glass Expressions</h1>
+
+      <div class="hero-flexwrapper">
+        <p>
+          Brenda has been owner and operator for sixteen years now, time flies
+          when you're having fun. Brenda and her sister Donna work together to
+          provide the exceptional customer care that Glass Expressions is known
+          for. We carry a wide selection of stained glass, tools and supplies,
+          to help ensure that you will have everything to successfully complete
+          your projects. <br /><br />If you are close to our store, please feel
+          free to drop in and talk with us.
+        </p>
+
+        <aside>
+          <!--Unsure if this should be  a quote inside the aside-->
+          <p>
+            <em
+              >On the Comox estuary, fixed between the busy Comox road and where
+              the wild ocean meets a river; sits a glass studio … next to an old
+              but well-used boat launch … and a field of wildflowers … where
+              brothers park houses on stilts … it's a remarkable place … a crux
+              of wild and old and useful and creative and powerful. But it never
+              overstates itself, this place. It's rather unassuming … but
+              remarkable.</em
+            >
+            <br />
+            <br />Cindy Trevitt-Comox Valley Artist
+          </p>
+        </aside>
+      </div>
+
+      <div class="artglass-wrapper">
+        <figure>
+          <img
+            src="images/stainedglass_chips.jpg"
+            alt="Stain Glass Chip"
+            width="110"
+          />
+          <img
+            src="images/stainglass_multi.jpg"
+            alt="Stain Glass Multi Chip"
+            width="110"
+          />
+        </figure>
+
+        <h2><a href="artglass.html"> VIEW ART GLASS</a></h2>
+        <!--I want to be able to style it as it is a call to action -->
+
+        <figure>
+          <img
+            src="images/stainedglass_blue.jpeg"
+            alt="Stain Glass Blue Square"
+            width="110"
+          />
+          <img
+            src="images/stainedglass_multisquare.jpg"
+            alt="Stain Glass Multi Square"
+            width="110"
+          />
+        </figure>
+      </div>
+    </main>
+    <!-- beginning of footer -->
+    <footer>
+      <div class="footer-wrapper">
+        <a
+          href="https://www.princestrust.ca/en-CA/Veterans-Military/Buy-Veteran"
+          ><img
+            src="images/buyachetonsveteranCA_colourlogo.jpg"
+            alt="Buy-Veteran logo"
+        /></a>
+        <!-- <a class="btn-style" a href="tel:250-339-7739">250-339-7739</a> -->
+        <p>
+          Brenda's Glass Expressions <br />
+          2925 Comox Road<br />
+          Courtenay, BC <br />
+          Canada
+        </p>
+        <p>
+          Hours of Operation<br />
+          Tuesday to Saturday <br />
+          10:00 am to 2:00 pm <br />
+          <a href="tel:250-339-7739">250-339-7739</a>
+        </p>
+
+        <nav class="secondary-nav">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="aboutme.html">ABOUT ME</a></li>
+            <li><a href="artglass.html">ART GLASS</a></li>
+            <li><a href="tools.html">TOOLS</a></li>
+            <li><a href="visitus.html">VISIT US</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="disclaimer-wrapper">
+        <p>
+          This is a fictional website that was designed and coded as an
+          educational exercise. It is not intended to be seen outside of the
+          class environment. None of the content and images were approved by the
+          business owner.
+        </p>
+      </div>
+    </footer>
+
+    <!--Add it anywhere on the page -->
+    <script>
+      function showNav() {
+        var element = document.getElementById("nav-items");
+        element.classList.toggle("show-items");
+      }
+    </script>
+
+    <!--back to top button W3 website-->
+    <script>
+      // Get the button
+      let mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+  </body>
+</html>

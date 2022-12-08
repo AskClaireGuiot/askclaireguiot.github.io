@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>our-team</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Google Fonts Import-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&family=Playfair+Display:wght@600&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/0d0c69edef.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--
+        Assignment G
+        Abbey Girvan
+        DGL103 Fall22 DLU1i
+    -->
+  </head>
+  <body>
+    <nav>
+      <div class="wrapper">
+        <section class="container">
+          <img
+            class="logo"
+            src="images/logo.png"
+            alt="nicole cahoon logo"
+            width="100"
+          />
+          <a class="toggle" onclick="showNav()"
+            ><i class="fa-solid fa-bars"></i
+          ></a>
+        </section>
+        <ul class="nav-list nav-container" id="nav-items">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="our-team.html">Our Team</a></li>
+          <li><a href="contact-us.html">Contact Us</a></li>
+          <li>
+            <a href="finanical-resources.html">BC Financial Resources</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <header>
+      <div class="wrapper">
+        <h1>Meet Our Team</h1>
+      </div>
+    </header>
+
+    <main>
+      <div class="wrapper main-wrapper">
+        <img
+          class="main-img"
+          src="images/example-group.jpg"
+          alt="example of a group photo"
+        />
+
+        <!--team member bios-->
+
+        <h2>Nicole Cahoon</h2>
+        <section class="container bio-container">
+          <img
+            class="headshot"
+            src="images/nicole-headshot.jpeg"
+            alt="nicole cahoon headshot"
+          />
+          <p>
+            Nicole has lived on Vancouver Island for more than twenty years. Ten
+            years ago she moved to the Comox Valley with her husband and two
+            daughters. She has been on several boards in the Valley, including
+            the Womens Business Network, Corporate Connections and Today N&#39;
+            Tomorrow Learning Society. In her spare time, she enjoys traveling
+            and spending time with her family.
+          </p>
+          <p>
+            With 7 years of public practice experience, and after completing her
+            Bachelors of Administration Degree and the Certified General
+            Accountants Program, Nicole started her own practice. She operates
+            her practice from the perspective of a small business owner, which
+            gives her the ability to offer practical solutions to her clients.
+          </p>
+        </section>
+
+        <h2>Brianne Clare</h2>
+        <section class="brianne bio-container">
+          <img
+            class="headshot"
+            src="images/brianne-headshot.jpeg"
+            alt="Brianne Clare headshot"
+          />
+          <p>
+            Brianne is our Office Manager, bookkeeper and assists Nicole with
+            Estates. With over 12 years of administrative and bookkeeping
+            experience and a certificate in accounting, she joined our office in
+            January 2016. Born in Powell River, Brianne moved to the Comox
+            Valley as a child. She now enjoys the upbeat small-town vibe of
+            Cumberland with her family.
+          </p>
+          <p>
+            Brianne has volunteered with various fundraising events including
+            the Youth and Mental Health Fundraiser, Vancouver Island Compassion
+            Dogs and Comox Valley Child Development Society.
+          </p>
+        </section>
+
+        <h2>Conlan White</h2>
+        <section class="container bio-container">
+          <img
+            class="headshot"
+            src="images/conlan-headshot.jpeg"
+            alt="conlan white headshot"
+          />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at
+            mauris non velit maximus ullamcorper et at tellus. Lorem ipsum dolor
+            sit amet, consectetur adipiscing elit. Integer sit amet hendrerit
+            lacus, sit amet pharetra quam. Vestibulum ante ipsum primis in
+            faucibus orci luctus et ultrices posuere cubilia curae; Duis cursus
+            nec ligula nec condimentum. Vestibulum sit amet pharetra massa.
+          </p>
+          <p>
+            Morbi accumsan sapien ex, in rhoncus risus consequat facilisis. In
+            ac blandit nunc, sed feugiat ex. Duis tincidunt metus ex, ut
+            malesuada ligula egestas id. Quisque pellentesque dignissim luctus.
+            Curabitur sem lorem, dignissim ac faucibus id, rhoncus venenatis
+            diam.
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <!--footer-->
+    <footer>
+      <div class="wrapper">
+        <em
+          >This is a fictional website that was designed and coded as an
+          educational exercise. It is not intended to be seen outside of the
+          class environment. None of the content and images were approved by the
+          business owner.</em
+        >
+      </div>
+    </footer>
+
+    <!--JS for bars icon-->
+    <script>
+      function showNav() {
+        var element = document.getElementById("nav-items");
+        element.classList.toggle("show-items");
+      }
+    </script>
+  </body>
+</html>

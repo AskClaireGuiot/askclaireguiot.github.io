@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>contact-us</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Google Fonts Import-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&family=Playfair+Display:wght@600&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/0d0c69edef.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--
+        Assignment G
+        Abbey Girvan
+        DGL103 Fall22 DLU1i
+    -->
+  </head>
+  <body>
+    <nav>
+      <div class="wrapper">
+        <section class="container">
+          <img
+            class="logo"
+            src="images/logo.png"
+            alt="nicole cahoon logo"
+            width="100"
+          />
+          <a class="toggle" onclick="showNav()"
+            ><i class="fa-solid fa-bars"></i
+          ></a>
+        </section>
+        <ul class="nav-list nav-container" id="nav-items">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="our-team.html">Our Team</a></li>
+          <li><a href="contact-us.html">Contact Us</a></li>
+          <li>
+            <a href="finanical-resources.html">BC Financial Resources</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <header>
+      <div class="wrapper">
+        <h1>Contact Us</h1>
+      </div>
+    </header>
+
+    <main>
+      <div class="wrapper main-wrapper">
+        <!--location and contact info-->
+        <section class="container">
+          <iframe
+            class="main-img"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10325.823384100233!2d-124.99089600000002!3d49.683388!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54881477e9282537%3A0x82e229134d19fe92!2s350%2017th%20St%20Unit%20%231%2C%20Courtenay%2C%20BC%20V9N%201Y4%2C%20Canada!5e0!3m2!1sen!2sus!4v1669852058162!5m2!1sen!2sus"
+            height="400"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <!-- google map link -->
+          <h2>Location</h2>
+          <ul class="contacts">
+            <li>350 17th St Unit #1</li>
+            <li>V9N 1Y4</li>
+            <li><a href="tel:12508711121">1(250) 871-1121</a></li>
+            <li>
+              <a href="Nicole@nicolecahoon.com">nicole@nicolecahoon.com</a>
+            </li>
+            <li>
+              Find us on
+              <a href="http://facebook.com/nicolecahooninc" target="_blank"
+                >Facebook</a
+              >
+            </li>
+          </ul>
+        </section>
+
+        <!--contact/booking form-->
+        <form action="/book">
+          <section class="container">
+            <!-- text-box form for name -->
+            <label for="client-name">Your Name</label>
+            <input type="text" name="client-name" id="client-name" />
+
+            <!-- drop-down of options -->
+            <label for="service">Choose the service you require</label>
+            <select name="service" id="service">
+              <option class="place-holder-option" value="" disabled selected>
+                select a service
+              </option>
+              <option value="accounting">Accounting</option>
+              <option value="business-consulting">Business Consultation</option>
+              <option value="taxes">Taxes</option>
+            </select>
+
+            <!-- text-box form for description -->
+            <label for="description">
+              Describe the questions or issue(s) you're having
+            </label>
+            <textarea name="description" id="description"></textarea>
+
+            <!-- calendar drop-down to select dates -->
+            <label for="booking-date">Select a date for your appointment</label>
+            <input type="date" name="booking-date" id="booking-date" />
+
+            <!--submit button-->
+            <input class="submit" type="submit" name="submit" value="submit" />
+          </section>
+        </form>
+      </div>
+    </main>
+
+    <!--footer-->
+    <footer>
+      <div class="wrapper">
+        <em
+          >This is a fictional website that was designed and coded as an
+          educational exercise. It is not intended to be seen outside of the
+          class environment. None of the content and images were approved by the
+          business owner.</em
+        >
+      </div>
+    </footer>
+
+    <!--JS for bars icon-->
+    <script>
+      function showNav() {
+        var element = document.getElementById("nav-items");
+        element.classList.toggle("show-items");
+      }
+    </script>
+  </body>
+</html>

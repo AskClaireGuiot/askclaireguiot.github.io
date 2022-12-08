@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/usclogo.png">
+    <link rel="stylesheet" href="aboutstyle.css">
+    <script src="https://kit.fontawesome.com/fdbe03722c.js" crossorigin="anonymous"></script>
+    <title>About</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="companyname"><img src="images/uscbanner2.png" width="50%" alt="Uncommon Spirit Co Logo"></div> 
+        </div>
+        <div class="social">
+            <div class="instagram"><a href="https://www.instagram.com/uncommon.spirit.co/"><img src="images/instagram-icon.png"  alt="Instagram Logo"></a></div> 
+            <div class="facebook"><a href="https://www.facebook.com/uncommonspiritco/"><img src="images/facebook-icon.png"  alt="Facebook Logo"></a></div>
+        </div>
+            <nav>
+                <div class="menu-label">Menu</div>
+                <ul id="nav-items">
+                    <li class="nav-item"><a href="file:///D:/DGL%20103%20HTML%20CSS/assignment-g-Gillian-harris/home.html">Home</a></li>
+                    <li class="nav-item"><a href="file:///D:/DGL%20103%20HTML%20CSS/assignment-g-Gillian-harris/shop.html">Shop</a></li>
+                    <li class="nav-item"><a href="file:///D:/DGL%20103%20HTML%20CSS/assignment-g-Gillian-harris/about.html">About</a></li>
+                    <li class="nav-item"><a href="file:///D:/DGL%20103%20HTML%20CSS/assignment-g-Gillian-harris/events.html">Events</a></li>
+                    <li class="nav-item"><a href="file:///D:/DGL%20103%20HTML%20CSS/assignment-g-Gillian-harris/contact.html">Contact</a></li>
+                    <li class="nav-item"><a href="file:///D:/DGL%20103%20HTML%20CSS/assignment-g-Gillian-harris/faq.html">F.A.Q</a></li>
+                </ul>
+                <a class="toggle" onclick="showNav()"><i class="fa-solid fa-bars"></i></a>
+            </nav>
+    </header>
+    <main>
+       
+    </main>
+</body>
+<footer>
+    <div class="footer-container">
+        <div class="footer">
+            <section class="events">
+                <h3> Upcoming Events </h3>
+                <a href="dec1">Dec 1</a>
+                    <p> interdum velit laoreet id donec ultrices tincidunt arcu </p>
+                <a href="Dec15">Dec 15</a>
+                    <p> lobortis elementum nibh tellus molestie nunc non blandit </p>
+                <a href="Dec30">Dec 30</a>
+                    <p> maecenas pharetra convallis posuere morbi leo urna molestien </p>
+            </section>
+            <section class="newsletter-container">
+                <div class="newsletter">
+                    <h3> Join The Newsletter </h3>
+                        <form method="post" action="file:///D:/DGL%20103%20HTML%20CSS/assignment-g-Gillian-harris/newslettersubmission.html"> <!--goes to submission confirmation page-->  
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Ex: Lorelai">
+                    
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Ex: Gilmore">
+                    
+                        <label for="email">Email <span class="label-required">* (required)</span></label>
+                        <input type="email" id="email" name="email" placeholder="Ex: lorelai@yahoo.com" required>
+                    </form>
+                    <p> Join today to get product announcements, sales and behind the scenes info! </p>
+                    <div class="wrapper-button">
+                        <input type="submit" value="Submit">
+                      </div>
+                </div>
+                      
+            </section>
+            <section class="socialfooter">
+                <h3> Let's get social </h3>
+                <div class="socialicons">
+                    <div class="instagram"><a href="https://www.instagram.com/uncommon.spirit.co/"><img src="images/instagram-icon.png" alt="Instagram Logo"></a></div> 
+                   
+                    <div class="tiktok"><a href="https://www.tiktok.com/@uncommon.spirit.co"><img src="images/tiktok-icon.png" alt="TikTok Logo"></a></div>
+                   
+                    <div class="youtube"><a href="https://www.youtube.com/channel/UCgwe65NUo87wP8OUQGFzWfw"><img src="images/youtube-icon.png" alt="YouTube Logo"></a></div>
+
+                    <div class="facebook"><a href="https://www.facebook.com/uncommonspiritco"><img src="images/facebook-icon.png"  alt="YouTube Logo"></a></div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="copyright">
+        <p> © 2022. All rights reserved Uncommon Spirit Co. </p>
+    </div>
+<script>
+    function showNav() {
+    var element = document.getElementById("nav-items");
+    element.classList.toggle("show-list");
+    }
+</script>
+</footer>
+
+</html>

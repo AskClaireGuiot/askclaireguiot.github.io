@@ -1,0 +1,367 @@
+.title {
+    font-family: 'quicksand', sans-serif;
+    color: #211f1c;
+    font-size: 55px;
+    text-align: center;
+}
+body {
+    width: auto;
+    background-size: 500px;
+    font-family: 'quicksand', sans-serif;
+    
+}
+/*START nav */
+.navigation {
+    max-width: 100%;
+    background-color: #2d608b;
+}
+ul {
+    width: auto;
+    list-style-type: none;
+    overflow: hidden;
+    text-align: center;
+    padding: 25px;
+}
+li a {
+    font-size: 30px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-decoration: none;
+  } 
+ul li {
+    display: inline-block;  
+}
+li a:hover {
+    color: #b5ba4f;
+  }
+/* END Nav */
+
+/*START main HOMEPAGE */
+img.bee {
+    float: right;
+    width: 350px;
+    height: 400px;
+    padding-right: 30px;
+    padding-left: 80px;
+    padding-top: 30px;
+}
+.wrapper { 
+    width: 1000px;
+    margin: auto;
+    margin-top: 80px;
+    background: rgba(230, 221, 219, .70);
+    padding: 25px;
+    overflow: auto;
+}
+
+.paragraph1 {
+    color: #211f1c;
+    font-size: 18px;
+    padding-left: 40px;
+    padding-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+/*END main HOMEPAGE */
+
+/* START store info HOMEPAGE */
+.column1 {
+    float: left;
+    margin-top: 90px;
+    margin-left: 245px;
+    margin-bottom: 90px;
+    padding: 8px;
+    width: 250px;
+    height: 240px;
+    background: rgba(45, 96, 139, .75);
+    text-align: center;
+    color: #FFFFFF;
+    font-size:  18px;
+}
+.column2 {
+    float: left;
+    margin-top: 90px;
+    margin-left: 250px;
+    width: 250px;
+    height: 240px;
+    padding: 8px;
+    background: rgba(45, 96, 139, .75);
+    text-align: center;
+    color: #FFFFFF;
+    font-size:  18px;
+}
+.row1:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* END store info HOMEPAGE */
+   
+
+/*  START news letter HOMEPAGE */
+
+form {
+    margin-left: 290px;
+    margin-bottom: 40px ;
+    width: 700px;
+    height: 250px;
+   
+  }
+#formheading {
+    color: #b5ba4f;
+    text-align: center;
+}
+/* I had a REAL hard time trying to figure out targeting and styling specific class's / ID's. I don't think we went over anyting like this in class. When and how to use "#paragraph6" for example. Or how to target specific links. This was the hardest and more confusing part of styling this project. */
+
+.container1 {
+    padding: 15px;
+    background: rgba(45, 96, 139, .75);
+}
+  
+input[type=text], input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+  
+input[type=submit] {
+    background-color: #b5ba4f;
+    color: white;
+    border: none;
+}
+  
+input[type=submit]:hover {
+    opacity: 0.8;
+}
+  /* END news letter HOMEPAGE */
+
+  /* START mini gallery HOMEPAGE */
+
+.wrapper2 { 
+    width: 1080px;
+    margin: auto;
+    margin-bottom: 70px;
+    margin-top: 160px;
+    background: rgba(230, 221, 219, .70);
+    padding: 10px;
+    overflow: auto;
+}
+
+#mypic { 
+    width: 184px;
+    height: 190px;
+    padding-left: 23px;
+    padding-top: 20px;
+    padding-bottom: 17px;
+}
+/* END mini gallery HOMEPAGE */
+
+
+/* START footer */
+.row2::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.column3 {
+    text-align: center;
+    color: #FFFFFF;
+    float: left;
+    margin-left: 145px;
+    padding-top: none;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.column4 { 
+    text-align: center;
+    color: #FFFFFF;
+    float: left;
+    margin-left: 187px;
+    padding-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.column5 {
+    text-align: center;
+    color: #FFFFFF;
+    float: left;
+    margin-left: 215px;
+    padding-top: none;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.row3::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer { 
+    max-width: fit-content auto;
+    background-color: #2d608b;
+    height: 200px;
+    padding-top: none;
+    margin-top: 110px;
+}
+/* END FOOTER */
+
+/*  LINKS */
+a:link {
+    color: #FFFFFF; 
+    background-color: transparent; 
+    text-decoration: none;
+}
+  
+a:visited {
+    color: #FFFFFF;
+    background-color: transparent;
+    text-decoration: none;
+}
+  
+a:hover {
+    color: #b5ba4f;
+    background-color: transparent;
+    text-decoration: none;
+}
+/*  LINKS */
+
+/* START store style sheet */
+.storeheader {
+    color: #211f1c;
+    font-size: 25px;
+    padding-top: 30px;
+    text-align: center;
+}
+.wrapper3 { 
+    width: 900px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: #e6dddb; 
+    padding: 25px;
+    overflow: auto;
+}
+#storeheadings {
+    color: #2d608b;
+}
+div.scroll1 {
+    font-size: 14px;
+    margin:4px, 4px;
+    padding: 7px;
+    background-color: none;
+    width: 900px;
+    height: 370px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align:justify;
+}
+
+.wrapper4 { 
+    font-size: 14px;
+    width: 900px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: #e6dddb; 
+    padding: 25px;
+    overflow: auto;
+}
+.wrapper5 { 
+    font-size: 14px;
+    width: 900px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: #e6dddb; 
+    padding: 25px;
+    overflow: auto;
+    margin-bottom: 50px;
+}
+input[type=button] {
+    background-color: #211f1c;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin-left: 559px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+/* END store style sheet */
+
+/* START GALLERY PAGE */
+
+.wrapper6 { 
+    width: 950px;
+    margin: auto;
+    margin-top: 90px;
+    background: rgba(230, 221, 219, .70);
+    padding: 30px;
+    overflow: auto;
+    margin-bottom: 50px;
+}
+
+#gallery {
+    width: 210px;
+    height: 210px;
+    padding: 12px;  
+}
+/* END GALLERY PAGE */
+
+/* START ABOUT PAGE */
+.wrapper7 {
+    width: 940px;
+    margin: auto;
+    margin-top: 90px;
+    background: rgba(230, 221, 219, .70);
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 30px;
+    overflow: auto;
+    margin-bottom: 20px;
+    height: 310px;
+    font-size: 20px;
+    height: 440px;
+}
+#janslink {
+    color: #2d608b;
+}
+/* END ABOUT */
+
+/* START CONTACT PAGE */
+img.awesome {
+    float: left;
+    width: 450px;
+    height: 400px;
+    padding-right: 50px;
+    padding-left: 10px;
+}
+.wrapper8 { 
+    text-align: center;
+    width: 1000px;
+    margin: auto;
+    margin-top: 50px;
+    background: rgba(230, 221, 219, .70); 
+    padding: 25px;
+    overflow: auto;
+}
+
+.contactlink:link {
+    color: #2d608b;
+    text-decoration:none;
+}
+    
+.contactlink:link:hover{
+    color: #b5ba4f;
+}
+.paragraph2 {
+    padding-top: 40px;
+    color: #211f1c;
+}
+
+/* END CONTACT */

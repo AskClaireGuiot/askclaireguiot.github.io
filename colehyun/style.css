@@ -1,0 +1,637 @@
+.logo1{
+    position: relative;
+    width: 350px;
+    height: 80px;
+    top: 10px;
+    left: 10px;
+}
+
+body{
+    background-color: #d9b361;
+}
+
+nav li {
+position: relative;
+float: right ;
+font-size: 20px;
+display: inline-block;
+color: black;
+padding: 10px;
+top: 25px;
+right: 200px;
+text-decoration: none;
+}
+
+header{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100px;
+    background-color: #a58849;
+}
+
+.booknow{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+   position: relative;
+   top: 120px;
+}
+
+
+.svo{
+    position: relative;
+    display: block;
+    text-align: center;
+    top: 150px;
+    font-family: 'Lato', sans-serif;
+}
+
+.shuttlesvo{
+    position: relative;   
+    display: block;
+    height:267px;
+    width: 450px;
+    float: right;
+    top: 170px;
+    right: 200px;
+}
+
+.shuttles{
+  font-family: 'Lato', sans-serif;
+    position: relative;
+    display: block;
+    float: right;
+    top: 450px;
+    left: 60px;
+}
+
+.limosvo{
+    position: relative;
+    display: block;
+    height:267px;
+    width: 450px;
+    float: left;
+    top: 170px;
+    left: 200px;
+}
+
+.limos{
+  font-family: 'Lato', sans-serif;
+    position: relative;
+    display: block;
+    float: left;
+    top: 450px;
+    right: 60px;
+}
+
+.toursvo {
+    display: block;
+    height:267px;
+    width: 450px;
+    position: relative;
+    margin: auto;
+    top: 170px;
+}
+
+.tours{
+  font-family: 'Lato', sans-serif;
+    position: relative;
+    display: block;
+    text-align: center;
+    top: 175px;
+}
+
+footer{
+    position: relative;
+    display: block;
+    top: 200px;
+    background-color: #FAF9F6;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center
+  } 
+
+
+.info{
+    position: relative;
+    display: block;
+    top: 10px;
+    margin: 10px;
+}
+
+.infophone{
+    position: relative;
+    display: block;
+    top: 10px;
+    margin: 10px;
+}
+
+.infofooter{
+  display: block;
+  position: relative;
+  top: 2px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.infotollf{
+    position: relative;
+    display: block;
+    top: 10px;
+    margin: 10px;
+}
+
+.logofooter{
+    position: relative;
+    display: block;
+    top: 10px;  
+    margin: 10px;
+}
+
+.logosm1{
+    position: relative;
+    display: block;
+    top: 10px;
+    margin: 10px;
+    float: right;
+    right: 2px;
+    width: 20px;
+    height: 20px;
+}
+
+.logosm2
+{
+    position: relative;
+    display: block;
+    top: 10px;
+    margin: 10px;
+    float: right;
+    right: 2px;
+    width: 20px;
+    height: 20px;
+}
+
+.logosm3{
+    position: relative;
+    display: block;
+    top: 10px;
+    margin: 10px;
+    float: right;
+    right: 2px;
+    width: 20px;
+    height: 20px;
+}
+
+.services{
+    text-align: center;
+    position: relative;
+    display: block;
+    top: 10px;
+    margin: 10px;
+    font-size: 35px;
+    }
+
+    .wehere{
+        text-align: center;
+        position: relative;
+        display: block;
+        top: 10px;
+        margin: 10px;
+        font-size: 20px;
+    }
+
+    .wehere1{
+        text-align: center;
+        position: relative;
+        display: block;
+        top: 10px;
+        margin: 10px;
+        font-size: 20px;
+    }
+
+    .ap{
+        width: 550px;
+        height: 350px;
+        display: block;
+        top: 25px;
+        position: relative;
+        margin: auto;
+        top: 170px;
+        right: 300px;
+
+    }
+
+    .aboutap{
+        position: relative;
+        display: block;
+        top: 25px;
+        position: relative;
+        margin: auto;
+        top: 5px;
+        float: left;
+        left: 950px;
+    }
+
+    .aboutap1{
+        position: relative;
+        display: block;
+        top: 25px;
+        position: relative;
+        margin: auto;
+        top: 8px;
+        float: left;
+        left: 950px;
+    }
+
+    .aboutap2{
+        position: relative;
+        display: block;
+        top: 25px;
+        position: relative;
+        margin: auto;
+        top: 12px;
+        float: left;
+        left: 950px;
+    }
+
+    .wt{
+        width: 550px;
+        height: 350px;
+        display: block;
+        top: 25px;
+        position: relative;
+        margin: auto;
+        top: 190px;
+        right: 300px;
+    }
+
+    .lt{
+        width: 550px;
+        height: 350px;
+        display: block;
+        top: 25px;
+        position: relative;
+        margin: auto;
+        top: 210px;
+        right: 300px;
+    }
+
+
+    .row {
+        display: -ms-flexbox; 
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin: 0 -16px;
+      }
+      
+      .col-25 {
+        -ms-flex: 25%; 
+        flex: 25%;
+      }
+      
+      .col-50 {
+        -ms-flex: 50%; 
+        flex: 50%;
+      }
+      
+      .col-75 {
+        -ms-flex: 75%; 
+        flex: 75%;
+      }
+      
+      .col-25,
+      .col-50,
+      .col-75 {
+        padding: 0 16px;
+      }
+      
+      .container {
+        background-color: #a5a5a5;
+        padding: 5px 20px 15px 20px;
+        border: 1px solid rgb(139, 126, 126);
+        border-radius: 3px;
+      }
+      
+      input[type=text] {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+      
+      label {
+        margin-bottom: 10px;
+        display: block;
+      }
+      
+      .icon-container {
+        margin-bottom: 20px;
+        padding: 7px 0;
+        font-size: 24px;
+      }
+      
+      .btn {
+        background-color: #629b86;
+        color: white;
+        padding: 12px;
+        margin: 10px 0;
+        border: none;
+        width: 100%;
+        border-radius: 3px;
+        cursor: pointer;
+        font-size: 17px;
+      }
+      
+      .btn:hover {
+        background-color: #45a049;
+      }
+      
+      span.price {
+        float: right;
+        color: grey;
+      }
+      .payment{
+        position: relative;
+        display: block;
+        top: 40px;
+        margin: 10px;
+        font-size: 20px;
+        text-align: center;
+      } 
+    
+      .aboutwt{
+        position: relative;
+        display: block;
+        top: 25px;
+        position: relative;
+        margin: auto;
+        top: 5px;
+        float: left;
+        left: 950px;
+      }
+
+      .aboutwt1{
+        position: relative;
+        display: block;
+        top: 25px;
+        position: relative;
+        margin: auto;
+        top: 11px;
+        float: left;
+        left: 950px;
+      }
+
+      .aboutwt2{
+        position: relative;
+        display: block;
+        top: 25px;
+        position: relative;
+        margin: auto;
+        top: 15px;
+        float: left;
+        left: 950px;
+      }
+
+      .aboutlt{
+        position: relative;
+        display: block;
+        top: 25px;
+        position: relative;
+        margin: auto;
+        top: 10px;
+        float: left;
+        left: 950px;
+      }
+
+      .aboutlt1{
+        position: relative;
+        display: block;
+        top: 25px;
+        position: relative;
+        margin: auto;
+        top: 11px;
+        float: left;
+        left: 950px;
+      }
+
+      .aboutlt2{
+        position: relative;
+        display: block;
+        top: 25px;
+        position: relative;
+        margin: auto;
+        top: 15px;
+        float: left;
+        left: 950px;
+      }
+
+      .reserve1{
+        position: relative;
+        display: block;
+        top: 25px;
+        position: relative;
+        margin: auto;
+        top: 25px;
+        float: left;
+        left: 950px;
+      }
+
+      .reserve2{
+        position: relative;
+        display: block;
+        top: 25px;
+        position: relative;
+        margin: auto;
+        top: 25px;
+        float: left;
+        left: 950px;
+      }
+
+      
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc;
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
+}
+
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+      .haveany{
+        position: relative;
+        display: block;
+        top: 25px;
+        position: relative;
+        margin: auto;
+        top: 25px;
+        text-align: center;
+        font-size: 20px;
+        font-style: italic;
+        font-weight: lighter;
+      }
+
+      .kevinpic{
+        position: relative;
+        left:350px;
+        top: 150px;
+        margin: auto; 
+        width: 120px; 
+        height: 120px;
+        border-radius: 50%;
+      }
+
+      .text1{
+        display: block;
+        margin: auto;
+        position: relative;
+        left: 475px;
+        top: 100px;
+        font-size: 20px;
+        font-style: italic;
+        font-weight: lighter;
+        font-family: 'Open Sans', sans-serif;
+      }
+
+      .text2{
+        display: block;
+        position: relative;
+        left: 450px;
+        top: 100px;
+        font-size: 20px;
+        font-style: italic;
+        font-weight: lighter;
+        font-family: 'Open Sans', sans-serif;
+      }
+
+      .text3{
+        display: block;
+        position: relative;
+        left: 450px;
+        top: 100px;
+        font-size: 20px;
+        font-style: italic;
+        font-weight: lighter;
+        font-family: 'Open Sans', sans-serif;
+      }
+
+      .text4{
+        display: block;
+        position: relative;
+        left: 450px;
+        top: 100px;
+        font-size: 20px;
+        font-style: italic;
+        font-weight: lighter;
+        font-family: 'Open Sans', sans-serif;
+      }
+
+
+      .text5{
+        display: block;
+        position: relative;
+        left: 500px;
+        top: 200px;
+        font-size: 20px;
+        font-style: italic;
+        font-weight: lighter;
+        font-family: 'Open Sans', sans-serif;
+      }
+
+      .text6{
+        display: block;
+        position: relative;
+        left: 500px;
+        top: 200px;
+        font-size: 20px;
+        font-style: italic;
+        font-weight: lighter;
+        font-family: 'Open Sans', sans-serif;
+      }
+
+      .ss{
+        display: block;
+        position: relative;
+        top: 200px;
+        font-size: 20px;
+        font-style: italic;
+        font-weight: bolder;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+      }
+
+      .abouthistory{
+        display: block;
+        position: relative;
+        top: 200px;
+        font-size: 15px;
+        font-style: italic;
+        font-weight: lighter;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+      }
+
+      .abouthistory1{
+        display: block;
+        position: relative;
+        top: 200px;
+        font-size: 15px;
+        font-style: italic;
+        font-weight: lighter;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+      }
+
+      .abouthistory2{
+        display: block;
+        position: relative;
+        top: 200px;
+        font-size: 15px;
+        font-style: italic;
+        font-weight: lighter;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+      }
+
+      .k1{
+        display: block;
+        position: relative;
+        top: 200px;
+        font-size: 17px;
+        font-style: italic;
+        text-align: center;
+      }
+
+      .k2{
+        display: block;
+        position: relative;
+        top: 200px;
+        font-size: 15px;
+        font-style: italic;
+        text-align: center;
+      }
+

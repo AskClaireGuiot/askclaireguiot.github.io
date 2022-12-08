@@ -1,0 +1,450 @@
+/* STYLES ----------------------------------
+1. Universal styling (fonts, centering)
+2. Header (logo image, social icons)
+3. Navigation
+4. Main (News banner, intro, new products card)
+5. Footer (upcoming events, newsletter, social icons)
+6. Forms
+7. Solo Buttons
+8. Media Queries 
+-----------------------------------------------------*/
+/* -----------------
+   1. Universal styling  
+   ------------------*/
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+p {
+    font-family: 'Nunito', sans-serif;
+    color: black;
+    font-size: 1.7rem;
+}
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    text-decoration: underline;
+}
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: large;
+}
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: large;
+}
+h5 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    font-size: large;
+}
+nav,
+main,
+footer {
+  text-align: center;
+}
+/* -----------------
+    2. Header  
+   ------------------*/
+.companyname { 
+    display: flex;
+    justify-content: center;
+} 
+.social {
+    display: flex;
+    justify-content: center;
+}
+/* -----------------
+    3. Navigation  
+   ------------------*/
+ nav {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(202, 202, 202);
+    border-radius: 30px 30px 0px 0px;
+    margin: 0px 0px;   
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    display: none; /*hides menu items - default for mobile*/
+    padding: 5px;
+}
+nav ul a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;  
+}
+nav ul li {
+    padding: 5px;
+}
+.nav-item:hover {
+    background-color: rgb(212, 212, 212);
+    border-radius: 3px;
+}  
+.nav-item:hover a {
+    color: rgb(100, 58, 4);
+}
+.show-list {
+    display: flex;
+}
+nav .toggle {
+    padding-right: 20px;
+    align-self: flex-end;
+    position: absolute;
+    cursor: pointer;
+}
+nav .menu-label {
+    font-size: 1.5rem ;
+}
+/* -----------------
+   4. Main  
+   ------------------*/
+.shopall {
+    margin-top: 20px;
+    padding: 5px;
+    background-color: #b75327;
+    display: flex;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+.shopall a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: black;
+}
+.bestsellers-container {
+    border-radius: 5px;
+    padding: 10px;
+}
+.card-1, .card-2, .card-3, .card-4 {
+    border: ridge 8px hsl(0, 0%, 75%);
+    border-radius: 5px; 
+    margin: 20px 5px;
+}
+.product1, .product2, .product3, .product4 {
+    border-radius: 2px;
+    margin: 20px 5px;
+    min-width: 100px;
+    justify-content: center;
+    }
+.category {
+    color: white;
+    background: hsl(39, 40%, 52%);
+    padding: 20px;
+    margin: 20px 5px; 
+    border-radius: 5px; 
+}
+.category1 a, .category2 a{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 5px;
+}
+.collection {
+    color: white;
+    background: #b75327;
+    padding: 20px;
+    margin: 20px 5px;
+    border-radius: 5px;
+}
+.collection1 a, .collection2 a{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 5px;
+}
+/* -----------------
+   5. Footer  
+   ------------------*/
+.footer-container {
+    border-radius: 5px;
+}
+.events, .newsletter, .socialfooter{
+    background-color: rgb(175, 174, 174);
+    border-radius: 5px;
+    margin: 10px 0px;
+}
+.events {
+    padding: 10px;
+}
+.events ul li {
+    list-style: none;
+    background-color: rgb(175, 174, 174);
+    text-decoration: none;
+}
+.events a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: black;
+}
+.newsletter {
+    font-size: 1.5rem;
+}
+.socialfooter {
+    padding: 5px 0px;
+}
+.socialicons{
+    display: flex;
+    justify-content: space-around;
+}
+.copyright {
+    text-align: center;
+    height: 5px;
+}
+/* -----------------
+   6. Forms  
+   ------------------*/
+
+  /* -----------------
+    Button Coding from 
+    https://getcssscan.com/css-buttons-examples?ref=beautifulboxshadow-bottom 
+   ------------------*/
+input[type="submit"] {
+    background-color: #c59d58 ;
+    border-radius: 5px;
+    width: fit-content;
+    align-self: center;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+input[type="submit"] {
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 2rem;
+  padding: 0 12px;
+  line-height: 30px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+input[type="submit"]:hover {
+  background-color: #fff;
+}
+input[type="submit"]:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+/* ---
+   Structure
+   --- */
+   .newsletter {
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  } 
+  .wrapper-button {
+    display: flex;
+    justify-content: center;
+  }
+/* ---
+   Structure
+   --- */
+   .newsletter {
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .wrapper-button {
+    display: flex;
+    justify-content: center;
+  }
+  /* ---
+    Form Controls
+    --- */
+  input,
+  select,
+  textarea {
+    font-size: 1em;
+  }
+  input[type="text"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 20px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 20px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  textarea {
+    font-family: sans-serif;
+  }
+  fieldset {
+    margin-bottom: 16px;
+  }
+  .label-required {
+    font-size: 1rem;
+    color: red;
+  }
+/* -----------------
+    6. Solo Buttons 
+   ------------------*/
+.shopall :hover {
+    color: white;
+}
+/* ==============
+   7. Media Queries 
+   ============== */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+  
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+/*header*/
+    .instagram,
+    .facebook {
+        display: flex;
+        align-self: flex-end;
+        margin-bottom: 20px;
+    }
+/*nav*/
+    .nav {
+        display: flex;
+        padding-bottom: 5px;
+    }
+    .nav-items {
+        display: flex;
+        list-style: none;
+    }
+    .nav-item a {
+        display: flex;
+        text-decoration: none;
+        color: black;
+        font-size: 2rem;
+    }
+    nav .menu-label {
+        display: none; /*nav menu bars */
+    }
+    nav ul {
+        display: flex; /*shows menu items on large screen*/
+        flex-direction: row;
+        justify-content: center;
+        justify-content: space-around;
+    }
+    nav .toggle {
+        display: none;
+    }
+/* main */
+.bestsellers-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card-1, .card-2, .card-3, .card-4 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 1;
+    margin: 10px 10px;
+}
+.category {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.collection {
+    display: flex;
+    justify-content: space-around;
+} 
+
+/* footer*/
+
+    .footer-container {
+        display: flex;
+        width: 100%;
+        padding: 10px;
+        flex-direction: row;justify-content: center;
+        background-color: rgb(202, 202, 202);
+        border-top:#b75327 solid 5px;
+
+    }
+    .footer {
+        display: flex;
+        flex-direction: row;
+       
+        
+    }
+    .events {
+        display: flex;
+        justify-content: left;
+        padding: 10px 10px;
+        margin: 10px;
+        align-self: flex-start;   
+        flex-direction: column; 
+    }
+    .events li {
+        display: flex;
+        list-style: none;
+        padding-top: 10px;
+    }
+
+    .newsletter {
+        display: flex;
+        justify-content: center;
+        padding: 10px 10px; 
+        margin: 10px 40px; 
+        flex-direction: column;
+        align-self: auto;
+    }
+   
+    .socialfooter {
+        display: flex;
+        justify-content: right;
+        background-color: rgb(175, 174, 174);
+        padding: 10px 10px;
+        margin: 10px;
+        flex-direction: column;
+        height: fit-content;
+    } 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  
+    /* nav */
+    .nav-item a {
+        display: flex;
+        text-decoration: none;
+        color: black;
+        justify-content: center;
+        padding: 10px 50px;
+        font-size: large;
+    }
+}
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) 

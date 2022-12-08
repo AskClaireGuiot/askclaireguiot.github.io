@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Macondo&family=Ms+Madi&display=swap"
+      rel="stylesheet"
+    />
+    <title>Home Page</title>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="brendalogo">
+        <img
+          src="images/0a6d81_3bf204f08d51f7420364ddb36c7fdbf1.webp"
+          alt="Brendas business logo"
+        />
+        <h1>Brendas Glass Expressions</h1>
+      </div>
+      <div class="facebook-link">
+        <h3>Follow us on</h3>
+        <a href="https://www.facebook.com/profile.php?id=100057411821495"
+          ><img src="images/facebooklogo.png" alt="Facebook logo"
+        /></a>
+      </div>
+      <div class="navbar-links">
+        <ul id="nav-items">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="store.html">Store</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <a class="toggle" onclick="showNav()"><i class="fa fa-bars"></i></a>
+    </nav>
+
+    <div class="welcome-wrap">
+      <article class="welcome">
+        <h2>Welcome to Glass Expressions!</h2>
+        <div class="welcome-intro">
+          <p>
+            Glass Expressions is proudly veteran owned and the "go to" place for
+            glass working tools and supplies on Northern Vancouver Island. The
+            store is located in the beautiful Comox Valley, British Columbia,
+            Canada, home of the prestigious Filberg Festival of the Arts.<br />
+            <br />
+            ​ Brenda has been owner and operator for sixteen years now....Time
+            flies when you're having fun!! She and her sister Donna work
+            together to provide the exceptional customer care that Glass
+            Expressions is known for.<br />
+
+            <br />
+            If you are close to our store please feel free to drop in and talk
+            with us.<br />​ <br />​ Jan Lindstrom's gallery and studio, Jan's
+            Glass by the Sea, is open right across the street. Jan gladly
+            accepts custom glass art orders or she will teach you the skills to
+            create your own
+          </p>
+          <img src="images/Welcome.jpg" alt="Stained glass with bamboo" />
+        </div>
+      </article>
+
+      <aside>
+        <h2>News</h2>
+        <p>Light mills are here!</p>
+        <img src="images/News.jpg" alt="Stained glass by window" />
+      </aside>
+    </div>
+
+    <footer>
+      <div>
+        <a
+          href="https://www.princestrust.ca/en-CA/Veterans-Military/Buy-Veteran"
+          ><img src="images/Veteran.jpg" alt="Veteran logo"
+        /></a>
+      </div>
+      <div class="hourswrap">
+        <h3>Hours</h3>
+        <p>Tuesday 10:00am to 2:00pm</p>
+      </div>
+      <div class="locationmapwrap">
+        <h3>Location</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2581.679321918995!2d-124.97020945917882!3d49.679178942715254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54881388f6d31ff1%3A0xecadc2b5150bd5ea!2sGlass%20Expressions!5e0!3m2!1sen!2sca!4v1669767070821!5m2!1sen!2sca"
+          width="150"
+          height="100"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <a href="https://goo.gl/maps/aG4JSNUJEVnQyHMXA"
+          ><p>2925 Comox Rd, Courtenay, BC V9N 3P7</p></a
+        >
+      </div>
+    </footer>
+
+    <script>
+      function showNav() {
+        var element = document.getElementById("nav-items");
+        element.classList.toggle("show-items");
+      }
+    </script>
+  </body>
+</html>

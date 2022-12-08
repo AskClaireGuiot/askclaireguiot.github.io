@@ -1,0 +1,596 @@
+/* global styles */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-family: "Work Sans", sans-serif;
+  margin: 0 auto;
+  text-align: center;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.site-header {
+  display: block;
+  width: 100%;
+  background-image: url(images/header_enzo-tommasi-unsplash.jpg);
+  background-size: cover;
+  min-height: 250px;
+  border-bottom: #130d0d 3px solid;
+}
+
+/* Back to top button of W3 site*/
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+/*=== Facebook and all links === */
+
+.fa-facebook:link {
+  color: #153c8a;
+}
+
+a:link {
+  text-decoration: none;
+  color: #130d0d;
+  font-weight: bold;
+}
+
+/* === H1 and H2 global styles === */
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  background: rgb(139, 0, 75);
+  background: linear-gradient(90deg, #8b004b 0%, #da9320 35%, #4d8bb9 100%);
+  letter-spacing: 0.1em;
+  padding: 10px;
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 5rem;
+  letter-spacing: 0.1em;
+  text-shadow: 4px 4px 2px rgba(170, 17, 51, 0.6);
+}
+
+h3 {
+  font-family: "Playfair Display", serif;
+  letter-spacing: 0.1em;
+  color: #8b008b;
+}
+
+h4 {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  letter-spacing: 0.1em;
+  color: #8b004b;
+}
+
+.site-header {
+  min-height: 150px;
+}
+
+.header-wrapper a img {
+  max-width: 50%;
+  margin-top: 10px;
+}
+
+/* End of Global Styles */
+
+/* Beginning of NAVIGATION Styles  */
+
+nav {
+  display: flex;
+  flex-direction: column;
+  padding-right: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  display: none;
+}
+
+.show-items {
+  display: flex;
+}
+
+nav .toggle {
+  align-self: flex-end;
+  position: absolute;
+  cursor: pointer;
+}
+
+nav .menu-label {
+  font-weight: bold;
+}
+
+/*End of NAVAGATION STYLES*/
+
+/*Beginning of HERO Styles*/
+
+.hero-flexwrapper {
+  padding: 20px;
+}
+
+aside {
+  border: 1.5px solid #1c3370;
+  padding: 15px;
+  color: #4d6ab9;
+}
+
+/*End of HERO Styles*/
+
+/*Beginning of MAIN styles*/
+
+main {
+  background-color: #f3f5f5;
+}
+
+main .artglass-wrapper {
+  background-color: goldenrod;
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  border-top: #130d0d 3px solid;
+}
+
+/* Beginning ABOUT ME Styles */
+
+.about-flexwrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.about-flexwrapper p {
+  padding-right: 40px;
+}
+
+.about-flexwrapper img {
+  max-width: 100%;
+}
+
+/*End of ABOUT ME Styles*/
+
+/*Beginning of ART GLASS styles*/
+
+#title {
+  color: #8b008b;
+  transform: rotate(-11deg);
+  padding: 10px 10px;
+}
+
+#intro {
+  font-size: 1.8rem;
+  padding: 30px 30px;
+}
+
+/*=== Borrowed from Claire codepen styles my button and skews it*/
+
+.artbutton {
+  border-radius: 25px;
+  padding: 15px 35px;
+  margin: 30px 0;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 0.07em;
+  background: rgb(139, 0, 75);
+  background: linear-gradient(
+    90deg,
+    rgba(139, 0, 75, 1) 0%,
+    rgba(218, 147, 32, 1) 35%,
+    rgba(77, 139, 185, 1) 100%
+  );
+  border: 2px solid #8b008b;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.artbutton:hover {
+  background-color: hsla(73, 64%, 44%, 0.3);
+  color: #8b008b;
+}
+
+/*End of ART GLASS styles*/
+
+/* Beginning of Visit Us styles */
+
+.address-wrapper p {
+  font-weight: bold;
+}
+
+/* Beginning of Form Styles */
+
+.wrapper-form {
+  margin: 0px auto;
+  width: 350px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+label {
+  font-size: 16px;
+  width: 100%;
+  margin-top: 12px;
+}
+
+input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 40px;
+  border: 1px solid #56d8e4;
+  margin: 6px 0 20px 0;
+  padding: 12px;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  height: 100%;
+  width: 80%;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: linear-gradient(to right, #56d8e4, #9f01ea);
+  padding: 12px 0;
+  margin: 32px auto;
+  display: block;
+}
+
+.wrapper-form textarea {
+  width: 100%;
+  height: 100%;
+  background-color: #e8fafc;
+}
+
+/* End of VISIT US styles */
+
+/* Beginning of DISCLAIMER styles  */
+
+footer {
+  padding: 20px;
+  background-color: #fdfbfb;
+  border-top: #130d0d 3px solid;
+}
+
+/* End of DISCLAIMER styles */
+
+/* Beginning of SECONDARY NAVAGATION styles */
+
+footer .secondary-nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+footer .disclaimer-wrapper {
+  width: 100%;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  background-color: goldenrod;
+}
+
+footer img {
+  width: 100%;
+}
+
+/*End of SECONDARY NAVAGATION styles*/
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 763px) {
+  .header-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .site-header {
+    min-height: 200px;
+  }
+
+  .header-wrapper a img {
+    max-width: 90%;
+  }
+
+  nav .menu-label {
+    display: none;
+  }
+  nav {
+    align-items: center;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav ul li {
+    padding-right: 8px;
+  }
+
+  nav .toggle {
+    display: none;
+  }
+
+  .fa-facebook {
+    padding-left: 2px;
+  }
+
+  .hero-flexwrapper {
+    display: flex;
+    gap: 48px;
+  }
+
+  h1 {
+    font-size: 6rem;
+  }
+
+  main .artglass-wrapper {
+    flex-wrap: nowrap;
+  }
+
+  footer img {
+    width: 50%;
+    display: block;
+    margin: auto;
+  }
+
+  .footer-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 25px;
+  }
+
+  /*About Me*/
+
+  .about-flexwrapper {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .about-flexwrapper img {
+    max-width: 100%;
+  }
+
+  .column {
+    flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  /*Visit Us*/
+
+  .wrapper-form {
+    margin: 0px auto;
+    width: 640px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 30px;
+  }
+
+  label {
+    font-size: 16px;
+    width: 100%;
+    margin-top: 12px;
+  }
+
+  input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #56d8e4;
+    margin: 6px 0 20px 0;
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  input[type="submit"] {
+    height: 100%;
+    width: 80%;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: linear-gradient(to right, #56d8e4, #9f01ea);
+    padding: 12px 0;
+    margin: 32px auto;
+    display: block;
+  }
+
+  .wrapper-form textarea {
+    width: 100%;
+    height: 100%;
+    background-color: #e8fafc;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .header-wrapper {
+    width: 960px;
+    margin: auto;
+  }
+  .hero-flexwrapper {
+    display: flex;
+    width: 960px;
+    margin: auto;
+    gap: 96px;
+  }
+
+  .header-wrapper img {
+    max-width: 100%;
+  }
+
+  .site-header {
+    min-height: 250px;
+  }
+
+  nav {
+    align-items: center;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav ul {
+    gap: 16px;
+  }
+
+  .fa-facebook {
+    font-size: larger;
+  }
+
+  /*About Me styles*/
+
+  .about-flexwrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+    padding: 20px;
+  }
+
+  .about-flexwrapper p {
+    padding-right: 40px;
+  }
+
+  .about-flexwrapper img {
+    margin-bottom: 25px;
+    max-width: 75%;
+  }
+
+  .about-flexwrapper h2 {
+    display: block;
+  }
+
+  /*end of ABOUT ME styles*/
+
+  /*ART GLASS styles and media taken from W3Schools*/
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+
+  .column {
+    flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+  /* End of Art Glass */
+
+  /* Beginning of VISIT US Styles */
+
+  /*===code pen borrowed from Claire with adjustments===*/
+
+  /*--Sturcture--*/
+
+  .wrapper-form {
+    margin: 0px auto;
+    width: 640px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 30px;
+  }
+  label {
+    font-size: 16px;
+    width: 100%;
+    margin-top: 12px;
+  }
+
+  input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #56d8e4;
+    margin: 6px 0 20px 0;
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .wrapper-form textarea {
+    width: 100%;
+    height: 100%;
+    background-color: #e8fafc;
+  }
+
+  /* -- Buttons --*/
+
+  input[type="submit"] {
+    height: 100%;
+    width: 80%;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: linear-gradient(to right, #56d8e4, #9f01ea);
+    padding: 12px 0;
+    margin: 32px auto;
+    display: block;
+  }
+
+  /*End of VISIT US Styles*/
+}

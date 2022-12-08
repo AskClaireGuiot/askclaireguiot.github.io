@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=s, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>home</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Google Fonts Import-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&family=Playfair+Display:wght@600&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/0d0c69edef.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--
+        Assignment G
+        Abbey Girvan
+        DGL103 Fall22 DLU1i
+    -->
+  </head>
+
+  <body>
+    <nav>
+      <div class="wrapper">
+        <section class="container">
+          <img
+            class="logo"
+            src="images/logo.png"
+            alt="nicole cahoon logo"
+            width="100"
+          />
+          <a class="toggle" onclick="showNav()"
+            ><i class="fa-solid fa-bars"></i
+          ></a>
+        </section>
+        <ul class="nav-list nav-container" id="nav-items">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="our-team.html">Our Team</a></li>
+          <li><a href="contact-us.html">Contact Us</a></li>
+          <li>
+            <a href="finanical-resources.html">BC Financial Resources</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <header>
+      <div class="wrapper">
+        <h1>Nicole Cahoon</h1>
+        <h2>Comox Valley CPA</h2>
+      </div>
+    </header>
+
+    <main>
+      <section class="main-info">
+        <div class="wrapper main-wrapper">
+          <img
+            class="main-img"
+            src="images/nicole-cahoon.jpeg"
+            alt="Nicole Cahoon standing next to blue armchair with 2 dogs"
+          />
+
+          <!--about the business-->
+          <h2>Nicole Cahoon</h2>
+          <p>
+            Nicole Cahoon, CPA offers a full range of accounting and bookkeeping
+            services to small and mid-sized businesses in Courtenay, Comox,
+            Cumberland and all neighbouring towns in the Comox Valley.
+          </p>
+          <p>
+            At Nicole Cahoon, CPA we are committed to provide a variety of
+            services to meet the needs of our clients by fostering an
+            environment that encourages personal and professional growth. We are
+            dedicated to provide excellent customer service by focusing on the
+            three underlying principles of professionalism, responsiveness and
+            quality. We specialize in small to medium size businesses in the
+            Comox Valley and surrounding areas.
+          </p>
+        </div>
+      </section>
+
+      <!--testimonial-->
+      <section class="testimonial">
+        <div class="testimonial-wrapper">
+          <h2>McKinnon Photography</h2>
+          <p>
+            “We have had the pleasure of working with Nicole and have found her
+            to be professional, organized and thorough. We highly recommend her
+            to anyone who is looking to have their accounting (taxes, whatever
+            you like here) done efficiently and courteously. She got everything
+            sorted, schooled me, and made me laugh all for a very competitive
+            fee. Can&#39;t beat her. (Plus, she does tons in our community.)”
+          </p>
+        </div>
+      </section>
+
+      <!--link to services page-->
+      <section class="learn-more">
+        <div class="learn-more-wrapper">
+          <h3>Learn more about the services we offer</h3>
+
+          <a class="button" href="services.html">SERVICES</a>
+        </div>
+      </section>
+    </main>
+
+    <!--footer-->
+    <footer>
+      <div class="wrapper">
+        <em
+          >This is a fictional website that was designed and coded as an
+          educational exercise. It is not intended to be seen outside of the
+          class environment. None of the content and images were approved by the
+          business owner.</em
+        >
+      </div>
+    </footer>
+
+    <!--javaScript-->
+    <script>
+      function showNav() {
+        var element = document.getElementById("nav-items");
+        element.classList.toggle("show-items");
+      }
+    </script>
+  </body>
+</html>

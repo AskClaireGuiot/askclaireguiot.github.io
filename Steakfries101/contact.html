@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Macondo&family=Ms+Madi&display=swap"
+      rel="stylesheet"
+    />
+    <title>Contact Us!</title>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="brendalogo">
+        <img
+          src="images/0a6d81_3bf204f08d51f7420364ddb36c7fdbf1.webp"
+          alt="Brendas business logo"
+        />
+        <h1>Brendas Glass Expressions</h1>
+      </div>
+      <div class="facebook-link">
+        <h3>Follow us on</h3>
+        <a href="https://www.facebook.com/profile.php?id=100057411821495"
+          ><img src="images/facebooklogo.png" alt="Facebook logo"
+        /></a>
+      </div>
+      <div class="navbar-links">
+        <ul id="nav-items">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="store.html">Store</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <a class="toggle" onclick="showNav()"><i class="fa fa-bars"></i></a>
+    </nav>
+
+    <main>
+      <div>
+        <article class="contact-hours">
+          <ul>
+            <li><h4>Our Hours</h4></li>
+            <li>Tuesday 10:00 AM to 2:00 PM</li>
+            <li>Wednesday 10:00 AM to 2:00 PM</li>
+            <li>Thursday10:00 AM to 2:00 PM</li>
+            <li>Friday 10:00 AM to 2:00 PM</li>
+            <li>Saturday 10:00 AM to 2:00 PM</li>
+          </ul>
+        </article>
+        <div class="map">
+          <h4>Where we are!</h4>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2581.679321918995!2d-124.97020945917882!3d49.679178942715254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54881388f6d31ff1%3A0xecadc2b5150bd5ea!2sGlass%20Expressions!5e0!3m2!1sen!2sca!4v1669767070821!5m2!1sen!2sca"
+            width="300"
+            height="290"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <form class="contact-form">
+          <h2>Send us an email!</h2>
+          <input type="text" id="username" name="username" placeholder="Name" />
+          <input type="email" id="name" name="email" placeholder="Email" />
+          <textarea
+            name="message"
+            rows="20"
+            cols="1"
+            placeholder="Enter Your Message!"
+          ></textarea>
+          <input type="submit" value="Submit" id="submit" />
+        </form>
+      </div>
+      <footer>
+        <div>
+          <a
+            href="https://www.princestrust.ca/en-CA/Veterans-Military/Buy-Veteran"
+            ><img src="images/Veteran.jpg" alt="Veteran logo"
+          /></a>
+        </div>
+        <div class="hourswrap">
+          <h3>Hours</h3>
+          <p>Tuesday 10:00am to 2:00pm</p>
+        </div>
+        <div class="locationmapwrap">
+          <h3>Location</h3>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2581.679321918995!2d-124.97020945917882!3d49.679178942715254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54881388f6d31ff1%3A0xecadc2b5150bd5ea!2sGlass%20Expressions!5e0!3m2!1sen!2sca!4v1669767070821!5m2!1sen!2sca"
+            width="150"
+            height="100"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <a href="https://goo.gl/maps/aG4JSNUJEVnQyHMXA"
+            ><p>2925 Comox Rd, Courtenay, BC V9N 3P7</p></a
+          >
+        </div>
+      </footer>
+      <script>
+        function showNav() {
+          var element = document.getElementById("nav-items");
+          element.classList.toggle("show-items");
+        }
+      </script>
+    </main>
+  </body>
+</html>

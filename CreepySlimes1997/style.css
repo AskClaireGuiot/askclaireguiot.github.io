@@ -1,0 +1,563 @@
+/*****************************
+DGL 103 DLU1 - Isiah Dyck - Assignment G
+CSS Style -- style.css
+Layout order:
+1. Common elements
+2. Classes 
+3. page's class
+    a. index.html
+    b. about_us.html
+    c. product_and_services.html
+    d. contact_us.html
+4. media
+******************************/
+
+/*****************************
+Common Elements
+******************************/
+
+/*html*/
+html {
+    font-size: 62.5%;
+}
+
+/*Body*/
+body {
+    margin: 0;
+    font-size: 2rem;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    font-family: 'Work Sans', sans-serif;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: darkblue;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*Header*/
+header {
+    background-color: green;
+    background: url(image/full_jungle_leaf.jpg);
+    overflow: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+}
+
+header nav p {
+    margin: 1px;
+}
+
+header nav a {
+    margin: 3px;
+    width: 29px;
+    height: 360px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    display: none;
+}
+
+header nav li {
+    margin: 4px;
+   
+}
+
+header nav a,
+header nav p {
+    color: black;
+}
+
+header nav a:hover {
+    color: black;
+}
+
+header h1 {
+    color: white;
+    margin: 1px;
+    clear: both;
+}
+
+header p,
+footer p {
+    color: white;
+}
+
+header small a {
+    font-size: 1rem;
+}
+
+/*Main*/
+
+main {
+    margin: 3px;
+}
+
+main hr {
+    
+    width: 100%;
+    color: black;
+}
+
+/*footer*/
+footer {
+    background-color: green;
+    background: url(image/full_jungle_leaf.jpg);
+    overflow: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer nav ul {
+    list-style: none;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer nav a, footer nav a:hover {
+    color: black;
+}
+
+footer nav ul li {
+    transition: all 0.15s ease-in-out;
+}
+
+footer nav ul li:hover {
+    background-color: darkgreen;
+    overflow:auto;
+   }
+
+footer small {
+    font-size: 1rem;
+}
+
+
+/********************************
+Classes and Id
+*********************************/
+
+.contact_us_button {
+    border: 1px solid blue;
+    background-color: lightblue;
+    color: black;
+    padding: 10px;
+    border-radius: 15px;
+    appearance: button;
+    transition: all 0.15s ease-in-out;
+}
+
+.contact_us_button:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+.about_us main section, .product_and_services .lifeline_canada, .contact_us .form, .contact_us .review section{/*this is also used in product_and_services.html*/
+    border: 2px solid darkgray;
+    border-radius: 20px;
+    margin: 5px 0;
+    padding: 5px;
+    background-color: rgb(211, 211, 211);
+}
+
+/*Header*/
+.show-items {
+    display: flex;
+}
+
+nav .toggle {
+    align-self: flex-end;
+    position: absolute;
+    cursor: pointer;
+    /* color: black; */
+}
+
+.current_page {
+    background-color: lightgreen;
+}
+
+.nav_wrapper {
+    border: 1px solid green;
+    overflow: auto;
+    margin: 5px;
+    background: green;
+}
+
+.nav_wrapper ul li {
+    transition: all 0.15s ease-in-out;
+}
+
+.nav_wrapper ul li:hover {
+ background-color: darkgreen;
+ overflow:auto;
+}
+
+/*main*/
+
+main .contact_copy_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+main .contact_copy_button button {
+    margin-left: 5px;
+}
+
+/*Footer*/
+.copyright {
+    background: white;
+}
+
+/****************
+Personal page classes and ids
+*****************/
+/*index.html*/
+.title_wrapper {
+    margin-top: 10px;
+}
+
+.home .title_wrapper h2 {
+    color: white;
+    font-size:40px;
+}
+.home main .home_appointment p {
+    margin-bottom: 5px;
+}
+
+.home main .home_appointment button {
+    margin-top: 15px;
+}
+
+.home .lifeline_information aside {
+    border: 2px solid darkgray;
+    border-radius: 20px;
+    background-color: rgb(211, 211, 211);
+    margin-left: 10px;
+}
+
+.home main aside img {
+    object-fit: contain;
+}
+
+.home .media iframe {
+    border: none;
+}
+
+/*about_us.html*/
+.about_us main section {
+    background-color: white;
+    border-color: black;
+}
+
+.about_us main section h2 {
+    margin-bottom: 10px;
+}
+
+.about_us #staff_and_members {
+    transform:scale(1.5) ;
+}
+
+/*contact_us.html*/
+.contact_us main aside .contact_copy_button button {
+    margin-right: 5px;
+}
+
+.contact_us #comment {
+    width: 50%;
+}
+
+.contact_us .privacy {
+    margin-top: 10px;
+}
+
+.contact_us #chris_parker {
+    margin-top: 25px;
+}
+
+.contact_us #vancouver_island_north_dial {
+    margin: 25px 0;
+}
+
+
+/********************************
+Media
+*********************************/
+@media only screen and (max-width: 567px) {
+    .home .media iframe{
+    width: 100%;
+    height: auto;
+}
+}
+
+/* @media only screen and (max-width: 686px) {
+    header .members_wrapper {
+        display: flex;
+        flex-direction: column;
+
+    }
+} */
+
+@media only screen and (min-width: 687px) {
+
+    /*header*/
+
+    header {
+        padding-bottom: 20px;
+        height: auto
+    }
+
+    .nav_wrapper {
+        margin: 0px;
+    }
+    nav .menu-label {
+        display: none;
+    }
+
+    header nav {
+        margin-bottom: 20px;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    nav ul li {
+        margin: 0px;
+        padding: 9px;
+    }
+
+    nav .toggle {
+        display: none;
+    }
+
+    .nav_wrapper {
+        background: none;
+        border: none;
+    }
+
+    header p {
+        float: right;
+        margin-right: 5%;
+        margin-bottom: 0;
+    }
+
+    header .title {
+        float: left;
+        margin-left: 5%;
+        margin-top: 0;
+    }
+
+    header h1 {
+        clear: both
+    }
+
+
+    /* header .members_wrapper {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 10px;
+        clear: both;
+    }
+
+    header .members_wrapper small {
+        margin: 5px;
+    } */
+
+    footer nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    /*index.html classes*/
+    .home header .title_wrapper {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .home .title_wrapper h1{
+        display: contents;
+    }
+
+    .home .title_wrapper #lifeline_society {
+        margin-left: 5px;
+        margin-top: 15px;
+    }
+
+    .home .media iframe {
+        width: 560px;
+        height: 315px;
+    }
+    /*about_us.html*/
+    .about_us main .norman_osborn {
+        margin-bottom: 10px;
+    }
+
+    .about_us img {
+        margin: 0 10px;
+    }
+
+    /*product_and_services.html classes*/
+    .product_and_services main figure ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .product_and_services main figure li {
+        width: max-content;
+        text-align: left;
+    }
+
+    /*contact_us.html*/
+    .contact_us .phone_and_email {
+        width: max-content;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 917px){
+
+    /*index.html*/
+    .home main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home .lifeline_information {
+        display: flex;
+        align-items: stretch;
+    }
+
+    .home .lifeline_information aside figure {
+        display: flex;
+    }
+
+    .home .lifeline_information section h3 {
+        margin-top: 40px;
+    }
+
+    .home .Services_and_pround_member {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .home .Services_and_pround_member aside {
+        padding-top: 80px;
+        margin: 20px;
+    }
+
+    /*about_us.html*/
+    .about_us main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about_us main section div {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .about_us main section .reverse {
+        flex-direction: row-reverse;
+    }
+
+    /*product_and_services.html*/
+    .product_and_services main section div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /*contact_us.html*/
+    .contact_us main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact_us .contacts_and_location {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .contact_us aside {
+        margin-top: 24.9px;
+    }
+
+    .contact_us .contacts_and_location aside {
+        margin-right: auto;
+        /* margin-left: auto; */
+    }
+
+    .contact_us .review {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: black;
+        background: url(image/full_jungle_leaf.jpg);/*created by Graham Holtshausen https://unsplash.com/photos/fUnfEz3VLv4 */
+        padding: 10px;
+        color: white;
+        margin: 25px 0;
+        overflow: auto;
+        border-radius: 20px;
+    }
+
+    .contact_us .review #chris_parker {
+        margin-top: 10px;
+    }
+
+    .contact_us .review section {
+        /* border: 2px solid white;
+        background-color: white; */
+        color: black;
+        margin: 10px;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    main {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+    /* , header .members_wrapper */
+    header .nav_wrapper, header p i{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    header .title {
+        /* max-width: 100px;
+        margin: 0 auto; */
+        margin-left: 200px;
+    }
+
+    header p i {
+        margin-right: 200px;
+    }
+
+}
+
