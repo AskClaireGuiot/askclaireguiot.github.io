@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Phi Architecture </title>
+    
+    <link rel="stylesheet" href="main.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/18cf34d46e.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <div class="headerwrapper">
+      <header>
+        <a href="index.html">
+          <img
+            src="images/PHI-Logo-full-white.svg"
+            alt="phi architecture Logo"
+            width="300"
+          />
+        </a>
+        <nav>
+          <ul id="nav-items">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Project Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <a class="toggle" onclick="showNav ()">
+            <i class="fa-solid fa-bars fa-xl"></i>
+          </a>
+        </nav>
+      </header>
+    </div>
+
+    <main>
+      <section class="hero">
+      
+          <img src="images/thevictorycropped.jpg" alt="The Victory building" />
+        
+        <div class="overlay"> </div>
+        <h1>
+          Architecture is successful when it is functional, practical,
+          beautiful, durable and uniquely suited to its place.
+        </h1>
+      </section>
+
+      <section class="homeservices">
+        <h2>We offer a variety of services</h2>
+        <div class="servicescontainer">
+        <div>
+          <i class="fa-solid fa-pen-ruler"></i>
+          <h3>Construction Documents</h3>
+        </div>
+        <div class="design">
+          <i class="fa-solid fa-paintbrush"></i>
+          <h3>Design</h3> 
+        </div>
+        <div>
+          <i class="fa-solid fa-file-pen"></i>
+          <h3>Project Management</h3>
+        </div>
+      </div>
+     </section>
+
+
+
+      <div class="testimonialswrapper">
+        <section>
+          <h2>Testimonials</h2>
+          <div class="testimonialcontainer">
+            <div class="testimonialitem">
+              <figure>
+                <img
+                  src="images/Quadra-seniors-residences.jpeg"
+                  alt="The Quadra Island Seniors Residences"
+                />
+              </figure>
+              <p>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Pellentesque at diam ut arcu ornare viverra. Duis non libero
+                iaculis, dapibus risus et, volutpat est. Morbi non convallis
+                dui." -Lorem Ipsum
+              </p>
+            </div>
+
+            <div class="testimonialitem">
+              <figure>
+                <img
+                  src="images/denmanislandchildcare.jpeg"
+                  alt="Denman Island Childcare Centre"
+                  width:600
+                />
+              </figure>
+              <p>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Pellentesque at diam ut arcu ornare viverra. Duis non libero
+                iaculis, dapibus risus et, volutpat est. Morbi non convallis
+                dui." - Lorem Ipsum
+              </p>
+            </div>
+          </div>
+          
+        </section>
+      </div>
+
+      <div class="ctawrapper">
+        <section class="cta">
+          
+            <h2>Book a Consultation</h2>
+            <p>
+              Lets connect! Book a free no obligation consultation and turn your
+              dreams into reality.
+            </p>
+            <button class="hvr-bounce-in"><a href="blank.html"  >Book a Consultation</a></button>
+            
+         
+        </section>
+      </div>
+    </main>
+    <div class="footerwrapper">
+      <footer>
+        <div class="footeritemcontainer">
+        <div class="footercontact">
+          <p>Royston, BC. 5 Little Bear Way</p>
+          <p> <a href="tel:250-703-0433"> 250-703-0433 </a> </p>
+          <p> <a href = "mailto:pippa@phiarchitecture.ca"> pippa@phiarchitecture.ca </a>  </p>
+        </div>
+        <div class="secondarynav">
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="gallery.html">Project Gallery</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+        <p class="copyright">
+          “This is a fictional website that was designed and coded as an
+          educational exercise. It is not intended to be seen outside of the
+          class environment. None of the content and images were approved by the
+          business owner.”
+        </p>
+      
+      </footer>
+    </div>
+
+    <script>
+      function showNav() {
+        var element = document.getElementById("nav-items");
+        element.classList.toggle("show-items");
+      }
+    </script>
+  </body>
+</html>

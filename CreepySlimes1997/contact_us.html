@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- DGL 103 DLU1 - Isiah Dyck - Assignment G -->
+    <!-- Contact Us - contact_us.html-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap" rel="stylesheet">
+    <title>Comox Valley Lifeline Society - Contact Us</title>
+</head>
+
+<!--
+    References/Credits:
+    Comox Valley Lifeline Society - http://comoxvalleylifeline.com/
+    Responsive Nav and Layout - Claire Guiot - https://codepen.io/AskClaireGuiot/pen/eYErXvr
+    How TO - Copy Text to Clipboard - https://www.w3schools.com/howto/howto_js_copy_clipboard.asp
+    How to Add an HTML Button that Acts Like a Link - https://www.w3docs.com/snippets/html/how-to-create-an-html-button-that-acts-like-a-link.html
+    google map of Comox Valley Lifeline Society - https://www.google.com/maps/place/Comox+Valley+Lifeline+Society/@49.687529,-124.996921,15z/data=!4m5!3m4!1s0x0:0xa57af17e80199166!8m2!3d49.687529!4d-124.996921?hl=en
+-->
+
+<body id="contact_us_link" class="contact_us">
+    <!--link from the bottom of the page-->
+    <header>
+        <div class="nav_wrapper">
+            <nav>
+                <p class="menu-label">menu</p>
+                <ul id="nav-items">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="product_and_services.html">Product and Services</a></li>
+                    <li class="current_page"><a href="contact_us.html">Contact Us</a></li>
+                </ul>
+                <a class="toggle" onclick="showNav()"><i class="fa fa-bars"></i></a>
+            </nav>
+        </div>
+        <p class="title">Comox Valley Lifeline Society</p>
+        <h1>Contact Us</h1>
+        <p><i>"Help At The Push Of A Button"</i></p>
+    </header>
+    <main>
+        <div class="contacts_and_location">
+            <section class="phone_and_email">
+                <h2>Community Office and Emails:</h2>
+                <ul>
+                    <li>
+                        <div class="contact_copy_button">Cowichan Valley Lifeline..........
+                            (250) 746 - 0814
+                            <button onclick="navigator.clipboard.writeText('(250) 746 - 0814');"><i class="fa fa-clone"
+                                    aria-hidden="true"></i></button>
+                            <button onclick="window.location.href='tel:(250) 746 - 0814';"><i class="fa fa-phone"
+                                    aria-hidden="true"></i></button>
+                        </div>
+                        <div class="contact_copy_button">
+                            CowichanValleyLifeline@gmail.com
+                            <button onclick="navigator.clipboard.writeText('CowichanValleyLifeline@gmail.com');"><i
+                                    class="fa fa-clone" aria-hidden="true"></i></button>
+                            <!--Email is fake-->
+                        </div>
+                    </li>
+                    <li>
+                        <div class="contact_copy_button">Chemaninus-Crofton Lifeline....
+                            (250) 246 - 3883
+                            <button onclick="navigator.clipboard.writeText('(250) 246 - 3883');"><i class="fa fa-clone"
+                                    aria-hidden="true"></i></button>
+                            <button onclick="window.location.href='tel:(250) 246 - 3883';"><i class="fa fa-phone"
+                                    aria-hidden="true"></i></button>
+                        </div>
+                        <div class="contact_copy_button">
+                            Chemaninus-CroftonLifeline@gmail.com
+                            <button onclick="navigator.clipboard.writeText('Chemaninus-CroftonLifeline@gmail.com');"><i
+                                    class="fa fa-clone" aria-hidden="true"></i></button>
+                            <!--Email is fake-->
+                        </div>
+                    </li>
+                    <li>
+                        <div class="contact_copy_button">Sunshine Coast Lifeline............(604) 885 - 9501
+                            <button onclick="navigator.clipboard.writeText('(604) 885 - 9501');"><i class="fa fa-clone"
+                                    aria-hidden="true"></i></button>
+                            <button onclick="window.location.href='tel:(604) 885 - 9501';"><i class="fa fa-phone"
+                                    aria-hidden="true"></i></button>
+                        </div>
+                        <div class="contact_copy_button">
+                            SunshineCoastLifeline@gmail.com
+                            <button onclick="navigator.clipboard.writeText('SunshineCoastLifeline@gmail.com');"><i
+                                    class="fa fa-clone" aria-hidden="true"></i></button>
+                            <!--Email is fake-->
+                        </div>
+                    </li>
+                    <li>
+                        <div class="contact_copy_button">Comox Valley Lifeline.............(250) 338 - 4255
+                            <button onclick="navigator.clipboard.writeText('(250) 338 - 4255');"><i class="fa fa-clone"
+                                    aria-hidden="true"></i></button>
+                            <button onclick="window.location.href='tel:(250) 338 - 4255';"><i class="fa fa-phone"
+                                    aria-hidden="true"></i></button>
+                        </div>
+                        <div class="contact_copy_button">
+                            CVLifelineSociety@gmail.com
+                            <button onclick="navigator.clipboard.writeText('CVLifelineSociety@gmail.com');"><i
+                                    class="fa fa-clone" aria-hidden="true"></i></button>
+                            <!--Email is fake-->
+                        </div>
+                    </li>
+                    <li>
+                        <div class="contact_copy_button">Campbell River Lifeline...........(250) 286 - 4888
+                            <button onclick="navigator.clipboard.writeText('(250) 286 - 4888');"><i class="fa fa-clone"
+                                    aria-hidden="true"></i></button>
+                            <button onclick="window.location.href='tel:(250) 286 - 4888';"><i class="fa fa-phone"
+                                    aria-hidden="true"></i></button>
+                        </div>
+                        <div class="contact_copy_button">
+                            CampbellRiverLifeline@gmail.com
+                            <button onclick="navigator.clipboard.writeText('CampbellRiverLifeline@gmail.com');"><i
+                                    class="fa fa-clone" aria-hidden="true"></i></button>
+                            <!--Email is fake-->
+                        </div>
+                    </li>
+
+                    <li id="vancouver_island_north_dial">
+                        <div class="contact_copy_button">Vancouver Island North Dial Toll Free...1-(866) 205 - 6160
+                            <button onclick="navigator.clipboard.writeText('1-(866) 205 - 6160');"><i
+                                    class="fa fa-clone" aria-hidden="true"></i></button>
+                            <button onclick="window.location.href='tel:1-(866) 205 - 6160';"><i class="fa fa-phone"
+                                    aria-hidden="true"></i></button>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="contact_copy_button">Fax Number For All Areas...........(250) 338 - 4922
+                            <button onclick="navigator.clipboard.writeText('(250) 338 - 4922');"><i class="fa fa-clone"
+                                    aria-hidden="true"></i></button>
+                            <button onclick="window.location.href='tel:(250) 338 - 4922';"><i class="fa fa-phone"
+                                    aria-hidden="true"></i></button>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <aside>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2581.235971067817!2d-124.99910968429609!3d49.68752897937737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5488147593f58011%3A0xa57af17e80199166!2sComox%20Valley%20Lifeline%20Society!5e0!3m2!1sen!2sca!4v1669416104361!5m2!1sen!2sca"
+                    width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="contact_copy_button">
+                    <button onclick="navigator.clipboard.writeText('Comox Valley Lifeline Society, 392 - 10th Street, Courtenay, BC V9N 1P5');"><i class="fa fa-clone"
+                            aria-hidden="true"></i></button><b>Main Office Address:</b>
+                </div>
+                <p>Comox Valley Lifeline Society <br> 392 - 10th Street <br> Courtenay, BC V9N 1P5</p>
+            </aside>
+        </div>
+        <section>
+            <h2>Administration Office Hours:</h2>
+            <p>Monday to Friday, 9:00AM to 5:00PM <br> Closed on Holidays <br> Phone: (250) 338 - 4255 <br> Fax: (250)
+                338 - 4922 </p>
+        </section>
+        <form class="form" method="post" action="#">
+            <h2>Request Information</h2>
+            <p>Please use the form below to send us your questions about the Comox Valley Lifeline services. One of our
+                Area Coordinators will back to you in the next business day.</p>
+            <div>
+                <label for="name">Your Name</label>
+                <br>
+                <input type="text" name="fullname" id="name">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <br>
+                <input type="email" id="email" name="email">
+            </div>
+            <div>
+                <label for="comment">Comments</label>
+                <br>
+                <textarea id="comment" name="comment" style="height: 200px;"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+            <small class="privacy">The information you provide here is used only by the Comox Valley Lifeline Society, it is
+                never sold or
+                shared with third parties.</small>
+        </form>
+        
+        <div class="review">
+            <section id="chris_parker">
+                <img src="image/chris_parker.jpg" alt="A man named Chris Parker" width="100" height="100">
+                <!--Created by Christian buehner https://unsplash.com/photos/DItYlc26zVI -->
+                <h3>Chris Parker</h3>
+                <p><i>"Fusce bibendum tincidunt quam nec luctus. Praesent egestas porttitor metus sit amet rhoncus. Cras
+                        id erat lectus. Donec ut
+                        ullamcorper nibh, et aliquam ex. Nulla lectus massa, facilisis ac sollicitudin a, vestibulum at
+                        purus. Ut dapibus, eros at
+                        venenatis elementum, justo augue laoreet enim, sollicitudin luctus felis turpis et sem."</i></p>
+            </section>
+            <section>
+                <img src="image/clay_turner.jpg" alt="A man named Clay Turner" width="100" height="100">
+                <!--Created by Mircosolf 365 https://unsplash.com/photos/7mBictB_urk -->
+                <h3>Clay Turner</h3>
+                <p><i>"Fusce bibendum tincidunt quam nec luctus. Praesent egestas porttitor metus sit amet rhoncus. Cras
+                        id erat lectus. Donec ut
+                        ullamcorper nibh, et aliquam ex. Nulla lectus massa, facilisis ac sollicitudin a, vestibulum at
+                        purus. Ut dapibus, eros at
+                        venenatis elementum, justo augue laoreet enim, sollicitudin luctus felis turpis et sem."</i></p>
+            </section>
+            <section>
+                <img src="image/alex_coroner.jpg" alt="A man named Alex Coroner" width="100" height="100">
+                <!--Created by charlie Green https://unsplash.com/photos/3JmfENcL24M -->
+                <h3>Alex Coroner</h3>
+                <p><i>"Fusce bibendum tincidunt quam nec luctus. Praesent egestas porttitor metus sit amet rhoncus. Cras
+                        id erat lectus. Donec ut
+                        ullamcorper nibh, et aliquam ex. Nulla lectus massa, facilisis ac sollicitudin a, vestibulum at
+                        purus. Ut dapibus, eros at
+                        venenatis elementum, justo augue laoreet enim, sollicitudin luctus felis turpis et sem."</i></p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="product_and_services.html">Product and Service</a></li>
+                <li><a href="#contact_us_link">Contact Us</a></li>
+            </ul>
+        </nav>
+        <p><i>"Help At The Push Of A Button"</i></p>
+    </footer>
+    <footer class="copyright">
+        <small>“This is a fictional website that was designed and coded as an educational exercise. It is not intended
+            to be seen outside of the class environment.
+            None of the content and images were approved by the business owner.”</small>
+    </footer>
+    <script>
+        function showNav() {//Responsive Nav and Layout - Claire Guiot - https://codepen.io/AskClaireGuiot/pen/eYErXvr
+            var element = document.getElementById("nav-items");
+            element.classList.toggle("show-items");
+        }
+    </script>
+</body>
+
+</html>

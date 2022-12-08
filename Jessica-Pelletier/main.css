@@ -1,0 +1,502 @@
+/*=============================
+-TYPOGRAPHY
+-PAGES
+-UNIVERSAL STYLES
+-MEDIA QUERIES
+===============================*/
+
+/*=====================
+======TYPOGRAPHY=======*/
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+body {
+  margin: 0;
+}
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+  font-family: "Playfair Display", serif;
+}
+
+/*===================
+=====PAGES===========*/
+
+/*====Header and Nav=====*/
+.headerwrapper {
+  background-color: #292e30;
+}
+nav ul {
+  display: none;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+header ul li a {
+  font-size: 2.5rem;
+}
+.show-items {
+  display: flex;
+}
+
+nav {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+}
+
+nav .toggle {
+  align-self: flex-end;
+  position: absolute;
+  color: white;
+}
+
+/*=======Hero Section Home Page =======*/
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 70vh;
+}
+
+.hero img,
+.overlay {
+  width: 100vw;
+  height: 70vh;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.overlay {
+  opacity: 0.5;
+  background-color: gray;
+}
+.hero h1 {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 4rem;
+  color: white;
+}
+
+/*=========Our services home page=========*/
+.homeservices h2 {
+  color: #292e30;
+}
+.servicescontainer {
+  display: flex;
+  justify-content: center;
+}
+.servicescontainer {
+  display: flex;
+}
+.servicescontainer div {
+  max-width: 33.33%;
+}
+.design {
+  flex-grow: 1;
+}
+
+/*=====testimonials Home page=====*/
+
+h2 {
+  font-family: "Playfair Display", serif;
+
+  font-size: 3rem;
+  padding: 1em 1em;
+  color: white;
+}
+
+.testimonialswrapper {
+  background-color: #292e30;
+  padding-bottom: 3%;
+}
+figure {
+  margin: 0;
+}
+.testimonialitem img {
+  max-width: 100vw;
+}
+.testimonialitem p {
+  color: white;
+  font-style: italic;
+  margin: 0;
+  padding: 0.5em 0;
+}
+
+
+
+
+
+
+/*========= About page ============*/
+.aboutpage img {
+  max-width: 90vw;
+}
+.video {
+  background-color: #292e30;
+}
+iframe {
+  padding: 0 0 2em 0;
+}
+/*===========Project Gallery page======*/
+.projectgallery h2 {
+  font-family: "Playfair Display", serif;
+  color: #292e30;
+  margin: 0;
+  padding: 0.5em;
+}
+.projectgallery img {
+  max-width: 90%;
+}
+.projectgallery button {
+  border: 2px solid #6f4e37;
+  font-family: "Nunito Sans", sans-serif;
+  margin: 1em;
+}
+
+/*========Contact page =========*/
+
+.wrapper-form {
+  box-sizing: border-box;
+  text-align: left;
+}
+.contactpage a {
+  color: #292e30;
+  text-decoration: none;
+}
+.contactpage h2 {
+  color: #292e30;
+}
+
+/* The form stylings are based heavily on Claires Codepen example */
+
+input[type="reset"] {
+  color: #6f4e37;
+  padding: 10px 20px;
+  border: 1pz solid #6f4e37;
+  border-radius: 5px;
+  cursor: pointer;
+}
+input[type="reset"]:hover {
+  background-color: #6f4e37;
+  color: white;
+}
+
+input[type="submit"] {
+  background-color: #6f4e37;
+  color: white;
+  padding: 10px 20px;
+  border: 1px solid #6f4e37;
+  border-radius: 5px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: #9d8879;
+  color: white;
+}
+.wrapper-form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px 40px 20px 20px;
+  max-width: 800px;
+  margin: 0 auto 2em auto;
+}
+.wrapper-button {
+  display: flex;
+  justify-content: space-between;
+}
+
+input,
+select,
+textarea {
+  font-size: 1em;
+}
+input[type="text"],
+select,
+textarea,
+input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+textarea {
+  font-family: "Nunito Sans", sans-serif;
+}
+fieldset {
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+}
+.label-required {
+  font-size: 1.3rem;
+  color: red;
+}
+
+/*======================
+======UNIVERSAL STYLES==*/
+
+/*=====consultation CTA all Pages======*/
+
+.ctawrapper {
+  background-color: #faf9f6;
+  padding-bottom: 2%;
+}
+.cta h2 {
+  color: #6f4e37;
+  font-style: normal;
+  font-weight: 600;
+  margin-top: 0;
+  font-size: 3rem;
+}
+.cta a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.7rem;
+}
+/*CODE USED FROM HOVER.CSS BOUNCE IN EFFECT*/
+.hvr-bounce-in {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.hvr-bounce-in:hover,
+.hvr-bounce-in:focus,
+.hvr-bounce-in:active {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+/*=====Footer all pages=====*/
+.footerwrapper {
+  background-color: #292e30;
+}
+.footercontact {
+  padding-top: 1em;
+}
+footer {
+  color: white;
+}
+footer a {
+  color: white;
+}
+.copyright {
+  margin: 0;
+  padding: 0.5em 0;
+  font-variant: small-caps;
+}
+
+/*======Buttons=======*/
+/*cta button*/
+button {
+  color: #292e30;
+  border: 2px solid #6f4e37;
+  border-radius: 5px;
+  padding: 1em 0.5em;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin-bottom: 1em;
+}
+button:hover {
+  background-color: #6f4e37;
+  color: white;
+}
+
+.projectgallery button a {
+  text-decoration: none;
+  color: #292e30;
+}
+.projectgallery button a:hover {
+  color: white;
+}
+
+/*===================
+====MEDIA QUERIES===*/
+
+/*=======Break Points======*/
+
+@media only screen and (min-width: 650px) {
+  .testimonialitem p {
+    max-width: 50%;
+    margin: auto;
+  }
+
+  /*project gallery*/
+  .galleryitem p {
+    max-width: 60%;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav .toggle {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 1em;
+  }
+
+  nav li {
+    padding: 0.8em;
+  }
+
+  .hero img {
+    max-width: 100%;
+    max-height: auto;
+  }
+
+  .testimonialcontainer {
+    display: flex;
+    max-width: 80%;
+    margin: auto;
+  }
+  .testimonialitem p {
+    max-width: 80%;
+  }
+  .testimonialitem img {
+    max-width: 85%;
+  }
+
+  .footeritemcontainer {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .secondarynav ul {
+    display: flex;
+    flex-direction: column;
+    line-height: 0.8em;
+  }
+
+  /*-- aboutpage-*/
+  .aboutpage p {
+    max-width: 80%;
+    margin: auto;
+    padding: 1em 0;
+    font-size: 1.8rem;
+  }
+  /*-Project Gallery Page-*/
+  .projectgallery {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .projectgallery article {
+    width: 50%;
+  }
+  .projectgallery {
+    width: 100%;
+  }
+
+  /*-contact page -*/
+  .contactpage {
+    max-width: 1100px;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  /*About page*/
+  .aboutflexcontainer {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+  }
+
+  .aboutcontentcontainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /*project gallery page*/
+  .projectgallery {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .projectgallery button {
+    max-width: fit-content;
+  }
+  .projectgallery article {
+    width: 80%;
+  }
+  .projectgallery figure {
+    width: 60%;
+  }
+  .galleryitem1,
+  .galleryitem2,
+  .galleryitem3,
+  .galleryitem4 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4%;
+  }
+  .galleryitem1info,
+  .galleryitem2info,
+  .galleryitem3info,
+  .galleryitem4info {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+  }
+
+  .galleryitem2,
+  .galleryitem4 {
+    flex-direction: row-reverse;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  /*aboutpage*/
+  .aboutpage,
+  .projectgallery,
+  footer {
+    max-width: 1200px;
+    margin: auto;
+  }
+}

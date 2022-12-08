@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- DGL 103 DLU1 - Isiah Dyck - Assignment G -->
+    <!-- Home Page - index.html-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap" rel="stylesheet">
+    <title>Comox Valley Lifeline Society</title>
+</head>
+
+<!--
+    References/Credits:
+    Comox Valley Lifeline Society - http://comoxvalleylifeline.com/
+    Responsive Nav and Layout - Claire Guiot - https://codepen.io/AskClaireGuiot/pen/eYErXvr
+    How TO - Copy Text to Clipboard - https://www.w3schools.com/howto/howto_js_copy_clipboard.asp
+    How to Add an HTML Button that Acts Like a Link - https://www.w3docs.com/snippets/html/how-to-create-an-html-button-that-acts-like-a-link.html
+-->
+
+<body id="home_link" class="home">
+    <!--link from the bottom of the page-->
+    <header>
+        <div class="nav_wrapper">
+            <nav>
+                <p class="menu-label">menu</p>
+                <ul id="nav-items">
+                    <li class="current_page"><a href="index.html">Home</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="product_and_services.html">Product and Service</a></li>
+                    <li><a href="contact_us.html">Contact Us</a></li>
+                </ul>
+                <a class="toggle" onclick="showNav()"><i class="fa fa-bars"></i></a>
+            </nav>
+        </div>
+        <div class="title_wrapper">
+            <h1>Comox Valley</h1>
+            <h2 id="lifeline_society">Lifeline Society</h2>
+        </div>
+        <p><i>"Help At The Push Of A Button"</i></p>
+    </header>
+    <main>
+        <section class="home_appointment">
+            <h2>Book An Appointment now, call the Administration Office;</h2>
+            <p>by phone: (250) 338-4255 <button
+                onclick="navigator.clipboard.writeText('(250)-338-4255');"><i class="fa fa-clone"
+                    aria-hidden="true"></i></button>
+            <button onclick="window.location.href='tel:(250)-338-4255';"><i class="fa fa-phone"
+                    aria-hidden="true"></i></button></p>
+            <div class="contact_copy_button"><!--How TO - Copy Text to Clipboard - https://www.w3schools.com/howto/howto_js_copy_clipboard.asp-->
+                <p>by email: CVLifelineSociety@gmail.com</p>
+                <button onclick="myFunction('CVLifelineSociety@gmail.com')"><i class="fa fa-clone"
+                        aria-hidden="true"></i></button>
+                <!--Email is fake-->
+            </div>
+            <p>or contact your town Community Office: <a
+                class="contact_us_button" href="contact_us.html">Contact
+                Us</a></p>
+        </section>
+        <section>
+            <h2>Communities We Serve</h2>
+            <p>Cowichan Valley, Chemainus-Crofton, Sunshine Coast, Comox Valley, Campbell River And North Vancouver
+                Island</p>
+        </section>
+        <hr>
+        <!-- The line -->
+        <div class="lifeline_information">
+            <section>
+                <h3>What is Lifeline?</h3>
+                <p>Lifeline is an easy-to-use personal emergency response system that lets you summon help any time of
+                    the
+                    day or night, even if you can't speak. All you have to do is
+                    press your Personal Help Button, worn on a wristband or pendant and a Personal Response Associate
+                    will
+                    ensure you get help fast.</p>
+                <h3>Live independently at home with Lifeline Medical Alert Service</h3>
+                <p>This year 1.4 million people, 65 and older will fall. If you or a loved one experience a medial
+                    emergency, time is of the essence. We can help by connecting you to
+                    the right help for the situation, 24 hours a day, 365 days a year at the push of a button. Whether
+                    you
+                    need emergency services or just the assistance of a family
+                    member or friend to help you get back on your feet, we can help.</p>
+                <h3>If a fall should happen</h3>
+                <p>Not all falls can be prevented. If a fall does occur, older adults need to be sure they can reach
+                    help
+                    easily and quickly, especially if they are injured, in order to
+                    prevent further injury and dangerous complications.</p>
+                <p>The Comox Valley Lifeline Society offers a variety of medical alert services designed specifically
+                    for
+                    older adults that provide fast, 24/7 access to expert help in an
+                    emergency. These services range from the standard HomeSafe service to the fall detection capability
+                    of
+                    the HomeSafe with AutoAlert and the freedom of the new GoSafe
+                    mobile service.</p>
+            </section>
+            <aside>
+                <h3>How Lifeline Works</h3>
+                <figure>
+                    <img src="image/works_button.jpg" alt="A button" width="150">
+                    <p>If you need help, push your Personal Help Button.</p>
+                </figure>
+                <figure>
+                    <img src="image/works_communitator.jpg" alt="a communicator" width="150">
+                    <p>Your Lifeline Communicator Unit dials our Response Centre.</p>
+                </figure>
+                <figure>
+                    <img src="image/works_response.jpg" alt="A person on the phone" width="150">
+                    <p>A Personal Response Associate assesses your situation and sends you the you need.</p>
+                </figure>
+                <figure>
+                    <img src="image/works_safe.jpg" alt="two person hugging" width="150">
+                    <p>Whether it is a family member, a neighbor or ambulance, Lifeline always sends you the help you
+                        need.
+                    </p>
+                </figure>
+            </aside>
+        </div>
+        <section class="media">
+            <!--The video-->
+            <h2>How Lifeline with AutoAlert Works</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/3OqE7AZUyQ0?start=10" title="YouTube video player" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!--Source: https://www.youtube.com/embed/3OqE7AZUyQ0?start=10 -->
+        </section>
+        <div class="Services_and_pround_member">
+            <div>
+                <section>
+                    <h2>Types of Services</h2>
+                    <h3><a href="product_and_services.html#homesafe_basic_link">HomeSafe Basic</a></h3>
+                    <!--Connected to the HomeSafe Basic figure element-->
+                    <p>Wear your basic help button around your neck or wrist and have access to help at the push of a
+                        button
+                        from anywhere within range of the in-home Communicator.</p>
+                    <h3><a href="product_and_services.html#homesafe_autoalert_link">HomeSafe with Auto Alert</a></h3>
+                    <!--Connected to the HomeSafe with Auto Alert figure element-->
+                    <p>HomeSafe with AutoAlert is designed to automatically detect hard falls and send a call for help
+                        even if
+                        you can't push the button yourself. This is an excellent
+                        choice if you have a history, risk or fear of falling.</p>
+                    <h3><a href="product_and_services.html#gosafe_link">GoSafe Mobile Help Button</a></h3>
+                    <!--Connected to the GoSafe figure element-->
+                    <p>GoSafe gives you the freedom to go where you want, when you want. This system has six locating
+                        technologies designed to help find you anywhere in Canada should an
+                        emergency occur.</p>
+                    <p><b>All our Help Buttons are 100% waterproof</b></p>
+                </section>
+                <section>
+                    <h2>Book An Appointment with an Administration Office to get the type of services you needed.</h2>
+                    <p>by phone: (250) 338-4255 <button
+                        onclick="navigator.clipboard.writeText('(250)-338-4255');"><i class="fa fa-clone"
+                            aria-hidden="true"></i></button>
+                    <button onclick="window.location.href='tel:(250)-338-4255';"><i class="fa fa-phone"
+                            aria-hidden="true"></i></button></p>
+                    <div class="contact_copy_button"><!--How TO - Copy Text to Clipboard - https://www.w3schools.com/howto/howto_js_copy_clipboard.asp -->
+                        <p>by email: CVLifelineSociety@gmail.com</p>
+                        <button onclick="myFunction('CVLifelineSociety@gmail.com')"><i class="fa fa-clone"
+                                aria-hidden="true"></i></button>
+                        <!--Email is fake-->
+                    </div>
+                    <p>or contact your town Community Office: <a
+                        class="contact_us_button" href="contact_us.html">Contact
+                        Us</a></p>
+                </section>
+            </div>
+            <aside>
+                <img src="image/golden_medal.png" alt="a gold medal" width="100">
+                <!--image created by: bartekhdd https://pixabay.com/vectors/medal-gold-golden-prize-blue-1678111/ -->
+                <p><b>A Pround member of:</b> <br> Western Canadian Association of Lifeline Programs</p>
+            </aside>
+        </div>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#home_link">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="product_and_services.html">Product and Service</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <p><i>"Help At The Push Of A Button"</i></p>
+    </footer>
+    <footer class="copyright">
+        <small>“This is a fictional website that was designed and coded as an educational exercise. It is not intended
+            to be seen outside of the class environment.
+            None of the content and images were approved by the business owner.”</small>
+    </footer>
+    <script>
+        function showNav() { //Responsive Nav and Layout - Claire Guiot - https://codepen.io/AskClaireGuiot/pen/eYErXvr
+            var element = document.getElementById("nav-items");
+            element.classList.toggle("show-items");
+        }
+    </script>
+</body>
+
+</html>
