@@ -1,0 +1,366 @@
+* {
+  font-family: sans-serif;
+}
+
+body {
+    background: whitesmoke;
+    color: black;
+    margin: 0;
+  }
+  
+  header,
+  nav,
+  footer {
+    margin-bottom: 10px;
+  }
+  
+  header,
+  footer {
+    text-align: center;
+    padding: 5px 0;
+    background-color: steelblue;
+  }
+
+  header{
+    width: 100%;
+    position: fixed;
+  }
+  
+  /* start navigation */
+  nav {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  nav img{
+  display: block;
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    display: none;
+    align-items: flex-start;
+  }
+  
+  .show-items {
+    display: flex;
+  }
+  
+  nav ul li a {
+    color: white;
+  }
+
+  nav ul li:hover {
+    background-color: navy;
+  }
+  
+  nav .toggle {
+    align-self: flex-end;
+    position: absolute;
+    cursor: pointer;
+  }
+
+  .book-btn {
+    background-color: lightcoral;
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    padding: 30px 10px;
+    position: fixed;
+    top: 10%;
+    right: 0;
+    writing-mode: vertical-rl;
+    border-radius: 15px 0  0 15px;
+  }
+
+  .book-btn:hover {
+    background-color: orangered;
+  }
+  /* end navigation */
+
+/* start main */
+main{
+  padding-top: 120px;
+}
+
+
+h1{
+  font-family: 'DM Serif Display', serif;
+}
+
+h2{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.title img{
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    left: 0;
+    top: 0;
+  }
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-item {
+  padding: 15px;
+  border-radius: 15px;
+  margin: 15px;
+  text-align: center;
+  width: 80%;
+}
+
+.item-h1,
+.item-s {
+  background-color: steelblue;
+  color: white;
+}
+
+.item-a{
+  border: solid;
+  border-color: steelblue;
+}
+
+.our-team p{
+  text-align: left;
+}
+
+/*table start*/
+.table-wrapper {
+  overflow-x:auto;
+}
+
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 80%;
+  border-collapse: collapse;
+  margin: auto;
+  margin-bottom: 15px;
+}
+caption {
+  font-size: 1em;
+  font-weight: bold;
+  text-align: left;
+  padding: 10px 0;
+}
+
+td,
+th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: cornflowerblue;
+  color: white;
+}
+
+td.merge {
+  text-align: center;
+  font-style: italic;
+}
+
+/* table end */
+
+/* form start */
+/* STYLES ----------------------------------
+1. Global settings (resets such as border-box)
+2. Typography (headings, paragraphs, lists, buttons)
+3. Layout structure (body, header, footer, sidebar)
+4. Content blocks (cards, tables, forms, calls-to-action block)
+5. General classes (.clear, .center, .right, .left, .big-margin, etc.)
+6. Page-specific (styles specific to individual locations)
+-----------------------------------------------------*/
+
+/* ===============
+   GLOBAL SETTINGS
+   =============== */
+
+   * {
+    box-sizing: border-box;
+  }
+  
+  /* ===============
+     TYPOGRAPHY
+     =============== */
+  
+  body {
+    font-family: sans-serif;
+  }
+  
+  /* ===============
+     BUTTONS
+     =============== */
+  
+  input[type="reset"] {
+    color: cornflowerblue;
+    padding: 12px 20px;
+    border: 1px solid cornflowerblue;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type="reset"]:hover {
+    background-color: aqua;
+  }
+  
+  input[type="submit"] {
+    background-color: cornflowerblue;
+    color: white;
+    padding: 12px 20px;
+    border: 1px solid cornflowerblue;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: aqua;
+  }
+  
+  /* ===============
+     STRUCTURE
+     =============== */
+  
+  .wrapper-form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .wrapper-button {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* ===============
+     FORM CONTROLS
+     =============== */
+  
+  input,
+  select,
+  textarea {
+    font-size: 1em;
+  }
+  
+  input[type="text"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  textarea {
+    font-family: sans-serif;
+  }
+  
+  .label-required {
+    font-size: 0.8rem;
+    color: red;
+  }
+  /* form ends */
+
+  button{
+    background-color: orange;
+    padding: 10px 15px;
+    color: white;
+    border: orange;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+  }
+
+  button:hover {
+    background-color: orangered;
+  }
+
+  .flex-container-f {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .flex-item-f{
+    background-color: steelblue;
+    padding: 5px;
+    margin: 5px;
+  }
+
+/* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {
+  nav .menu-label {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  nav ul li {
+    padding-right: 8px;
+  }
+
+  nav .toggle {
+    display: none;
+  }
+  .flex-container {
+    flex-direction: row;
+  }
+  .flex-item {
+    flex-grow: 1;
+  }
+
+  .wrap {
+    flex-wrap: wrap;
+  }
+
+  .item-s{
+    width: 30%;
+  }
+  .item-a{
+    width: 22%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  nav ul,
+  main {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}

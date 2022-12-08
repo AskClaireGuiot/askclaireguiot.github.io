@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Ascent Physiotherapy Home</title>
+  <!-- DGL 103 CVS1 - Yuki Onishi - Assignment G -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <header>
+    <nav>
+       <a href="home.html"><img src="images/Ascent Logo.png" alt="Ascent Logo" width="100"></a>
+        <ul id="nav-items">
+         <li><a href="about.html">About us</a></li>
+         <li><a href="services.html">Services</a></li>
+         <li><a href="contact.html">Contact Us</a></li>
+         <li><a href="links.html">Links</a></li>
+        </ul>
+        <a class="toggle" onclick="showNav()"><i class="fa fa-bars"></i></a>
+    </nav>
+       <!-- Contact button --> 
+       <a href="book.html" class="book-btn">Book Now</a>
+
+       
+    </header>
+
+    <main>
+      <div class="title">
+        <h1>Ascent Physiotherapy</h1>
+        <img src="images/Home/Home_head.jpg" alt="Ascent Physiotherapy Home" width="100%">
+      </div>    
+      <article class="News">
+        <h2>News</h2>
+        <ul>
+          <li>News 1</li>
+          <li>News 2</li>
+        </ul>
+    </article> <hr>
+
+      <!-- Why many people choose Ascent Physiotherapy ? --> 
+      <section class="advantages">
+        <h2>Why many people choose Ascent Physiotherapy ?</h2>
+        <button onclick="location.href='about.html'">About Us</button>
+        <section class="flex-container">
+          <div class="flex-item item-h1">
+            <h3>Advantage 1</h3>
+            <img src="images/Home/Advantage_1.jpg" alt="Advantage 1" width="100%">
+            <p>Advantage 1 is ...</p>
+          </div>
+        
+          <div class="flex-item item-h1">
+            <h3>Advantage 2</h3>
+            <img src="images/Home/Advantage_2.jpg" alt="Advantage 2" width="100%">
+            <p>Advantage 2 is ...</p>
+          </div>
+        
+          <div class="flex-item item-h1">
+            <h3>Advantage 3</h3>
+            <img src="images/Home/Advantage_3.jpg" alt="Advantage 3" width="100%">
+            <p>Advantage 3 is ...</p>
+          </div>
+       </section>
+      </section>
+      <hr>
+
+      <!-- Services -->
+      <section class="Services">
+        <h2>Our Services</h2>
+        <p>We have many kinds of services.</p>
+        <button onclick="location.href='services.html'">Services</button>
+        <section class="flex-container">
+          <div class="flex-item">
+          <figure>
+            <img src="images/Services/Acupuncture.jpg" alt="Acupuncture" width="100%">
+            <figcaption>Acupuncture</figcaption>
+          </figure>
+          </div>
+        
+          <div class="flex-item">
+            <figure>
+              <img src="images/Services/Special order.jpg" alt="Special order" width="100%">
+              <figcaption>Special order</figcaption>
+            </figure>
+          </div>
+        
+          <div class="flex-item">
+            <figure>
+              <img src="images/Services/Sports Therapy.jpg" alt="Sports Therapy" width="100%">
+              <figcaption>Sports Therapy</figcaption>
+            </figure>
+          </div>
+       </section>
+      </section><hr>
+
+    <!-- Available date and time -->
+    <section class="date-and-time">
+      <h2>Available date and time</h2>
+      <p>We are available the date and time below.</p>
+      <button onclick="location.href='contact.html'">Contact Us</button>
+
+      <div class="table-wrapper">
+       <table>
+        <caption>Available date and time</caption>
+        <thead>
+          <th></th>
+          <th>Mon.</th>
+          <th>Tue.</th>
+          <th>Wed.</th>
+          <th>Thu.</th>
+          <th>Fri.</th>
+          <th>Sat.</th>
+          <th>Sun.</th>
+        </thead>
+        <tr>
+          <th>8:30-12:00</th>
+          <td>○</td>
+          <td>○</td>
+          <td>○</td>
+          <td>○</td>
+          <td>○</td>
+          <td>×</td>
+          <td>×</td>
+        </tr>
+        <tr>
+          <th>1:00-5:00</th>
+          <td>○</td>
+          <td>○</td>
+          <td>○</td>
+          <td>○</td>
+          <td>○</td>
+          <td>×</td>
+          <td>×</td>
+        </tr>
+       </table>
+     </div>
+    </section>
+
+    </main>
+
+    <footer>
+      <p><small>This is a fictional website that was designed and coded as an educational exercise. It is not intended to be seen outside of the class environment. None of the content and images were approved by the business owner.</small></p>
+      <section class="flex-container-f">
+        <div class="flex-item-f">
+          <a href="/home.html"><img src="images/footer/f_logo_RGB-Blue_58.png" alt="Facebook icon" width="50px"></a>
+        </div>
+      
+        <div class="flex-item-f">
+          <a href="/home.html"><img src="images/footer/Instagram_Glyph_Gradient_RGB.png" alt="Instagram icon" width="50px"></a>
+        </div>
+      </section>
+    </footer>
+
+    <script>
+      function showNav() {
+        var element = document.getElementById("nav-items");
+        element.classList.toggle("show-items");
+      }
+    </script>
+  </body>
+</html>

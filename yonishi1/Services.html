@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Ascent Physiotherapy Services</title>
+  <!-- DGL 103 CVS1 - Yuki Onishi - Assignment G -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <header>
+    <nav>
+        <a href="home.html"><img src="images/Ascent Logo.png" alt="Ascent Logo" width="100"></a>
+        <ul id="nav-items">
+         <li><a href="about.html">About us</a></li>
+         <li><a href="services.html">Services</a></li>
+         <li><a href="contact.html">Contact Us</a></li>
+         <li><a href="links.html">Links</a></li>
+        </ul>
+        <a class="toggle" onclick="showNav()"><i class="fa fa-bars"></i></a>
+    </nav>
+       <!-- Contact button --> 
+       <a href="book.html" class="book-btn">Book Now</a>
+    </header>
+
+    <main>
+      <div class="title">
+         <h1>Services</h1>
+         <img src="images/Services/Services_head.jpg" alt="Ascent Physiotherapy Services" width="100%">
+      </div><hr>
+
+      <!-- Service contents --> 
+      <section class="service-contents">
+        <h2>Our Services</h2>
+        <section class="flex-container wrap">
+          <div class="flex-item item-s">
+            <h3>Acupuncture</h3>
+            <img src="images/Services/Acupuncture.jpg" alt="Acupuncture" width="100%">
+            <p>Acupuncture is ...</p>
+          </div>
+        
+          <div class="flex-item item-s">
+            <h3>Auto Injuries</h3>
+            <img src="images/Services/Auto Injuries.jpg" alt="Auto Injuries" width="100%">
+            <p>Auto Injuries is ...</p>
+          </div>
+        
+          <div class="flex-item item-s">
+            <h3>CranioSacral Therapy</h3>
+            <img src="images/Services/CranioSacral Therapy.jpg" alt="CranioSacral Therapy" width="100%">
+            <p>CranioSacral Therapy is ...</p>
+          </div>
+
+          <div class="flex-item item-s">
+            <h3>Large exercise area</h3>
+            <img src="images/Services/Large exercise area.jpg" alt="Large exercise area" width="100%">
+            <p>We have a large exercise area ...</p>
+          </div>
+
+          <div class="flex-item item-s">
+            <h3>Special order</h3>
+            <img src="images/Services/Special order.jpg" alt="Special order" width="100%">
+            <p>We can make special order ...</p>
+          </div>
+
+          <div class="flex-item item-s">
+            <h3>Sports Therapy</h3>
+            <img src="images/Services/Sports Therapy.jpg" alt="Sports Therapy" width="100%">
+            <p>Sports Therapy is ...</p>
+          </div>        
+       </section>
+      </section>
+        
+    </main>
+    
+    <footer>
+        <p><small>This is a fictional website that was designed and coded as an educational exercise. It is not intended to be seen outside of the class environment. None of the content and images were approved by the business owner.</small></p>
+        <section class="flex-container-f">
+          <div class="flex-item-f">
+            <a href="/home.html"><img src="images/footer/f_logo_RGB-Blue_58.png" alt="Facebook icon" width="50px"></a>
+          </div>
+        
+          <div class="flex-item-f">
+            <a href="/home.html"><img src="images/footer/Instagram_Glyph_Gradient_RGB.png" alt="Instagram icon" width="50px"></a>
+          </div>
+        </section>
+      </footer>
+  
+      <script>
+        function showNav() {
+          var element = document.getElementById("nav-items");
+          element.classList.toggle("show-items");
+        }
+      </script>
+    </body>
+  </html>
